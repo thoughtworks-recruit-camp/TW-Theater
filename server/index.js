@@ -25,7 +25,7 @@ const proxyServer = http.createServer((request, response) => {
   response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   response.setHeader('Content-Type', 'text/plain;charset=utf-8');
   switch (parsedUrl.pathname) {
-    case "topMovies/all":
+    case "/topMovies/all":
       response.statusCode = 200;
       response.end(JSON.stringify(DATA));
       break;
