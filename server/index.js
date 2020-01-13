@@ -4,6 +4,7 @@ const API_ROOT = '/topMovies';
 const DB_ROOT = 'http://localhost:3000';
 const MAX_RANDOM_N = 36;
 let DATA;
+let idPosterMap;
 http.get(`${DB_ROOT}${API_ROOT}`, res => {
   let body = '';
   res.on('data', data => {
@@ -11,7 +12,7 @@ http.get(`${DB_ROOT}${API_ROOT}`, res => {
   });
   res.on('end', () => {
     DATA = JSON.parse(body);
-    console.log(DATA.length)
+    idPosterMap = new Map(DATA.map(entry => [entry.id, entry.images.large]));
   });
 }).on('error', error => {
   console.log('代理失败:' + error.message)
@@ -53,26 +54,18 @@ const proxyServer = http.createServer((request, response) => {
         return acc;
       }, [])));
       break;
+    case "/topMovies/poster":
+      http.get(idPosterMap.get(parsedUrl.query.id), res => {
+        let body = Buffer.from([]);
+        res.on("data", data => {
+          body = Buffer.concat([body, data]);
+        });
+        res.on("end", () => {
+          response.statusCode = 200;
+          response.end(body);
+        })
+      });
   }
-
-
-  // if (parsedUrl.pathname.startsWith(API_ROOT)) {
-  //   http.get(`${DB_ROOT}${parsedUrl.pathname}`, res => {
-  //     let body = '';
-  //     res.on('data', data => {
-  //       body += data;
-  //     });
-  //     res.on('end', () => {
-  //       response.statusCode = res.statusCode;
-  //       response.end(body);
-  //     });
-  //   }).on('error', error => {
-  //     console.log('代理失败:' + error.message)
-  //   });
-  // } else {
-  //   response.statusCode = 404;
-  //   response.end('请求正确的地址');
-  // }
 });
 
 
