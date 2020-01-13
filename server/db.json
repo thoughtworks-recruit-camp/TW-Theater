@@ -8,8 +8,8 @@
           "1": 1413,
           "2": 1172,
           "3": 19025,
-          "4": 187822,
-          "5": 1171240
+          "4": 187839,
+          "5": 1171340
         },
         "stars": "50",
         "min": 0
@@ -57,7 +57,7 @@
       "durations": [
         "142分钟"
       ],
-      "collect_count": 2426622,
+      "collect_count": 2427138,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Shawshank Redemption",
@@ -95,9 +95,9 @@
         "details": {
           "1": 1443,
           "2": 1566,
-          "3": 22102,
-          "4": 169428,
-          "5": 863552
+          "3": 22103,
+          "4": 169445,
+          "5": 863636
         },
         "stars": "50",
         "min": 0
@@ -146,7 +146,7 @@
       "durations": [
         "171 分钟"
       ],
-      "collect_count": 1931635,
+      "collect_count": 1932012,
       "mainland_pubdate": "1993-07-26",
       "has_video": true,
       "original_title": "霸王别姬",
@@ -184,9 +184,9 @@
         "details": {
           "1": 1070,
           "2": 1958,
-          "3": 30693,
-          "4": 228778,
-          "5": 843618
+          "3": 30696,
+          "4": 228798,
+          "5": 843689
         },
         "stars": "50",
         "min": 0
@@ -234,7 +234,7 @@
       "durations": [
         "142分钟"
       ],
-      "collect_count": 2098789,
+      "collect_count": 2099193,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Forrest Gump",
@@ -271,10 +271,10 @@
         "average": 9.4,
         "details": {
           "1": 1184,
-          "2": 2334,
-          "3": 39523,
-          "4": 283374,
-          "5": 932302
+          "2": 2335,
+          "3": 39525,
+          "4": 283395,
+          "5": 932379
         },
         "stars": "50",
         "min": 0
@@ -324,7 +324,7 @@
         "110分钟(剧场版)",
         "133分钟(国际版)"
       ],
-      "collect_count": 2437689,
+      "collect_count": 2438178,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Léon",
@@ -361,9 +361,9 @@
         "details": {
           "1": 750,
           "2": 1282,
-          "3": 15945,
-          "4": 123033,
-          "5": 559186
+          "3": 15951,
+          "4": 123099,
+          "5": 559510
         },
         "stars": "50",
         "min": 0
@@ -413,7 +413,7 @@
         "116分钟",
         "125分钟(加长版)"
       ],
-      "collect_count": 1173086,
+      "collect_count": 1173853,
       "mainland_pubdate": "2020-01-03",
       "has_video": false,
       "original_title": "La vita è bella",
@@ -451,9 +451,9 @@
         "details": {
           "1": 939,
           "2": 2282,
-          "3": 39897,
-          "4": 239898,
-          "5": 785853
+          "3": 39900,
+          "4": 239915,
+          "5": 785937
         },
         "stars": "50",
         "min": 0
@@ -503,7 +503,7 @@
         "194分钟",
         "227分钟(白星版)"
       ],
-      "collect_count": 2035556,
+      "collect_count": 2036036,
       "mainland_pubdate": "1998-04-03",
       "has_video": true,
       "original_title": "Titanic",
@@ -540,11 +540,11 @@
         "max": 10,
         "average": 9.3,
         "details": {
-          "1": 1240,
+          "1": 1241,
           "2": 2379,
-          "3": 42579,
-          "4": 278042,
-          "5": 819231
+          "3": 42582,
+          "4": 278066,
+          "5": 819312
         },
         "stars": "50",
         "min": 0
@@ -593,7 +593,7 @@
       "durations": [
         "125分钟"
       ],
-      "collect_count": 2028854,
+      "collect_count": 2029355,
       "mainland_pubdate": "2019-06-21",
       "has_video": true,
       "original_title": "千と千尋の神隠し",
@@ -632,8 +632,8 @@
           "1": 450,
           "2": 741,
           "3": 13711,
-          "4": 109623,
-          "5": 447900
+          "4": 109631,
+          "5": 447954
         },
         "stars": "50",
         "min": 0
@@ -682,7 +682,7 @@
       "durations": [
         "195分钟"
       ],
-      "collect_count": 1026227,
+      "collect_count": 1026448,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Schindler's List",
@@ -720,9 +720,9 @@
         "details": {
           "1": 1573,
           "2": 2645,
-          "3": 42353,
-          "4": 273541,
-          "5": 764993
+          "3": 42358,
+          "4": 273575,
+          "5": 765055
         },
         "stars": "50",
         "min": 0
@@ -771,7 +771,7 @@
       "durations": [
         "148分钟"
       ],
-      "collect_count": 2041821,
+      "collect_count": 2042196,
       "mainland_pubdate": "2010-09-01",
       "has_video": true,
       "original_title": "Inception",
@@ -809,9 +809,9 @@
         "details": {
           "1": 804,
           "2": 2075,
-          "3": 32462,
-          "4": 172961,
-          "5": 546872
+          "3": 32464,
+          "4": 172979,
+          "5": 546928
         },
         "stars": "50",
         "min": 0
@@ -858,7 +858,7 @@
       "durations": [
         "93分钟"
       ],
-      "collect_count": 1535351,
+      "collect_count": 1535698,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Hachi: A Dog's Tale",
@@ -895,10 +895,10 @@
         "average": 9.3,
         "details": {
           "1": 1490,
-          "2": 4000,
-          "3": 42275,
-          "4": 221157,
-          "5": 604711
+          "2": 4001,
+          "3": 42278,
+          "4": 221188,
+          "5": 604799
         },
         "stars": "50",
         "min": 0
@@ -949,7 +949,7 @@
         "169分钟(加长版)",
         "125分钟(中国大陆)"
       ],
-      "collect_count": 1595179,
+      "collect_count": 1595580,
       "mainland_pubdate": "2019-11-15",
       "has_video": true,
       "original_title": "La leggenda del pianista sull'oceano",
@@ -987,9 +987,9 @@
         "details": {
           "1": 607,
           "2": 1639,
-          "3": 29215,
-          "4": 172744,
-          "5": 506130
+          "3": 29220,
+          "4": 172763,
+          "5": 506172
         },
         "stars": "50",
         "min": 0
@@ -1038,7 +1038,7 @@
       "durations": [
         "98分钟"
       ],
-      "collect_count": 1320293,
+      "collect_count": 1320531,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "WALL·E",
@@ -1075,9 +1075,9 @@
         "details": {
           "1": 2655,
           "2": 5473,
-          "3": 53445,
-          "4": 256941,
-          "5": 673865
+          "3": 53450,
+          "4": 256977,
+          "5": 673953
         },
         "stars": "50",
         "min": 0
@@ -1126,7 +1126,7 @@
       "durations": [
         "171分钟(印度)"
       ],
-      "collect_count": 1802075,
+      "collect_count": 1802487,
       "mainland_pubdate": "2011-12-08",
       "has_video": true,
       "original_title": "3 Idiots",
@@ -1164,9 +1164,9 @@
         "details": {
           "1": 641,
           "2": 1847,
-          "3": 33516,
-          "4": 221452,
-          "5": 543516
+          "3": 33523,
+          "4": 221471,
+          "5": 543605
         },
         "stars": "50",
         "min": 0
@@ -1214,7 +1214,7 @@
       "durations": [
         "103分钟"
       ],
-      "collect_count": 1424926,
+      "collect_count": 1425250,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Truman Show",
@@ -1251,9 +1251,9 @@
         "details": {
           "1": 393,
           "2": 1207,
-          "3": 26880,
-          "4": 187725,
-          "5": 480697
+          "3": 26882,
+          "4": 187744,
+          "5": 480743
         },
         "stars": "50",
         "min": 0
@@ -1301,7 +1301,7 @@
       "durations": [
         "97分钟"
       ],
-      "collect_count": 1337176,
+      "collect_count": 1337454,
       "mainland_pubdate": "2004-10-16",
       "has_video": true,
       "original_title": "Les choristes",
@@ -1339,9 +1339,9 @@
         "details": {
           "1": 2621,
           "2": 3838,
-          "3": 38841,
-          "4": 195598,
-          "5": 574421
+          "3": 38846,
+          "4": 195622,
+          "5": 574475
         },
         "stars": "50",
         "min": 0
@@ -1390,7 +1390,7 @@
       "durations": [
         "169分钟"
       ],
-      "collect_count": 1409625,
+      "collect_count": 1409918,
       "mainland_pubdate": "2014-11-12",
       "has_video": true,
       "original_title": "Interstellar",
@@ -1427,10 +1427,10 @@
         "average": 9.2,
         "details": {
           "1": 1963,
-          "2": 3575,
-          "3": 46266,
-          "4": 204395,
-          "5": 522451
+          "2": 3576,
+          "3": 46274,
+          "4": 204416,
+          "5": 522505
         },
         "stars": "45",
         "min": 0
@@ -1480,7 +1480,7 @@
         "95分钟",
         "110分钟(重映版)"
       ],
-      "collect_count": 1485032,
+      "collect_count": 1485381,
       "mainland_pubdate": "2014-10-24",
       "has_video": true,
       "original_title": "西遊記大結局之仙履奇緣",
@@ -1519,9 +1519,9 @@
         "details": {
           "1": 540,
           "2": 1113,
-          "3": 18067,
-          "4": 129134,
-          "5": 345509
+          "3": 18068,
+          "4": 129148,
+          "5": 345560
         },
         "stars": "50",
         "min": 0
@@ -1568,7 +1568,7 @@
       "durations": [
         "125分钟"
       ],
-      "collect_count": 798901,
+      "collect_count": 799099,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "도가니",
@@ -1607,7 +1607,7 @@
           "2": 476,
           "3": 11033,
           "4": 55694,
-          "5": 122992
+          "5": 122994
         },
         "stars": "45",
         "min": 0
@@ -1656,7 +1656,7 @@
       "durations": [
         "86分钟"
       ],
-      "collect_count": 1324074,
+      "collect_count": 1324386,
       "mainland_pubdate": "2018-12-14",
       "has_video": true,
       "original_title": "となりのトトロ",
@@ -1694,9 +1694,9 @@
         "details": {
           "1": 396,
           "2": 1258,
-          "3": 32088,
-          "4": 193392,
-          "5": 421842
+          "3": 32094,
+          "4": 193415,
+          "5": 421891
         },
         "stars": "45",
         "min": 0
@@ -1746,7 +1746,7 @@
         "101分钟",
         "97分钟(导演剪辑版)"
       ],
-      "collect_count": 1237094,
+      "collect_count": 1237369,
       "mainland_pubdate": "2003-09-05",
       "has_video": true,
       "original_title": "無間道",
@@ -1795,9 +1795,9 @@
         "details": {
           "1": 907,
           "2": 2103,
-          "3": 24406,
-          "4": 117218,
-          "5": 341260
+          "3": 24407,
+          "4": 117230,
+          "5": 341305
         },
         "stars": "50",
         "min": 0
@@ -1845,7 +1845,7 @@
       "durations": [
         "175 分钟"
       ],
-      "collect_count": 881662,
+      "collect_count": 881837,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Godfather",
@@ -1883,9 +1883,9 @@
         "details": {
           "1": 909,
           "2": 2234,
-          "3": 48983,
-          "4": 293422,
-          "5": 617004
+          "3": 48986,
+          "4": 293458,
+          "5": 617081
         },
         "stars": "45",
         "min": 0
@@ -1935,7 +1935,7 @@
         "109分钟(中国大陆)",
         "108分钟"
       ],
-      "collect_count": 1676663,
+      "collect_count": 1677121,
       "mainland_pubdate": "2016-03-04",
       "has_video": true,
       "original_title": "Zootopia",
@@ -1995,9 +1995,9 @@
         "details": {
           "1": 869,
           "2": 2961,
-          "3": 50021,
-          "4": 251093,
-          "5": 493070
+          "3": 50023,
+          "4": 251122,
+          "5": 493132
         },
         "stars": "45",
         "min": 0
@@ -2046,7 +2046,7 @@
       "durations": [
         "117分钟"
       ],
-      "collect_count": 1512747,
+      "collect_count": 1513103,
       "mainland_pubdate": "2008-01-17",
       "has_video": true,
       "original_title": "The Pursuit of Happyness",
@@ -2082,11 +2082,11 @@
         "max": 10,
         "average": 9,
         "details": {
-          "1": 1126,
+          "1": 1127,
           "2": 4208,
-          "3": 64902,
-          "4": 297939,
-          "5": 563055
+          "3": 64911,
+          "4": 297967,
+          "5": 563121
         },
         "stars": "45",
         "min": 0
@@ -2135,7 +2135,7 @@
       "durations": [
         "90分钟"
       ],
-      "collect_count": 1676586,
+      "collect_count": 1676977,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Flipped",
@@ -2172,10 +2172,10 @@
         "average": 9.2,
         "details": {
           "1": 482,
-          "2": 1449,
-          "3": 23511,
-          "4": 148977,
-          "5": 348844
+          "2": 1450,
+          "3": 23513,
+          "4": 148990,
+          "5": 348886
         },
         "stars": "50",
         "min": 0
@@ -2223,7 +2223,7 @@
       "durations": [
         "112分钟"
       ],
-      "collect_count": 896842,
+      "collect_count": 897013,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Intouchables",
@@ -2269,11 +2269,11 @@
         "max": 10,
         "average": 9.2,
         "details": {
-          "1": 1231,
+          "1": 1232,
           "2": 2660,
-          "3": 34743,
-          "4": 148545,
-          "5": 363819
+          "3": 34752,
+          "4": 148562,
+          "5": 363866
         },
         "stars": "45",
         "min": 0
@@ -2322,7 +2322,7 @@
       "durations": [
         "152分钟"
       ],
-      "collect_count": 973341,
+      "collect_count": 973551,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Dark Knight",
@@ -2361,8 +2361,8 @@
           "1": 451,
           "2": 1327,
           "3": 19717,
-          "4": 118750,
-          "5": 280021
+          "4": 118762,
+          "5": 280059
         },
         "stars": "50",
         "min": 0
@@ -2411,7 +2411,7 @@
       "durations": [
         "132分钟"
       ],
-      "collect_count": 729372,
+      "collect_count": 729508,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "活着",
@@ -2450,8 +2450,8 @@
           "1": 145,
           "2": 183,
           "3": 3345,
-          "4": 34267,
-          "5": 166521
+          "4": 34271,
+          "5": 166553
         },
         "stars": "50",
         "min": 0
@@ -2500,7 +2500,7 @@
       "durations": [
         "116分钟"
       ],
-      "collect_count": 285673,
+      "collect_count": 285745,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Witness for the Prosecution",
@@ -2537,9 +2537,9 @@
         "details": {
           "1": 426,
           "2": 1054,
-          "3": 16145,
-          "4": 88862,
-          "5": 235858
+          "3": 16146,
+          "4": 88866,
+          "5": 235887
         },
         "stars": "50",
         "min": 0
@@ -2589,7 +2589,7 @@
         "238分钟",
         "234分钟"
       ],
-      "collect_count": 631083,
+      "collect_count": 631184,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Gone with the Wind",
@@ -2649,9 +2649,9 @@
         "details": {
           "1": 1454,
           "2": 3698,
-          "3": 51854,
-          "4": 247712,
-          "5": 470748
+          "3": 51857,
+          "4": 247731,
+          "5": 470796
         },
         "stars": "45",
         "min": 0
@@ -2700,7 +2700,7 @@
       "durations": [
         "127分钟"
       ],
-      "collect_count": 1390974,
+      "collect_count": 1391261,
       "mainland_pubdate": "2012-11-22",
       "has_video": true,
       "original_title": "Life of Pi",
@@ -2740,8 +2740,8 @@
           "1": 255,
           "2": 636,
           "3": 10641,
-          "4": 53635,
-          "5": 95562
+          "4": 53637,
+          "5": 95563
         },
         "stars": "45",
         "min": 0
@@ -2791,7 +2791,7 @@
         "161分钟(印度)",
         "140分钟(中国大陆)"
       ],
-      "collect_count": 1695338,
+      "collect_count": 1695831,
       "mainland_pubdate": "2017-05-05",
       "has_video": true,
       "original_title": "Dangal",
@@ -2829,9 +2829,9 @@
         "details": {
           "1": 630,
           "2": 1741,
-          "3": 24170,
-          "4": 104232,
-          "5": 259134
+          "3": 24172,
+          "4": 104246,
+          "5": 259160
         },
         "stars": "45",
         "min": 0
@@ -2882,7 +2882,7 @@
         "254分钟(加长版)",
         "263分钟(蓝光加长版)"
       ],
-      "collect_count": 731634,
+      "collect_count": 731769,
       "mainland_pubdate": "2004-03-12",
       "has_video": true,
       "original_title": "The Lord of the Rings: The Return of the King",
@@ -2920,9 +2920,9 @@
         "details": {
           "1": 491,
           "2": 2368,
-          "3": 50893,
-          "4": 244324,
-          "5": 406220
+          "3": 50897,
+          "4": 244344,
+          "5": 406268
         },
         "stars": "45",
         "min": 0
@@ -2971,7 +2971,7 @@
       "durations": [
         "96分钟"
       ],
-      "collect_count": 1338932,
+      "collect_count": 1339230,
       "mainland_pubdate": "2009-08-04",
       "has_video": true,
       "original_title": "Up",
@@ -3023,7 +3023,7 @@
           "2": 719,
           "3": 11737,
           "4": 53210,
-          "5": 102894
+          "5": 102897
         },
         "stars": "45",
         "min": 0
@@ -3072,7 +3072,7 @@
       "durations": [
         "105分钟"
       ],
-      "collect_count": 1394911,
+      "collect_count": 1395324,
       "mainland_pubdate": "2017-11-24",
       "has_video": true,
       "original_title": "Coco",
@@ -3122,9 +3122,9 @@
         "details": {
           "1": 651,
           "2": 1299,
-          "3": 16736,
-          "4": 86595,
-          "5": 225994
+          "3": 16738,
+          "4": 86602,
+          "5": 226013
         },
         "stars": "50",
         "min": 0
@@ -3174,7 +3174,7 @@
         "139分钟",
         "162分钟(戛纳电影节)"
       ],
-      "collect_count": 602262,
+      "collect_count": 602343,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "鬼子来了",
@@ -3212,9 +3212,9 @@
         "details": {
           "1": 301,
           "2": 517,
-          "3": 7998,
-          "4": 51491,
-          "5": 174503
+          "3": 8001,
+          "4": 51501,
+          "5": 174527
         },
         "stars": "50",
         "min": 0
@@ -3261,7 +3261,7 @@
       "durations": [
         "96 分钟"
       ],
-      "collect_count": 378945,
+      "collect_count": 379015,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "12 Angry Men",
@@ -3298,9 +3298,9 @@
         "details": {
           "1": 407,
           "2": 1119,
-          "3": 17939,
-          "4": 103212,
-          "5": 241196
+          "3": 17944,
+          "4": 103225,
+          "5": 241235
         },
         "stars": "50",
         "min": 0
@@ -3350,7 +3350,7 @@
         "163分钟",
         "219分钟 (电视版)"
       ],
-      "collect_count": 636599,
+      "collect_count": 636761,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Last Emperor",
@@ -3388,9 +3388,9 @@
         "details": {
           "1": 380,
           "2": 1203,
-          "3": 26901,
-          "4": 142200,
-          "5": 276916
+          "3": 26903,
+          "4": 142210,
+          "5": 276938
         },
         "stars": "45",
         "min": 0
@@ -3439,7 +3439,7 @@
       "durations": [
         "125分钟"
       ],
-      "collect_count": 902276,
+      "collect_count": 902476,
       "mainland_pubdate": "1992-05-01",
       "has_video": false,
       "original_title": "天空の城ラピュタ",
@@ -3477,9 +3477,9 @@
         "details": {
           "1": 417,
           "2": 1258,
-          "3": 19414,
-          "4": 100815,
-          "5": 229043
+          "3": 19416,
+          "4": 100823,
+          "5": 229057
         },
         "stars": "45",
         "min": 0
@@ -3529,7 +3529,7 @@
         "173分钟(导演剪辑版)",
         "124分钟(剧场版)"
       ],
-      "collect_count": 636093,
+      "collect_count": 636162,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Nuovo Cinema Paradiso",
@@ -3566,9 +3566,9 @@
         "details": {
           "1": 1366,
           "2": 3525,
-          "3": 50872,
-          "4": 209301,
-          "5": 373666
+          "3": 50876,
+          "4": 209323,
+          "5": 373709
         },
         "stars": "45",
         "min": 0
@@ -3617,7 +3617,7 @@
       "durations": [
         "87分钟"
       ],
-      "collect_count": 1302900,
+      "collect_count": 1303241,
       "mainland_pubdate": "2014-10-24",
       "has_video": true,
       "original_title": "西遊記第壹佰零壹回之月光寶盒",
@@ -3654,10 +3654,10 @@
         "average": 9,
         "details": {
           "1": 555,
-          "2": 2250,
-          "3": 37232,
-          "4": 166718,
-          "5": 310441
+          "2": 2251,
+          "3": 37235,
+          "4": 166726,
+          "5": 310470
         },
         "stars": "45",
         "min": 0
@@ -3706,7 +3706,7 @@
       "durations": [
         "119分钟"
       ],
-      "collect_count": 989876,
+      "collect_count": 990092,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "ハウルの動く城",
@@ -3744,9 +3744,9 @@
         "details": {
           "1": 465,
           "2": 1615,
-          "3": 36450,
-          "4": 174101,
-          "5": 296690
+          "3": 36453,
+          "4": 174122,
+          "5": 296726
         },
         "stars": "45",
         "min": 0
@@ -3795,7 +3795,7 @@
       "durations": [
         "118分钟"
       ],
-      "collect_count": 1060972,
+      "collect_count": 1061164,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Roman Holiday",
@@ -3834,8 +3834,8 @@
           "1": 364,
           "2": 860,
           "3": 14371,
-          "4": 94377,
-          "5": 214287
+          "4": 94389,
+          "5": 214319
         },
         "stars": "50",
         "min": 0
@@ -3882,7 +3882,7 @@
       "durations": [
         "123分钟"
       ],
-      "collect_count": 554303,
+      "collect_count": 554469,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "소원",
@@ -3919,9 +3919,9 @@
         "details": {
           "1": 1501,
           "2": 3551,
-          "3": 34220,
-          "4": 142064,
-          "5": 285064
+          "3": 34223,
+          "4": 142071,
+          "5": 285090
         },
         "stars": "45",
         "min": 0
@@ -3970,7 +3970,7 @@
       "durations": [
         "139 分钟"
       ],
-      "collect_count": 803931,
+      "collect_count": 804028,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Fight Club",
@@ -4008,9 +4008,9 @@
         "details": {
           "1": 468,
           "2": 1854,
-          "3": 30354,
-          "4": 147778,
-          "5": 270317
+          "3": 30356,
+          "4": 147798,
+          "5": 270354
         },
         "stars": "45",
         "min": 0
@@ -4057,7 +4057,7 @@
       "durations": [
         "157 分钟"
       ],
-      "collect_count": 821785,
+      "collect_count": 821938,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Scent of a Woman",
@@ -4093,10 +4093,10 @@
         "average": 9.1,
         "details": {
           "1": 85,
-          "2": 250,
-          "3": 3853,
-          "4": 25406,
-          "5": 44973
+          "2": 251,
+          "3": 3854,
+          "4": 25414,
+          "5": 44977
         },
         "stars": "45",
         "min": 0
@@ -4144,7 +4144,7 @@
         "126分钟",
         "117分钟(中国大陆)"
       ],
-      "collect_count": 662160,
+      "collect_count": 662509,
       "mainland_pubdate": "2019-04-29",
       "has_video": true,
       "original_title": "كفرناحوم",
@@ -4183,9 +4183,9 @@
         "details": {
           "1": 327,
           "2": 789,
-          "3": 14862,
-          "4": 93792,
-          "5": 210188
+          "3": 14863,
+          "4": 93801,
+          "5": 210217
         },
         "stars": "50",
         "min": 0
@@ -4232,7 +4232,7 @@
       "durations": [
         "127分钟"
       ],
-      "collect_count": 520396,
+      "collect_count": 520475,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "변호인",
@@ -4269,9 +4269,9 @@
         "details": {
           "1": 423,
           "2": 1273,
-          "3": 17077,
-          "4": 91941,
-          "5": 197076
+          "3": 17081,
+          "4": 91951,
+          "5": 197096
         },
         "stars": "45",
         "min": 0
@@ -4319,7 +4319,7 @@
       "durations": [
         "137分钟"
       ],
-      "collect_count": 546263,
+      "collect_count": 546334,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Das Leben der Anderen",
@@ -4356,9 +4356,9 @@
         "details": {
           "1": 588,
           "2": 2133,
-          "3": 25400,
-          "4": 115195,
-          "5": 228447
+          "3": 25404,
+          "4": 115202,
+          "5": 228471
         },
         "stars": "45",
         "min": 0
@@ -4405,7 +4405,7 @@
       "durations": [
         "128 分钟"
       ],
-      "collect_count": 630206,
+      "collect_count": 630296,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Dead Poets Society",
@@ -4443,9 +4443,9 @@
         "details": {
           "1": 312,
           "2": 863,
-          "3": 14338,
-          "4": 77937,
-          "5": 177248
+          "3": 14339,
+          "4": 77946,
+          "5": 177275
         },
         "stars": "45",
         "min": 0
@@ -4493,7 +4493,7 @@
       "durations": [
         "202分钟"
       ],
-      "collect_count": 498584,
+      "collect_count": 498678,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Godfather: Part Ⅱ",
@@ -4531,9 +4531,9 @@
         "details": {
           "1": 556,
           "2": 1670,
-          "3": 25723,
-          "4": 110920,
-          "5": 220688
+          "3": 25727,
+          "4": 110932,
+          "5": 220714
         },
         "stars": "45",
         "min": 0
@@ -4584,7 +4584,7 @@
         "223分钟(加长版)",
         "235分钟(蓝光加长版)"
       ],
-      "collect_count": 685518,
+      "collect_count": 685660,
       "mainland_pubdate": "2003-04-25",
       "has_video": true,
       "original_title": "The Lord of the Rings: The Two Towers",
@@ -4623,9 +4623,9 @@
         "details": {
           "1": 309,
           "2": 1173,
-          "3": 29263,
-          "4": 138302,
-          "5": 237536
+          "3": 29270,
+          "4": 138319,
+          "5": 237574
         },
         "stars": "45",
         "min": 0
@@ -4674,7 +4674,7 @@
       "durations": [
         "89 分钟"
       ],
-      "collect_count": 857190,
+      "collect_count": 857399,
       "mainland_pubdate": "1995-07-15",
       "has_video": true,
       "original_title": "The Lion King",
@@ -4723,10 +4723,10 @@
         "average": 9.1,
         "details": {
           "1": 568,
-          "2": 1661,
-          "3": 19740,
-          "4": 95678,
-          "5": 197100
+          "2": 1662,
+          "3": 19744,
+          "4": 95683,
+          "5": 197113
         },
         "stars": "45",
         "min": 0
@@ -4776,7 +4776,7 @@
         "107分钟",
         "115分钟(导演剪辑版)"
       ],
-      "collect_count": 539263,
+      "collect_count": 539328,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Lock, Stock and Two Smoking Barrels",
@@ -4813,9 +4813,9 @@
         "details": {
           "1": 535,
           "2": 1624,
-          "3": 20362,
-          "4": 98892,
-          "5": 198905
+          "3": 20364,
+          "4": 98902,
+          "5": 198919
         },
         "stars": "45",
         "min": 0
@@ -4862,7 +4862,7 @@
       "durations": [
         "133分钟"
       ],
-      "collect_count": 581279,
+      "collect_count": 581345,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "One Flew Over the Cuckoo's Nest",
@@ -4899,9 +4899,9 @@
         "details": {
           "1": 850,
           "2": 2427,
-          "3": 32431,
-          "4": 128691,
-          "5": 241889
+          "3": 32436,
+          "4": 128704,
+          "5": 241918
         },
         "stars": "45",
         "min": 0
@@ -4952,7 +4952,7 @@
         "208分钟(加长版)",
         "228分钟(蓝光加长版)"
       ],
-      "collect_count": 780201,
+      "collect_count": 780362,
       "mainland_pubdate": "2002-04-04",
       "has_video": true,
       "original_title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -4990,9 +4990,9 @@
         "details": {
           "1": 557,
           "2": 1970,
-          "3": 37537,
-          "4": 161636,
-          "5": 264965
+          "3": 37541,
+          "4": 161665,
+          "5": 265019
         },
         "stars": "45",
         "min": 0
@@ -5041,7 +5041,7 @@
         "152分钟",
         "159分钟(加长版)"
       ],
-      "collect_count": 874421,
+      "collect_count": 874736,
       "mainland_pubdate": "2002-01-26",
       "has_video": true,
       "original_title": "Harry Potter and the Sorcerer's Stone",
@@ -5078,11 +5078,11 @@
         "max": 10,
         "average": 8.9,
         "details": {
-          "1": 2158,
+          "1": 2159,
           "2": 5807,
-          "3": 54042,
-          "4": 194806,
-          "5": 324626
+          "3": 54050,
+          "4": 194823,
+          "5": 324666
         },
         "stars": "45",
         "min": 0
@@ -5131,7 +5131,7 @@
       "durations": [
         "132分钟"
       ],
-      "collect_count": 1052007,
+      "collect_count": 1052202,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "V for Vendetta",
@@ -5169,9 +5169,9 @@
         "details": {
           "1": 224,
           "2": 787,
-          "3": 15036,
-          "4": 96685,
-          "5": 183366
+          "3": 15037,
+          "4": 96703,
+          "5": 183398
         },
         "stars": "45",
         "min": 0
@@ -5219,7 +5219,7 @@
       "durations": [
         "124分钟"
       ],
-      "collect_count": 482325,
+      "collect_count": 482423,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "飲食男女",
@@ -5256,9 +5256,9 @@
         "details": {
           "1": 344,
           "2": 1362,
-          "3": 26311,
-          "4": 142531,
-          "5": 225671
+          "3": 26315,
+          "4": 142545,
+          "5": 225699
         },
         "stars": "45",
         "min": 0
@@ -5306,7 +5306,7 @@
       "durations": [
         "135分钟"
       ],
-      "collect_count": 752184,
+      "collect_count": 752301,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "A Beautiful Mind",
@@ -5344,9 +5344,9 @@
         "details": {
           "1": 343,
           "2": 682,
-          "3": 9073,
-          "4": 42558,
-          "5": 140218
+          "3": 9075,
+          "4": 42562,
+          "5": 140241
         },
         "stars": "50",
         "min": 0
@@ -5394,7 +5394,7 @@
       "durations": [
         "114分钟"
       ],
-      "collect_count": 399132,
+      "collect_count": 399227,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "大闹天宫",
@@ -5446,8 +5446,8 @@
           "1": 179,
           "2": 715,
           "3": 13691,
-          "4": 84463,
-          "5": 164585
+          "4": 84466,
+          "5": 164613
         },
         "stars": "45",
         "min": 0
@@ -5496,7 +5496,7 @@
       "durations": [
         "150分钟"
       ],
-      "collect_count": 452460,
+      "collect_count": 452522,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Pianist",
@@ -5534,9 +5534,9 @@
         "details": {
           "1": 655,
           "2": 2319,
-          "3": 33226,
-          "4": 134183,
-          "5": 235677
+          "3": 33231,
+          "4": 134203,
+          "5": 235718
         },
         "stars": "45",
         "min": 0
@@ -5584,7 +5584,7 @@
       "durations": [
         "136分钟"
       ],
-      "collect_count": 802178,
+      "collect_count": 802327,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Matrix",
@@ -5632,9 +5632,9 @@
         "details": {
           "1": 597,
           "2": 2991,
-          "3": 45069,
-          "4": 187790,
-          "5": 281408
+          "3": 45070,
+          "4": 187804,
+          "5": 281441
         },
         "stars": "45",
         "min": 0
@@ -5683,7 +5683,7 @@
       "durations": [
         "166分钟"
       ],
-      "collect_count": 908813,
+      "collect_count": 908963,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Curious Case of Benjamin Button",
@@ -5722,7 +5722,7 @@
           "2": 969,
           "3": 13431,
           "4": 67788,
-          "5": 112018
+          "5": 112021
         },
         "stars": "45",
         "min": 0
@@ -5770,7 +5770,7 @@
       "durations": [
         "117分钟"
       ],
-      "collect_count": 3847867,
+      "collect_count": 3848403,
       "mainland_pubdate": "2018-07-05",
       "has_video": true,
       "original_title": "我不是药神",
@@ -5807,10 +5807,10 @@
         "average": 9.3,
         "details": {
           "1": 828,
-          "2": 1082,
+          "2": 1083,
           "3": 10297,
-          "4": 47722,
-          "5": 147032
+          "4": 47725,
+          "5": 147042
         },
         "stars": "50",
         "min": 0
@@ -5849,7 +5849,7 @@
       "durations": [
         "92分钟"
       ],
-      "collect_count": 376736,
+      "collect_count": 376783,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Cove",
@@ -5886,9 +5886,9 @@
         "details": {
           "1": 938,
           "2": 3513,
-          "3": 44888,
-          "4": 162276,
-          "5": 262075
+          "3": 44892,
+          "4": 162286,
+          "5": 262101
         },
         "stars": "45",
         "min": 0
@@ -5936,7 +5936,7 @@
       "durations": [
         "117分钟"
       ],
-      "collect_count": 857471,
+      "collect_count": 857600,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Love Letter",
@@ -5976,7 +5976,7 @@
           "2": 640,
           "3": 12471,
           "4": 59974,
-          "5": 68587
+          "5": 68588
         },
         "stars": "45",
         "min": 0
@@ -6025,7 +6025,7 @@
       "durations": [
         "106分钟"
       ],
-      "collect_count": 999381,
+      "collect_count": 999645,
       "mainland_pubdate": "2017-09-15",
       "has_video": true,
       "original_title": "Contratiempo",
@@ -6064,9 +6064,9 @@
         "details": {
           "1": 3092,
           "2": 7994,
-          "3": 85932,
-          "4": 307888,
-          "5": 444152
+          "3": 85940,
+          "4": 307911,
+          "5": 444201
         },
         "stars": "45",
         "min": 0
@@ -6115,7 +6115,7 @@
       "durations": [
         "132分钟"
       ],
-      "collect_count": 1700806,
+      "collect_count": 1701155,
       "mainland_pubdate": "2010-12-16",
       "has_video": true,
       "original_title": "让子弹飞",
@@ -6152,9 +6152,9 @@
         "details": {
           "1": 222,
           "2": 1209,
-          "3": 26947,
-          "4": 156691,
-          "5": 223108
+          "3": 26953,
+          "4": 156711,
+          "5": 223146
         },
         "stars": "45",
         "min": 0
@@ -6203,7 +6203,7 @@
       "durations": [
         "141 分钟"
       ],
-      "collect_count": 673526,
+      "collect_count": 673677,
       "mainland_pubdate": "2003-04-11",
       "has_video": true,
       "original_title": "Catch Me If You Can",
@@ -6242,9 +6242,9 @@
         "details": {
           "1": 587,
           "2": 2379,
-          "3": 42909,
-          "4": 200499,
-          "5": 270091
+          "3": 42916,
+          "4": 200529,
+          "5": 270119
         },
         "stars": "45",
         "min": 0
@@ -6291,7 +6291,7 @@
         "USA: 92 分钟(heavily cut)",
         "Turkey: 84 分钟(TV version)"
       ],
-      "collect_count": 931704,
+      "collect_count": 931938,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Malèna",
@@ -6327,10 +6327,10 @@
         "average": 9.2,
         "details": {
           "1": 159,
-          "2": 449,
+          "2": 450,
           "3": 9066,
-          "4": 60052,
-          "5": 135176
+          "4": 60057,
+          "5": 135198
         },
         "stars": "50",
         "min": 0
@@ -6379,7 +6379,7 @@
       "durations": [
         "89分钟"
       ],
-      "collect_count": 333860,
+      "collect_count": 333917,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "بچههای آسمان",
@@ -6418,8 +6418,8 @@
           "1": 404,
           "2": 1248,
           "3": 23574,
-          "4": 119203,
-          "5": 196291
+          "4": 119210,
+          "5": 196323
         },
         "stars": "45",
         "min": 0
@@ -6468,7 +6468,7 @@
       "durations": [
         "169分钟"
       ],
-      "collect_count": 641764,
+      "collect_count": 641869,
       "mainland_pubdate": "1998-11-13",
       "has_video": true,
       "original_title": "Saving Private Ryan",
@@ -6507,8 +6507,8 @@
           "1": 441,
           "2": 1055,
           "3": 12947,
-          "4": 61249,
-          "5": 144048
+          "4": 61253,
+          "5": 144063
         },
         "stars": "45",
         "min": 0
@@ -6557,7 +6557,7 @@
         "229分钟(导演剪辑版)",
         "251分钟(导演剪辑加长版)"
       ],
-      "collect_count": 387929,
+      "collect_count": 387977,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Once Upon a Time in America",
@@ -6595,9 +6595,9 @@
         "details": {
           "1": 254,
           "2": 999,
-          "3": 22220,
-          "4": 104268,
-          "5": 178858
+          "3": 22221,
+          "4": 104282,
+          "5": 178880
         },
         "stars": "45",
         "min": 0
@@ -6646,7 +6646,7 @@
       "durations": [
         "174分钟"
       ],
-      "collect_count": 594436,
+      "collect_count": 594544,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Sound of Music",
@@ -6682,10 +6682,10 @@
         "average": 8.9,
         "details": {
           "1": 723,
-          "2": 2610,
-          "3": 38158,
-          "4": 172190,
-          "5": 237426
+          "2": 2611,
+          "3": 38159,
+          "4": 172208,
+          "5": 237454
         },
         "stars": "45",
         "min": 0
@@ -6734,7 +6734,7 @@
       "durations": [
         "130分钟"
       ],
-      "collect_count": 728323,
+      "collect_count": 728426,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Prestige",
@@ -6771,10 +6771,10 @@
         "average": 9.1,
         "details": {
           "1": 264,
-          "2": 781,
-          "3": 13530,
-          "4": 89639,
-          "5": 153232
+          "2": 782,
+          "3": 13532,
+          "4": 89649,
+          "5": 153260
         },
         "stars": "45",
         "min": 0
@@ -6822,7 +6822,7 @@
       "durations": [
         "94分钟"
       ],
-      "collect_count": 417340,
+      "collect_count": 417447,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Boy in the Striped Pajamas",
@@ -6859,10 +6859,10 @@
         "average": 8.8,
         "details": {
           "1": 799,
-          "2": 2912,
-          "3": 47465,
-          "4": 202593,
-          "5": 258263
+          "2": 2913,
+          "3": 47472,
+          "4": 202614,
+          "5": 258287
         },
         "stars": "45",
         "min": 0
@@ -6911,7 +6911,7 @@
       "durations": [
         "127分钟"
       ],
-      "collect_count": 934155,
+      "collect_count": 934284,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Se7en",
@@ -6948,9 +6948,9 @@
         "details": {
           "1": 1249,
           "2": 4073,
-          "3": 42496,
-          "4": 159740,
-          "5": 242316
+          "3": 42501,
+          "4": 159760,
+          "5": 242339
         },
         "stars": "45",
         "min": 0
@@ -6999,7 +6999,7 @@
       "durations": [
         "154分钟"
       ],
-      "collect_count": 756840,
+      "collect_count": 756954,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Pulp Fiction",
@@ -7037,9 +7037,9 @@
         "details": {
           "1": 1747,
           "2": 4469,
-          "3": 36564,
-          "4": 136564,
-          "5": 223883
+          "3": 36568,
+          "4": 136580,
+          "5": 223907
         },
         "stars": "45",
         "min": 0
@@ -7087,7 +7087,7 @@
       "durations": [
         "130 分钟"
       ],
-      "collect_count": 676521,
+      "collect_count": 676627,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "嫌われ松子の一生",
@@ -7124,9 +7124,9 @@
         "details": {
           "1": 610,
           "2": 2183,
-          "3": 38297,
-          "4": 174790,
-          "5": 225382
+          "3": 38300,
+          "4": 174803,
+          "5": 225416
         },
         "stars": "45",
         "min": 0
@@ -7175,7 +7175,7 @@
       "durations": [
         "118分钟"
       ],
-      "collect_count": 799924,
+      "collect_count": 800042,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Silence of the Lambs",
@@ -7212,9 +7212,9 @@
         "details": {
           "1": 785,
           "2": 3300,
-          "3": 45963,
-          "4": 192845,
-          "5": 245170
+          "3": 45971,
+          "4": 192869,
+          "5": 245209
         },
         "stars": "45",
         "min": 0
@@ -7264,7 +7264,7 @@
         "113分钟",
         "120分钟(导演剪辑版)"
       ],
-      "collect_count": 947607,
+      "collect_count": 947750,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Butterfly Effect",
@@ -7311,10 +7311,10 @@
         "average": 8.9,
         "details": {
           "1": 696,
-          "2": 1948,
-          "3": 27661,
-          "4": 116497,
-          "5": 184624
+          "2": 1949,
+          "3": 27665,
+          "4": 116508,
+          "5": 184638
         },
         "stars": "45",
         "min": 0
@@ -7363,7 +7363,7 @@
       "durations": [
         "96分钟"
       ],
-      "collect_count": 563071,
+      "collect_count": 563143,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "春光乍洩",
@@ -7402,8 +7402,8 @@
           "1": 422,
           "2": 1850,
           "3": 29737,
-          "4": 142009,
-          "5": 193591
+          "4": 142022,
+          "5": 193616
         },
         "stars": "45",
         "min": 0
@@ -7450,7 +7450,7 @@
       "durations": [
         "126 分钟"
       ],
-      "collect_count": 639971,
+      "collect_count": 640082,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Good Will Hunting",
@@ -7487,9 +7487,9 @@
         "details": {
           "1": 646,
           "2": 2697,
-          "3": 43264,
-          "4": 204807,
-          "5": 242660
+          "3": 43272,
+          "4": 204829,
+          "5": 242692
         },
         "stars": "45",
         "min": 0
@@ -7538,7 +7538,7 @@
       "durations": [
         "138 分钟"
       ],
-      "collect_count": 854045,
+      "collect_count": 854188,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Shutter Island",
@@ -7576,9 +7576,9 @@
         "details": {
           "1": 871,
           "2": 3608,
-          "3": 43540,
-          "4": 178971,
-          "5": 249453
+          "3": 43545,
+          "4": 178992,
+          "5": 249495
         },
         "stars": "45",
         "min": 0
@@ -7627,7 +7627,7 @@
       "durations": [
         "99分钟"
       ],
-      "collect_count": 738995,
+      "collect_count": 739132,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Grand Budapest Hotel",
@@ -7664,10 +7664,10 @@
         "average": 8.9,
         "details": {
           "1": 631,
-          "2": 2390,
-          "3": 29928,
-          "4": 112718,
-          "5": 178596
+          "2": 2391,
+          "3": 29930,
+          "4": 112722,
+          "5": 178619
         },
         "stars": "45",
         "min": 0
@@ -7716,7 +7716,7 @@
       "durations": [
         "177 分钟"
       ],
-      "collect_count": 635457,
+      "collect_count": 635528,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Braveheart",
@@ -7752,11 +7752,11 @@
         "max": 10,
         "average": 8.7,
         "details": {
-          "1": 1112,
-          "2": 4676,
-          "3": 65207,
-          "4": 234883,
-          "5": 280128
+          "1": 1113,
+          "2": 4677,
+          "3": 65212,
+          "4": 234893,
+          "5": 280165
         },
         "stars": "45",
         "min": 0
@@ -7805,7 +7805,7 @@
       "durations": [
         "105分钟"
       ],
-      "collect_count": 1168311,
+      "collect_count": 1168530,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Edward Scissorhands",
@@ -7842,9 +7842,9 @@
         "details": {
           "1": 1725,
           "2": 6658,
-          "3": 66239,
-          "4": 204749,
-          "5": 280550
+          "3": 66244,
+          "4": 204762,
+          "5": 280577
         },
         "stars": "45",
         "min": 0
@@ -7892,7 +7892,7 @@
       "durations": [
         "122分钟"
       ],
-      "collect_count": 1144116,
+      "collect_count": 1144290,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Le fabuleux destin d'Amélie Poulain",
@@ -7930,9 +7930,9 @@
         "details": {
           "1": 2185,
           "2": 6688,
-          "3": 84146,
-          "4": 258704,
-          "5": 350053
+          "3": 84154,
+          "4": 258728,
+          "5": 350092
         },
         "stars": "45",
         "min": 0
@@ -7982,7 +7982,7 @@
         "162分钟",
         "178分钟(加长版)"
       ],
-      "collect_count": 1426249,
+      "collect_count": 1426588,
       "mainland_pubdate": "2010-01-04",
       "has_video": true,
       "original_title": "Avatar",
@@ -8020,9 +8020,9 @@
         "details": {
           "1": 146,
           "2": 299,
-          "3": 5990,
-          "4": 39263,
-          "5": 98540
+          "3": 5991,
+          "4": 39271,
+          "5": 98562
         },
         "stars": "50",
         "min": 0
@@ -8071,7 +8071,7 @@
       "durations": [
         "87分钟"
       ],
-      "collect_count": 301856,
+      "collect_count": 301921,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Modern Times",
@@ -8108,9 +8108,9 @@
         "details": {
           "1": 562,
           "2": 2584,
-          "3": 48293,
-          "4": 196245,
-          "5": 226200
+          "3": 48295,
+          "4": 196261,
+          "5": 226227
         },
         "stars": "45",
         "min": 0
@@ -8159,7 +8159,7 @@
       "durations": [
         "143 分钟"
       ],
-      "collect_count": 962148,
+      "collect_count": 962366,
       "mainland_pubdate": "2003-11-21",
       "has_video": true,
       "original_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
@@ -8198,8 +8198,8 @@
           "1": 699,
           "2": 2581,
           "3": 37251,
-          "4": 168309,
-          "5": 200211
+          "4": 168326,
+          "5": 200248
         },
         "stars": "45",
         "min": 0
@@ -8248,7 +8248,7 @@
       "durations": [
         "90分钟"
       ],
-      "collect_count": 665342,
+      "collect_count": 665435,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Identity",
@@ -8284,10 +8284,10 @@
         "average": 8.8,
         "details": {
           "1": 904,
-          "2": 2915,
-          "3": 42728,
-          "4": 145381,
-          "5": 203673
+          "2": 2916,
+          "3": 42729,
+          "4": 145390,
+          "5": 203695
         },
         "stars": "45",
         "min": 0
@@ -8336,7 +8336,7 @@
       "durations": [
         "134分钟"
       ],
-      "collect_count": 711291,
+      "collect_count": 711388,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Brokeback Mountain",
@@ -8375,9 +8375,9 @@
         "details": {
           "1": 339,
           "2": 1333,
-          "3": 26309,
-          "4": 106993,
-          "5": 156982
+          "3": 26312,
+          "4": 107001,
+          "5": 156999
         },
         "stars": "45",
         "min": 0
@@ -8426,7 +8426,7 @@
       "durations": [
         "134分钟"
       ],
-      "collect_count": 574447,
+      "collect_count": 574554,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "もののけ姫",
@@ -8463,9 +8463,9 @@
         "details": {
           "1": 649,
           "2": 3359,
-          "3": 52890,
-          "4": 195630,
-          "5": 233884
+          "3": 52897,
+          "4": 195650,
+          "5": 233928
         },
         "stars": "45",
         "min": 0
@@ -8515,7 +8515,7 @@
         "85分钟",
         "89分钟(DVD)"
       ],
-      "collect_count": 980012,
+      "collect_count": 980266,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "喜劇之王",
@@ -8562,10 +8562,10 @@
         "average": 8.8,
         "details": {
           "1": 388,
-          "2": 1617,
-          "3": 29021,
-          "4": 128943,
-          "5": 172261
+          "2": 1618,
+          "3": 29022,
+          "4": 128951,
+          "5": 172271
         },
         "stars": "45",
         "min": 0
@@ -8612,7 +8612,7 @@
       "durations": [
         "130 分钟"
       ],
-      "collect_count": 600757,
+      "collect_count": 600822,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "おくりびと",
@@ -8648,10 +8648,10 @@
         "average": 8.8,
         "details": {
           "1": 503,
-          "2": 1783,
-          "3": 29848,
-          "4": 130291,
-          "5": 169567
+          "2": 1784,
+          "3": 29850,
+          "4": 130297,
+          "5": 169587
         },
         "stars": "45",
         "min": 0
@@ -8703,7 +8703,7 @@
         "140分钟(修复版)",
         "225分钟(初剪版)"
       ],
-      "collect_count": 613534,
+      "collect_count": 613609,
       "mainland_pubdate": "1995-08-21",
       "has_video": false,
       "original_title": "阳光灿烂的日子",
@@ -8742,9 +8742,9 @@
         "details": {
           "1": 123,
           "2": 619,
-          "3": 9125,
-          "4": 48404,
-          "5": 106569
+          "3": 9127,
+          "4": 48421,
+          "5": 106603
         },
         "stars": "45",
         "min": 0
@@ -8793,7 +8793,7 @@
       "durations": [
         "111分钟"
       ],
-      "collect_count": 245207,
+      "collect_count": 245332,
       "mainland_pubdate": "2019-05-16",
       "has_video": true,
       "original_title": "Heidi",
@@ -8830,10 +8830,10 @@
         "average": 9.1,
         "details": {
           "1": 448,
-          "2": 808,
-          "3": 10157,
-          "4": 58222,
-          "5": 111916
+          "2": 809,
+          "3": 10158,
+          "4": 58225,
+          "5": 111937
         },
         "stars": "45",
         "min": 0
@@ -8880,7 +8880,7 @@
       "durations": [
         "115分钟"
       ],
-      "collect_count": 285789,
+      "collect_count": 285824,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Jagten",
@@ -8918,9 +8918,9 @@
         "details": {
           "1": 1068,
           "2": 3486,
-          "3": 43958,
-          "4": 164688,
-          "5": 206977
+          "3": 43963,
+          "4": 164706,
+          "5": 207008
         },
         "stars": "45",
         "min": 0
@@ -8969,7 +8969,7 @@
         "102分钟",
         "111分钟(台湾版DVD)"
       ],
-      "collect_count": 751838,
+      "collect_count": 751960,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "重慶森林",
@@ -9006,9 +9006,9 @@
         "details": {
           "1": 365,
           "2": 1414,
-          "3": 23741,
-          "4": 111077,
-          "5": 149671
+          "3": 23743,
+          "4": 111092,
+          "5": 149679
         },
         "stars": "45",
         "min": 0
@@ -9057,7 +9057,7 @@
       "durations": [
         "107分钟"
       ],
-      "collect_count": 467835,
+      "collect_count": 467888,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Sixth Sense",
@@ -9094,9 +9094,9 @@
         "details": {
           "1": 769,
           "2": 2430,
-          "3": 29086,
-          "4": 129834,
-          "5": 168649
+          "3": 29088,
+          "4": 129854,
+          "5": 168686
         },
         "stars": "45",
         "min": 0
@@ -9145,7 +9145,7 @@
       "durations": [
         "131分钟"
       ],
-      "collect_count": 502336,
+      "collect_count": 502436,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "살인의 추억",
@@ -9182,9 +9182,9 @@
         "details": {
           "1": 401,
           "2": 1234,
-          "3": 15994,
-          "4": 72947,
-          "5": 126823
+          "3": 15995,
+          "4": 72955,
+          "5": 126841
         },
         "stars": "45",
         "min": 0
@@ -9231,7 +9231,7 @@
       "durations": [
         "111分钟"
       ],
-      "collect_count": 351387,
+      "collect_count": 351459,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "リトル・フォレスト 夏・秋",
@@ -9267,10 +9267,10 @@
         "average": 8.7,
         "details": {
           "1": 915,
-          "2": 2927,
-          "3": 43199,
-          "4": 207809,
-          "5": 232577
+          "2": 2929,
+          "3": 43207,
+          "4": 207830,
+          "5": 232602
         },
         "stars": "45",
         "min": 0
@@ -9319,7 +9319,7 @@
       "durations": [
         "149分钟"
       ],
-      "collect_count": 745506,
+      "collect_count": 745630,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Gone Girl",
@@ -9357,9 +9357,9 @@
         "details": {
           "1": 501,
           "2": 1889,
-          "3": 20491,
-          "4": 81024,
-          "5": 135029
+          "3": 20492,
+          "4": 81031,
+          "5": 135038
         },
         "stars": "45",
         "min": 0
@@ -9408,7 +9408,7 @@
       "durations": [
         "92分钟"
       ],
-      "collect_count": 405855,
+      "collect_count": 405889,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Mary and Max",
@@ -9446,9 +9446,9 @@
         "details": {
           "1": 1426,
           "2": 3589,
-          "3": 31341,
-          "4": 110280,
-          "5": 183309
+          "3": 31350,
+          "4": 110295,
+          "5": 183330
         },
         "stars": "45",
         "min": 0
@@ -9497,7 +9497,7 @@
       "durations": [
         "132分钟"
       ],
-      "collect_count": 486119,
+      "collect_count": 486219,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Call Me by Your Name",
@@ -9536,8 +9536,8 @@
           "1": 176,
           "2": 554,
           "3": 10776,
-          "4": 61027,
-          "5": 86061
+          "4": 61029,
+          "5": 86064
         },
         "stars": "45",
         "min": 0
@@ -9586,7 +9586,7 @@
       "durations": [
         "130分钟"
       ],
-      "collect_count": 1277834,
+      "collect_count": 1278275,
       "mainland_pubdate": "2019-03-01",
       "has_video": true,
       "original_title": "Green Book",
@@ -9625,9 +9625,9 @@
         "details": {
           "1": 2090,
           "2": 4891,
-          "3": 41675,
-          "4": 154056,
-          "5": 205548
+          "3": 41679,
+          "4": 154063,
+          "5": 205564
         },
         "stars": "45",
         "min": 0
@@ -9675,7 +9675,7 @@
       "durations": [
         "106分钟"
       ],
-      "collect_count": 660774,
+      "collect_count": 660837,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "告白",
@@ -9712,9 +9712,9 @@
         "details": {
           "1": 456,
           "2": 1406,
-          "3": 15611,
-          "4": 66273,
-          "5": 117468
+          "3": 15612,
+          "4": 66278,
+          "5": 117481
         },
         "stars": "45",
         "min": 0
@@ -9763,7 +9763,7 @@
       "durations": [
         "90 分钟"
       ],
-      "collect_count": 303175,
+      "collect_count": 303219,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "パプリカ",
@@ -9801,9 +9801,9 @@
         "details": {
           "1": 660,
           "2": 1774,
-          "3": 15022,
-          "4": 51737,
-          "5": 111102
+          "3": 15023,
+          "4": 51745,
+          "5": 111121
         },
         "stars": "45",
         "min": 0
@@ -9852,7 +9852,7 @@
       "durations": [
         "173分钟"
       ],
-      "collect_count": 306413,
+      "collect_count": 306454,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "一一",
@@ -9891,9 +9891,9 @@
         "details": {
           "1": 902,
           "2": 3117,
-          "3": 31019,
-          "4": 105656,
-          "5": 158343
+          "3": 31024,
+          "4": 105665,
+          "5": 158366
         },
         "stars": "45",
         "min": 0
@@ -9941,7 +9941,7 @@
       "durations": [
         "101分钟"
       ],
-      "collect_count": 486022,
+      "collect_count": 486113,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Before Sunrise",
@@ -9976,11 +9976,11 @@
         "max": 10,
         "average": 8.8,
         "details": {
-          "1": 634,
-          "2": 2477,
-          "3": 30989,
-          "4": 115287,
-          "5": 156077
+          "1": 635,
+          "2": 2478,
+          "3": 30991,
+          "4": 115300,
+          "5": 156090
         },
         "stars": "45",
         "min": 0
@@ -10029,7 +10029,7 @@
       "durations": [
         "125 分钟"
       ],
-      "collect_count": 522213,
+      "collect_count": 522287,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Big Fish",
@@ -10067,9 +10067,9 @@
         "details": {
           "1": 819,
           "2": 2830,
-          "3": 33528,
-          "4": 127747,
-          "5": 174766
+          "3": 33531,
+          "4": 127759,
+          "5": 174780
         },
         "stars": "45",
         "min": 0
@@ -10118,7 +10118,7 @@
         "124分钟",
         "135分钟(导演剪辑版)"
       ],
-      "collect_count": 618037,
+      "collect_count": 618121,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "써니",
@@ -10153,11 +10153,11 @@
         "max": 10,
         "average": 8.9,
         "details": {
-          "1": 710,
-          "2": 2287,
-          "3": 24377,
-          "4": 95377,
-          "5": 144999
+          "1": 711,
+          "2": 2288,
+          "3": 24381,
+          "4": 95386,
+          "5": 145018
         },
         "stars": "45",
         "min": 0
@@ -10206,7 +10206,7 @@
       "durations": [
         "127分钟"
       ],
-      "collect_count": 457766,
+      "collect_count": 457875,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "7번방의 선물",
@@ -10243,9 +10243,9 @@
         "details": {
           "1": 264,
           "2": 1089,
-          "3": 21246,
-          "4": 86116,
-          "5": 127133
+          "3": 21247,
+          "4": 86123,
+          "5": 127148
         },
         "stars": "45",
         "min": 0
@@ -10294,7 +10294,7 @@
       "durations": [
         "111分钟"
       ],
-      "collect_count": 397701,
+      "collect_count": 397759,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "耳をすませば",
@@ -10331,9 +10331,9 @@
         "details": {
           "1": 1016,
           "2": 3111,
-          "3": 43358,
-          "4": 137198,
-          "5": 200418
+          "3": 43359,
+          "4": 137219,
+          "5": 200452
         },
         "stars": "45",
         "min": 0
@@ -10382,7 +10382,7 @@
       "durations": [
         "130分钟"
       ],
-      "collect_count": 728434,
+      "collect_count": 728615,
       "mainland_pubdate": "2011-08-04",
       "has_video": true,
       "original_title": "Harry Potter and the Deathly Hallows: Part 2",
@@ -10420,9 +10420,9 @@
         "details": {
           "1": 2009,
           "2": 5354,
-          "3": 39381,
-          "4": 110887,
-          "5": 178095
+          "3": 39384,
+          "4": 110902,
+          "5": 178115
         },
         "stars": "45",
         "min": 0
@@ -10472,7 +10472,7 @@
         "113分钟(香港)",
         "98分钟(翡翠高清版)"
       ],
-      "collect_count": 658973,
+      "collect_count": 659088,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "射鵰英雄傳之東成西就",
@@ -10509,9 +10509,9 @@
         "details": {
           "1": 582,
           "2": 2100,
-          "3": 21176,
-          "4": 84835,
-          "5": 129720
+          "3": 21178,
+          "4": 84841,
+          "5": 129736
         },
         "stars": "45",
         "min": 0
@@ -10558,7 +10558,7 @@
       "durations": [
         "97分钟"
       ],
-      "collect_count": 377392,
+      "collect_count": 377438,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Detachment",
@@ -10596,8 +10596,8 @@
           "1": 330,
           "2": 1213,
           "3": 23965,
-          "4": 103223,
-          "5": 134034
+          "4": 103231,
+          "5": 134041
         },
         "stars": "45",
         "min": 0
@@ -10646,7 +10646,7 @@
         "118分钟(中国大陆)",
         "116分钟(台湾)"
       ],
-      "collect_count": 473975,
+      "collect_count": 474031,
       "mainland_pubdate": "2015-02-13",
       "has_video": false,
       "original_title": "甜蜜蜜",
@@ -10684,9 +10684,9 @@
         "details": {
           "1": 378,
           "2": 932,
-          "3": 13046,
-          "4": 62833,
-          "5": 112857
+          "3": 13048,
+          "4": 62841,
+          "5": 112874
         },
         "stars": "45",
         "min": 0
@@ -10733,7 +10733,7 @@
       "durations": [
         "120分钟"
       ],
-      "collect_count": 308129,
+      "collect_count": 308210,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "リトル・フォレスト 冬・春",
@@ -10770,9 +10770,9 @@
         "details": {
           "1": 352,
           "2": 1684,
-          "3": 38512,
-          "4": 159832,
-          "5": 172386
+          "3": 38518,
+          "4": 159852,
+          "5": 172408
         },
         "stars": "45",
         "min": 0
@@ -10822,7 +10822,7 @@
         "98分钟(香港)",
         "96分钟"
       ],
-      "collect_count": 865415,
+      "collect_count": 865575,
       "mainland_pubdate": "2011-04-30",
       "has_video": true,
       "original_title": "倩女幽魂",
@@ -10860,9 +10860,9 @@
         "details": {
           "1": 977,
           "2": 3411,
-          "3": 40804,
-          "4": 148425,
-          "5": 191979
+          "3": 40806,
+          "4": 148441,
+          "5": 192001
         },
         "stars": "45",
         "min": 0
@@ -10911,7 +10911,7 @@
       "durations": [
         "165分钟"
       ],
-      "collect_count": 697882,
+      "collect_count": 698007,
       "mainland_pubdate": "2012-08-27",
       "has_video": true,
       "original_title": "The Dark Knight Rises",
@@ -10949,9 +10949,9 @@
         "details": {
           "1": 372,
           "2": 1858,
-          "3": 41562,
-          "4": 170388,
-          "5": 187681
+          "3": 41569,
+          "4": 170414,
+          "5": 187704
         },
         "stars": "45",
         "min": 0
@@ -11000,7 +11000,7 @@
       "durations": [
         "98分钟"
       ],
-      "collect_count": 721146,
+      "collect_count": 721323,
       "mainland_pubdate": "2010-05-14",
       "has_video": true,
       "original_title": "How to Train Your Dragon",
@@ -11049,10 +11049,10 @@
         "average": 8.8,
         "details": {
           "1": 508,
-          "2": 2122,
-          "3": 25049,
-          "4": 99186,
-          "5": 136431
+          "2": 2123,
+          "3": 25052,
+          "4": 99199,
+          "5": 136450
         },
         "stars": "45",
         "min": 0
@@ -11100,7 +11100,7 @@
       "durations": [
         "121 分钟"
       ],
-      "collect_count": 480034,
+      "collect_count": 480114,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "菊次郎の夏",
@@ -11138,9 +11138,9 @@
         "details": {
           "1": 720,
           "2": 3622,
-          "3": 64699,
-          "4": 229576,
-          "5": 227433
+          "3": 64705,
+          "4": 229602,
+          "5": 227480
         },
         "stars": "45",
         "min": 0
@@ -11189,7 +11189,7 @@
       "durations": [
         "102 分钟"
       ],
-      "collect_count": 1123293,
+      "collect_count": 1123588,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "唐伯虎點秋香",
@@ -11226,9 +11226,9 @@
         "details": {
           "1": 629,
           "2": 2133,
-          "3": 31398,
-          "4": 134795,
-          "5": 161991
+          "3": 31400,
+          "4": 134811,
+          "5": 162013
         },
         "stars": "45",
         "min": 0
@@ -11277,7 +11277,7 @@
       "durations": [
         "97分钟"
       ],
-      "collect_count": 535198,
+      "collect_count": 535267,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "더 테러 라이브",
@@ -11314,9 +11314,9 @@
         "details": {
           "1": 780,
           "2": 2630,
-          "3": 26016,
-          "4": 90186,
-          "5": 136912
+          "3": 26022,
+          "4": 90193,
+          "5": 136926
         },
         "stars": "45",
         "min": 0
@@ -11364,7 +11364,7 @@
       "durations": [
         "80 分钟"
       ],
-      "collect_count": 427812,
+      "collect_count": 427894,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Before Sunset",
@@ -11402,9 +11402,9 @@
         "details": {
           "1": 564,
           "2": 2016,
-          "3": 25136,
-          "4": 89280,
-          "5": 138494
+          "3": 25138,
+          "4": 89288,
+          "5": 138518
         },
         "stars": "45",
         "min": 0
@@ -11453,7 +11453,7 @@
       "durations": [
         "45分钟"
       ],
-      "collect_count": 470078,
+      "collect_count": 470182,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "蛍火の杜へ",
@@ -11491,8 +11491,8 @@
           "1": 252,
           "2": 1546,
           "3": 25722,
-          "4": 111508,
-          "5": 134537
+          "4": 111517,
+          "5": 134555
         },
         "stars": "45",
         "min": 0
@@ -11541,7 +11541,7 @@
       "durations": [
         "128分钟"
       ],
-      "collect_count": 485762,
+      "collect_count": 485830,
       "mainland_pubdate": "2005-01-14",
       "has_video": true,
       "original_title": "The Terminal",
@@ -11579,9 +11579,9 @@
         "details": {
           "1": 884,
           "2": 3887,
-          "3": 60307,
-          "4": 224058,
-          "5": 244698
+          "3": 60313,
+          "4": 224084,
+          "5": 244724
         },
         "stars": "45",
         "min": 0
@@ -11630,7 +11630,7 @@
       "durations": [
         "102分钟"
       ],
-      "collect_count": 921255,
+      "collect_count": 921467,
       "mainland_pubdate": "2015-02-28",
       "has_video": true,
       "original_title": "Big Hero 6",
@@ -11680,9 +11680,9 @@
         "details": {
           "1": 227,
           "2": 1216,
-          "3": 27016,
-          "4": 113139,
-          "5": 138974
+          "3": 27018,
+          "4": 113151,
+          "5": 138988
         },
         "stars": "45",
         "min": 0
@@ -11731,7 +11731,7 @@
       "durations": [
         "94分钟"
       ],
-      "collect_count": 472345,
+      "collect_count": 472417,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "借りぐらしのアリエッティ",
@@ -11768,9 +11768,9 @@
         "details": {
           "1": 205,
           "2": 503,
-          "3": 6825,
-          "4": 43981,
-          "5": 83495
+          "3": 6826,
+          "4": 43983,
+          "5": 83506
         },
         "stars": "45",
         "min": 0
@@ -11817,7 +11817,7 @@
       "durations": [
         "141分钟"
       ],
-      "collect_count": 209506,
+      "collect_count": 209550,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "誰も知らない",
@@ -11854,10 +11854,10 @@
         "average": 8.8,
         "details": {
           "1": 288,
-          "2": 1022,
-          "3": 19663,
-          "4": 78067,
-          "5": 112420
+          "2": 1023,
+          "3": 19665,
+          "4": 78073,
+          "5": 112426
         },
         "stars": "45",
         "min": 0
@@ -11906,7 +11906,7 @@
       "durations": [
         "117分钟"
       ],
-      "collect_count": 432047,
+      "collect_count": 432122,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "風の谷のナウシカ",
@@ -11943,10 +11943,10 @@
         "average": 8.6,
         "details": {
           "1": 617,
-          "2": 3356,
-          "3": 64185,
-          "4": 242851,
-          "5": 222702
+          "2": 3357,
+          "3": 64192,
+          "4": 242880,
+          "5": 222730
         },
         "stars": "45",
         "min": 0
@@ -11995,7 +11995,7 @@
       "durations": [
         "95分钟"
       ],
-      "collect_count": 1029574,
+      "collect_count": 1029849,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Despicable Me",
@@ -12045,8 +12045,8 @@
           "1": 257,
           "2": 920,
           "3": 12884,
-          "4": 60567,
-          "5": 94747
+          "4": 60577,
+          "5": 94752
         },
         "stars": "45",
         "min": 0
@@ -12094,7 +12094,7 @@
       "durations": [
         "130分钟"
       ],
-      "collect_count": 294945,
+      "collect_count": 294975,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Cidade de Deus",
@@ -12143,9 +12143,9 @@
         "details": {
           "1": 256,
           "2": 1443,
-          "3": 35771,
-          "4": 145760,
-          "5": 151063
+          "3": 35775,
+          "4": 145773,
+          "5": 151087
         },
         "stars": "45",
         "min": 0
@@ -12194,7 +12194,7 @@
       "durations": [
         "92 分钟"
       ],
-      "collect_count": 656603,
+      "collect_count": 656713,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Monsters, Inc.",
@@ -12254,9 +12254,9 @@
         "details": {
           "1": 238,
           "2": 1283,
-          "3": 25668,
-          "4": 93740,
-          "5": 134787
+          "3": 25670,
+          "4": 93753,
+          "5": 134804
         },
         "stars": "45",
         "min": 0
@@ -12305,7 +12305,7 @@
       "durations": [
         "103分钟"
       ],
-      "collect_count": 494991,
+      "collect_count": 495084,
       "mainland_pubdate": "2010-06-16",
       "has_video": true,
       "original_title": "Toy Story 3",
@@ -12345,7 +12345,7 @@
           "2": 1002,
           "3": 12459,
           "4": 48179,
-          "5": 53111
+          "5": 53112
         },
         "stars": "45",
         "min": 0
@@ -12395,7 +12395,7 @@
         "139分钟(中国大陆)",
         "140分钟(美国)"
       ],
-      "collect_count": 861783,
+      "collect_count": 861942,
       "mainland_pubdate": "2016-12-08",
       "has_video": true,
       "original_title": "Hacksaw Ridge",
@@ -12434,9 +12434,9 @@
         "details": {
           "1": 1004,
           "2": 2548,
-          "3": 28628,
-          "4": 97887,
-          "5": 131735
+          "3": 28630,
+          "4": 97897,
+          "5": 131756
         },
         "stars": "45",
         "min": 0
@@ -12485,7 +12485,7 @@
       "durations": [
         "103分钟"
       ],
-      "collect_count": 455590,
+      "collect_count": 455658,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Saw",
@@ -12523,9 +12523,9 @@
         "details": {
           "1": 660,
           "2": 2775,
-          "3": 37643,
-          "4": 135309,
-          "5": 159722
+          "3": 37645,
+          "4": 135316,
+          "5": 159738
         },
         "stars": "45",
         "min": 0
@@ -12574,7 +12574,7 @@
         "117分钟",
         "120分钟(柏林电影节)"
       ],
-      "collect_count": 614003,
+      "collect_count": 614078,
       "mainland_pubdate": "2010-04-16",
       "has_video": false,
       "original_title": "歲月神偷",
@@ -12613,9 +12613,9 @@
         "details": {
           "1": 164,
           "2": 492,
-          "3": 11512,
-          "4": 72275,
-          "5": 91879
+          "3": 11513,
+          "4": 72283,
+          "5": 91889
         },
         "stars": "45",
         "min": 0
@@ -12664,7 +12664,7 @@
       "durations": [
         "108分钟"
       ],
-      "collect_count": 284039,
+      "collect_count": 284077,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "囍宴",
@@ -12703,8 +12703,8 @@
           "1": 192,
           "2": 543,
           "3": 7271,
-          "4": 37667,
-          "5": 74431
+          "4": 37672,
+          "5": 74441
         },
         "stars": "45",
         "min": 0
@@ -12753,7 +12753,7 @@
         "138分钟",
         "125分钟(德国电视版)"
       ],
-      "collect_count": 186392,
+      "collect_count": 186422,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "A Perfect World",
@@ -12790,9 +12790,9 @@
         "details": {
           "1": 488,
           "2": 2286,
-          "3": 32263,
-          "4": 109680,
-          "5": 141493
+          "3": 32265,
+          "4": 109692,
+          "5": 141510
         },
         "stars": "45",
         "min": 0
@@ -12841,7 +12841,7 @@
       "durations": [
         "123分钟"
       ],
-      "collect_count": 469238,
+      "collect_count": 469322,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "About Time",
@@ -12876,11 +12876,11 @@
         "max": 10,
         "average": 9.2,
         "details": {
-          "1": 255,
+          "1": 256,
           "2": 452,
           "3": 5114,
-          "4": 25315,
-          "5": 66548
+          "4": 25319,
+          "5": 66560
         },
         "stars": "50",
         "min": 0
@@ -12934,7 +12934,7 @@
         "203分钟(美国重映版)",
         "207分钟(修复版)"
       ],
-      "collect_count": 173864,
+      "collect_count": 173887,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "七人の侍",
@@ -12971,9 +12971,9 @@
         "details": {
           "1": 249,
           "2": 1084,
-          "3": 22652,
-          "4": 90374,
-          "5": 114040
+          "3": 22653,
+          "4": 90385,
+          "5": 114053
         },
         "stars": "45",
         "min": 0
@@ -13022,7 +13022,7 @@
       "durations": [
         "115分钟"
       ],
-      "collect_count": 429158,
+      "collect_count": 429228,
       "mainland_pubdate": "2007-11-15",
       "has_video": true,
       "original_title": "The Bourne Ultimatum",
@@ -13060,9 +13060,9 @@
         "details": {
           "1": 784,
           "2": 3701,
-          "3": 48683,
-          "4": 163052,
-          "5": 169949
+          "3": 48686,
+          "4": 163071,
+          "5": 169972
         },
         "stars": "45",
         "min": 0
@@ -13111,7 +13111,7 @@
         "129 分钟",
         "135 分钟(加拿大)"
       ],
-      "collect_count": 752410,
+      "collect_count": 752540,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Pride & Prejudice",
@@ -13199,7 +13199,7 @@
       "durations": [
         "95分钟"
       ],
-      "collect_count": 580132,
+      "collect_count": 580236,
       "mainland_pubdate": "2017-11-17",
       "has_video": true,
       "original_title": "英雄本色",
@@ -13236,10 +13236,10 @@
         "average": 8.7,
         "details": {
           "1": 692,
-          "2": 3241,
-          "3": 55397,
-          "4": 192890,
-          "5": 218532
+          "2": 3243,
+          "3": 55399,
+          "4": 192910,
+          "5": 218546
         },
         "stars": "45",
         "min": 0
@@ -13288,7 +13288,7 @@
       "durations": [
         "98分钟"
       ],
-      "collect_count": 897118,
+      "collect_count": 897277,
       "mainland_pubdate": "2013-04-20",
       "has_video": true,
       "original_title": "The Croods",
@@ -13338,9 +13338,9 @@
         "details": {
           "1": 1090,
           "2": 4728,
-          "3": 53148,
-          "4": 146197,
-          "5": 174818
+          "3": 53157,
+          "4": 146220,
+          "5": 174837
         },
         "stars": "45",
         "min": 0
@@ -13389,7 +13389,7 @@
       "durations": [
         "135 分钟"
       ],
-      "collect_count": 642776,
+      "collect_count": 642870,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Love Actually",
@@ -13429,8 +13429,8 @@
           "1": 293,
           "2": 1163,
           "3": 16388,
-          "4": 63763,
-          "5": 96441
+          "4": 63768,
+          "5": 96457
         },
         "stars": "45",
         "min": 0
@@ -13478,7 +13478,7 @@
       "durations": [
         "170分钟"
       ],
-      "collect_count": 356002,
+      "collect_count": 356061,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Godfather: Part III",
@@ -13513,11 +13513,11 @@
         "max": 10,
         "average": 8.7,
         "details": {
-          "1": 2944,
+          "1": 2945,
           "2": 3785,
-          "3": 24004,
-          "4": 77398,
-          "5": 124680
+          "3": 24006,
+          "4": 77407,
+          "5": 124693
         },
         "stars": "45",
         "min": 0
@@ -13554,7 +13554,7 @@
       "durations": [
         "89 分钟"
       ],
-      "collect_count": 429057,
+      "collect_count": 429120,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "火垂るの墓",
@@ -13589,11 +13589,11 @@
         "max": 10,
         "average": 8.6,
         "details": {
-          "1": 1399,
+          "1": 1401,
           "2": 4160,
-          "3": 39396,
-          "4": 123157,
-          "5": 151182
+          "3": 39401,
+          "4": 123169,
+          "5": 151203
         },
         "stars": "45",
         "min": 0
@@ -13642,7 +13642,7 @@
       "durations": [
         "100分钟"
       ],
-      "collect_count": 715558,
+      "collect_count": 715675,
       "mainland_pubdate": "1994-09-17",
       "has_video": true,
       "original_title": "東邪西毒",
@@ -13680,9 +13680,9 @@
         "details": {
           "1": 674,
           "2": 2280,
-          "3": 33318,
-          "4": 139898,
-          "5": 152573
+          "3": 33321,
+          "4": 139908,
+          "5": 152591
         },
         "stars": "45",
         "min": 0
@@ -13732,7 +13732,7 @@
         "163分钟(中国大陆)",
         "165分钟(美国)"
       ],
-      "collect_count": 522745,
+      "collect_count": 522812,
       "mainland_pubdate": "2013-05-12",
       "has_video": true,
       "original_title": "Django Unchained",
@@ -13769,10 +13769,10 @@
         "average": 8.7,
         "details": {
           "1": 658,
-          "2": 1827,
-          "3": 22862,
-          "4": 115019,
-          "5": 120099
+          "2": 1828,
+          "3": 22866,
+          "4": 115030,
+          "5": 120116
         },
         "stars": "45",
         "min": 0
@@ -13822,7 +13822,7 @@
         "110分钟(中国大陆)",
         "119分钟(威尼斯电影节)"
       ],
-      "collect_count": 410483,
+      "collect_count": 410538,
       "mainland_pubdate": "2015-10-16",
       "has_video": true,
       "original_title": "心迷宫",
@@ -13859,11 +13859,11 @@
         "max": 10,
         "average": 8.7,
         "details": {
-          "1": 1164,
+          "1": 1165,
           "2": 3093,
-          "3": 31996,
-          "4": 118335,
-          "5": 138822
+          "3": 31998,
+          "4": 118351,
+          "5": 138836
         },
         "stars": "45",
         "min": 0
@@ -13911,7 +13911,7 @@
       "durations": [
         "107分钟"
       ],
-      "collect_count": 469213,
+      "collect_count": 469275,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Whiplash",
@@ -13947,11 +13947,11 @@
         "max": 10,
         "average": 8.8,
         "details": {
-          "1": 298,
-          "2": 1313,
-          "3": 20246,
-          "4": 83113,
-          "5": 105138
+          "1": 299,
+          "2": 1314,
+          "3": 20248,
+          "4": 83117,
+          "5": 105142
         },
         "stars": "45",
         "min": 0
@@ -14000,7 +14000,7 @@
       "durations": [
         "108分钟"
       ],
-      "collect_count": 413187,
+      "collect_count": 413239,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "緃横四海",
@@ -14037,8 +14037,8 @@
         "details": {
           "1": 250,
           "2": 878,
-          "3": 11979,
-          "4": 55619,
+          "3": 11980,
+          "4": 55620,
           "5": 59484
         },
         "stars": "45",
@@ -14087,7 +14087,7 @@
       "durations": [
         "115分钟"
       ],
-      "collect_count": 751289,
+      "collect_count": 751436,
       "mainland_pubdate": "2018-03-02",
       "has_video": true,
       "original_title": "Three Billboards Outside Ebbing, Missouri",
@@ -14126,9 +14126,9 @@
         "details": {
           "1": 665,
           "2": 2929,
-          "3": 49828,
-          "4": 185629,
-          "5": 174659
+          "3": 49832,
+          "4": 185641,
+          "5": 174673
         },
         "stars": "45",
         "min": 0
@@ -14176,7 +14176,7 @@
       "durations": [
         "120 分钟"
       ],
-      "collect_count": 803364,
+      "collect_count": 803463,
       "mainland_pubdate": "2009-03-26",
       "has_video": false,
       "original_title": "Slumdog Millionaire",
@@ -14226,9 +14226,9 @@
         "details": {
           "1": 987,
           "2": 3295,
-          "3": 37681,
-          "4": 139268,
-          "5": 147261
+          "3": 37685,
+          "4": 139283,
+          "5": 147274
         },
         "stars": "45",
         "min": 0
@@ -14277,7 +14277,7 @@
       "durations": [
         "113分钟"
       ],
-      "collect_count": 590243,
+      "collect_count": 590308,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Memento",
@@ -14316,9 +14316,9 @@
         "details": {
           "1": 1024,
           "2": 3965,
-          "3": 56568,
-          "4": 216182,
-          "5": 198435
+          "3": 56571,
+          "4": 216196,
+          "5": 198461
         },
         "stars": "45",
         "min": 0
@@ -14367,7 +14367,7 @@
         "108分钟",
         "103分钟(威尼斯电影节)"
       ],
-      "collect_count": 849318,
+      "collect_count": 849430,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Black Swan",
@@ -14405,9 +14405,9 @@
         "details": {
           "1": 160,
           "2": 575,
-          "3": 9560,
-          "4": 38599,
-          "5": 75473
+          "3": 9561,
+          "4": 38603,
+          "5": 75489
         },
         "stars": "45",
         "min": 0
@@ -14456,7 +14456,7 @@
       "durations": [
         "65分钟"
       ],
-      "collect_count": 252230,
+      "collect_count": 252287,
       "mainland_pubdate": "1979-05-19",
       "has_video": true,
       "original_title": "哪吒闹海",
@@ -14515,9 +14515,9 @@
         "details": {
           "1": 356,
           "2": 1255,
-          "3": 17947,
-          "4": 89115,
-          "5": 105560
+          "3": 17949,
+          "4": 89128,
+          "5": 105576
         },
         "stars": "45",
         "min": 0
@@ -14566,7 +14566,7 @@
       "durations": [
         "122分钟"
       ],
-      "collect_count": 324217,
+      "collect_count": 324271,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Relatos salvajes",
@@ -14604,9 +14604,9 @@
         "details": {
           "1": 242,
           "2": 924,
-          "3": 20088,
-          "4": 107141,
-          "5": 114830
+          "3": 20089,
+          "4": 107148,
+          "5": 114848
         },
         "stars": "45",
         "min": 0
@@ -14655,7 +14655,7 @@
       "durations": [
         "117分钟"
       ],
-      "collect_count": 411323,
+      "collect_count": 411362,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Dallas Buyers Club",
@@ -14692,10 +14692,10 @@
         "average": 8.9,
         "details": {
           "1": 192,
-          "2": 656,
-          "3": 11804,
-          "4": 55440,
-          "5": 81707
+          "2": 657,
+          "3": 11805,
+          "4": 55447,
+          "5": 81725
         },
         "stars": "45",
         "min": 0
@@ -14743,7 +14743,7 @@
       "durations": [
         "132 分钟"
       ],
-      "collect_count": 240649,
+      "collect_count": 240703,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "I Am Sam",
@@ -14780,9 +14780,9 @@
         "details": {
           "1": 514,
           "2": 2197,
-          "3": 34006,
-          "4": 128523,
-          "5": 132709
+          "3": 34009,
+          "4": 128538,
+          "5": 132717
         },
         "stars": "45",
         "min": 0
@@ -14830,7 +14830,7 @@
       "durations": [
         "98 分钟"
       ],
-      "collect_count": 551562,
+      "collect_count": 551633,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "花樣年華",
@@ -14868,9 +14868,9 @@
         "details": {
           "1": 727,
           "2": 2585,
-          "3": 25767,
+          "3": 25769,
           "4": 60919,
-          "5": 67067
+          "5": 67068
         },
         "stars": "45",
         "min": 0
@@ -14919,7 +14919,7 @@
       "durations": [
         "106分钟"
       ],
-      "collect_count": 1472694,
+      "collect_count": 1473097,
       "mainland_pubdate": "2016-12-02",
       "has_video": true,
       "original_title": "君の名は。",
@@ -14957,9 +14957,9 @@
         "details": {
           "1": 207,
           "2": 1004,
-          "3": 21384,
-          "4": 101030,
-          "5": 103037
+          "3": 21386,
+          "4": 101037,
+          "5": 103042
         },
         "stars": "45",
         "min": 0
@@ -15006,7 +15006,7 @@
       "durations": [
         "133分钟"
       ],
-      "collect_count": 425402,
+      "collect_count": 425449,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Rain Man",
@@ -15043,9 +15043,9 @@
         "details": {
           "1": 144,
           "2": 361,
-          "3": 5724,
-          "4": 26593,
-          "5": 63030
+          "3": 5725,
+          "4": 26600,
+          "5": 63048
         },
         "stars": "45",
         "min": 0
@@ -15093,7 +15093,7 @@
       "durations": [
         "89分钟"
       ],
-      "collect_count": 180439,
+      "collect_count": 180509,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "天书奇谭",
@@ -15141,9 +15141,9 @@
         "details": {
           "1": 649,
           "2": 2037,
-          "3": 19951,
+          "3": 19952,
           "4": 63809,
-          "5": 81960
+          "5": 81962
         },
         "stars": "45",
         "min": 0
@@ -15192,7 +15192,7 @@
       "durations": [
         "140分钟"
       ],
-      "collect_count": 1439753,
+      "collect_count": 1440095,
       "mainland_pubdate": "2018-03-30",
       "has_video": true,
       "original_title": "Ready Player One",
@@ -15231,9 +15231,9 @@
         "details": {
           "1": 136,
           "2": 521,
-          "3": 10479,
-          "4": 56898,
-          "5": 77489
+          "3": 10480,
+          "4": 56906,
+          "5": 77504
         },
         "stars": "45",
         "min": 0
@@ -15282,7 +15282,7 @@
       "durations": [
         "121分钟"
       ],
-      "collect_count": 273470,
+      "collect_count": 273519,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Hotel Rwanda",
@@ -15320,9 +15320,9 @@
         "details": {
           "1": 1143,
           "2": 6553,
-          "3": 72602,
-          "4": 179338,
-          "5": 200397
+          "3": 72606,
+          "4": 179369,
+          "5": 200453
         },
         "stars": "45",
         "min": 0
@@ -15373,7 +15373,7 @@
         "95分钟(中国大陆)",
         "99分钟(美国)"
       ],
-      "collect_count": 949220,
+      "collect_count": 949482,
       "mainland_pubdate": "2004-12-23",
       "has_video": true,
       "original_title": "功夫",
@@ -15414,8 +15414,8 @@
           "1": 745,
           "2": 3151,
           "3": 37417,
-          "4": 119089,
-          "5": 157011
+          "4": 119105,
+          "5": 157028
         },
         "stars": "45",
         "min": 0
@@ -15464,7 +15464,7 @@
       "durations": [
         "95分钟"
       ],
-      "collect_count": 508187,
+      "collect_count": 508271,
       "mainland_pubdate": "2015-10-06",
       "has_video": true,
       "original_title": "Inside Out",
@@ -15513,9 +15513,9 @@
         "details": {
           "1": 165,
           "2": 389,
-          "3": 5812,
+          "3": 5813,
           "4": 27433,
-          "5": 60934
+          "5": 60945
         },
         "stars": "45",
         "min": 0
@@ -15562,7 +15562,7 @@
       "durations": [
         "107 分钟"
       ],
-      "collect_count": 287479,
+      "collect_count": 287551,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "ハチ公物語",
@@ -15599,9 +15599,9 @@
         "details": {
           "1": 310,
           "2": 1151,
-          "3": 16487,
-          "4": 62893,
-          "5": 93929
+          "3": 16491,
+          "4": 62913,
+          "5": 93960
         },
         "stars": "45",
         "min": 0
@@ -15650,7 +15650,7 @@
       "durations": [
         "90分钟"
       ],
-      "collect_count": 289848,
+      "collect_count": 289919,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "おまえうまそうだな",
@@ -15687,9 +15687,9 @@
         "details": {
           "1": 360,
           "2": 1910,
-          "3": 31357,
-          "4": 115181,
-          "5": 134187
+          "3": 31364,
+          "4": 115201,
+          "5": 134203
         },
         "stars": "45",
         "min": 0
@@ -15738,7 +15738,7 @@
       "durations": [
         "101分钟"
       ],
-      "collect_count": 488555,
+      "collect_count": 488644,
       "mainland_pubdate": "2012-11-06",
       "has_video": true,
       "original_title": "Wreck-It Ralph",
@@ -15776,9 +15776,9 @@
         "details": {
           "1": 256,
           "2": 1078,
-          "3": 16517,
-          "4": 77219,
-          "5": 97285
+          "3": 16518,
+          "4": 77225,
+          "5": 97300
         },
         "stars": "45",
         "min": 0
@@ -15825,7 +15825,7 @@
       "durations": [
         "116分钟"
       ],
-      "collect_count": 305847,
+      "collect_count": 305904,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "En man som heter Ove",
@@ -15863,8 +15863,8 @@
           "1": 335,
           "2": 836,
           "3": 10879,
-          "4": 49379,
-          "5": 76949
+          "4": 49384,
+          "5": 76964
         },
         "stars": "45",
         "min": 0
@@ -15913,7 +15913,7 @@
       "durations": [
         "81 分钟"
       ],
-      "collect_count": 208063,
+      "collect_count": 208098,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Perfect Blue",
@@ -15952,8 +15952,8 @@
           "1": 382,
           "2": 1952,
           "3": 35320,
-          "4": 141160,
-          "5": 145622
+          "4": 141172,
+          "5": 145636
         },
         "stars": "45",
         "min": 0
@@ -16002,7 +16002,7 @@
       "durations": [
         "114分钟"
       ],
-      "collect_count": 526952,
+      "collect_count": 527005,
       "mainland_pubdate": "2015-07-21",
       "has_video": true,
       "original_title": "The Imitation Game",
@@ -16091,7 +16091,7 @@
       "durations": [
         "137分钟"
       ],
-      "collect_count": 433098,
+      "collect_count": 433150,
       "mainland_pubdate": "2017-08-25",
       "has_video": true,
       "original_title": "Manchester by the Sea",
@@ -16128,11 +16128,11 @@
         "max": 10,
         "average": 8.5,
         "details": {
-          "1": 288,
+          "1": 289,
           "2": 1671,
-          "3": 39839,
-          "4": 155978,
-          "5": 133336
+          "3": 39842,
+          "4": 155995,
+          "5": 133354
         },
         "stars": "45",
         "min": 0
@@ -16181,7 +16181,7 @@
       "durations": [
         "81 分钟"
       ],
-      "collect_count": 709713,
+      "collect_count": 709861,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Ice Age",
@@ -16229,9 +16229,9 @@
         "details": {
           "1": 1059,
           "2": 4249,
-          "3": 48359,
-          "4": 141014,
-          "5": 149812
+          "3": 48361,
+          "4": 141028,
+          "5": 149836
         },
         "stars": "45",
         "min": 0
@@ -16279,7 +16279,7 @@
       "durations": [
         "123分钟"
       ],
-      "collect_count": 600183,
+      "collect_count": 600267,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Notebook",
@@ -16317,8 +16317,8 @@
           "1": 174,
           "2": 528,
           "3": 4127,
-          "4": 12321,
-          "5": 19004
+          "4": 12323,
+          "5": 19005
         },
         "stars": "45",
         "min": 0
@@ -16332,7 +16332,7 @@
         "99分钟(公映版)",
         "112分钟"
       ],
-      "collect_count": 338934,
+      "collect_count": 339016,
       "mainland_pubdate": "2017-08-14",
       "has_video": true,
       "original_title": "二十二",
@@ -16371,9 +16371,9 @@
         "details": {
           "1": 533,
           "2": 2155,
-          "3": 25112,
-          "4": 79823,
-          "5": 105856
+          "3": 25113,
+          "4": 79837,
+          "5": 105875
         },
         "stars": "45",
         "min": 0
@@ -16421,7 +16421,7 @@
       "durations": [
         "129 分钟"
       ],
-      "collect_count": 391490,
+      "collect_count": 391567,
       "mainland_pubdate": "2003-11-05",
       "has_video": true,
       "original_title": "The Matrix Revolutions",
@@ -16470,9 +16470,9 @@
         "details": {
           "1": 306,
           "2": 962,
-          "3": 10504,
-          "4": 39195,
-          "5": 69627
+          "3": 10506,
+          "4": 39198,
+          "5": 69639
         },
         "stars": "45",
         "min": 0
@@ -16523,7 +16523,7 @@
         "119分钟(DVD版)",
         "122分钟(4K修复版)"
       ],
-      "collect_count": 218449,
+      "collect_count": 218489,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "La grande vadrouille",
@@ -16561,8 +16561,8 @@
           "1": 143,
           "2": 405,
           "3": 7403,
-          "4": 35832,
-          "5": 61771
+          "4": 35836,
+          "5": 61775
         },
         "stars": "45",
         "min": 0
@@ -16611,7 +16611,7 @@
       "durations": [
         "103分钟"
       ],
-      "collect_count": 188367,
+      "collect_count": 188397,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Singin' in the Rain",
@@ -16659,9 +16659,9 @@
         "details": {
           "1": 216,
           "2": 1057,
-          "3": 18861,
-          "4": 86555,
-          "5": 97279
+          "3": 18864,
+          "4": 86564,
+          "5": 97285
         },
         "stars": "45",
         "min": 0
@@ -16709,7 +16709,7 @@
       "durations": [
         "127分钟"
       ],
-      "collect_count": 307413,
+      "collect_count": 307455,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "海街diary",
@@ -16747,9 +16747,9 @@
         "details": {
           "1": 639,
           "2": 2780,
-          "3": 27953,
-          "4": 88040,
-          "5": 106919
+          "3": 27955,
+          "4": 88048,
+          "5": 106929
         },
         "stars": "45",
         "min": 0
@@ -16798,7 +16798,7 @@
       "durations": [
         "146分钟"
       ],
-      "collect_count": 396676,
+      "collect_count": 396724,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Artificial Intelligence: AI",
@@ -16836,8 +16836,8 @@
           "1": 150,
           "2": 460,
           "3": 6801,
-          "4": 28720,
-          "5": 57954
+          "4": 28721,
+          "5": 57957
         },
         "stars": "45",
         "min": 0
@@ -16887,7 +16887,7 @@
         "100分钟(德国)",
         "86分钟(阿根廷)"
       ],
-      "collect_count": 163417,
+      "collect_count": 163432,
       "mainland_pubdate": "2011-08-12",
       "has_video": true,
       "original_title": "Océans",
@@ -16937,9 +16937,9 @@
         "details": {
           "1": 233,
           "2": 856,
-          "3": 17279,
-          "4": 93035,
-          "5": 103318
+          "3": 17280,
+          "4": 93044,
+          "5": 103332
         },
         "stars": "45",
         "min": 0
@@ -16987,7 +16987,7 @@
       "durations": [
         "118分钟"
       ],
-      "collect_count": 356950,
+      "collect_count": 357011,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Room",
@@ -17027,10 +17027,10 @@
         "average": 8.6,
         "details": {
           "1": 195,
-          "2": 1022,
-          "3": 29442,
-          "4": 113224,
-          "5": 107280
+          "2": 1023,
+          "3": 29444,
+          "4": 113232,
+          "5": 107297
         },
         "stars": "45",
         "min": 0
@@ -17079,7 +17079,7 @@
       "durations": [
         "103分钟"
       ],
-      "collect_count": 524210,
+      "collect_count": 524331,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "魔女の宅急便",
@@ -17116,9 +17116,9 @@
         "details": {
           "1": 1634,
           "2": 5823,
-          "3": 59747,
-          "4": 184685,
-          "5": 168946
+          "3": 59751,
+          "4": 184706,
+          "5": 168975
         },
         "stars": "45",
         "min": 0
@@ -17167,7 +17167,7 @@
       "durations": [
         "99 分钟"
       ],
-      "collect_count": 699007,
+      "collect_count": 699119,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Triangle",
@@ -17204,9 +17204,9 @@
         "details": {
           "1": 204,
           "2": 486,
-          "3": 8128,
-          "4": 43948,
-          "5": 65167
+          "3": 8129,
+          "4": 43953,
+          "5": 65183
         },
         "stars": "45",
         "min": 0
@@ -17255,7 +17255,7 @@
       "durations": [
         "109分钟"
       ],
-      "collect_count": 189584,
+      "collect_count": 189615,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Psycho",
@@ -17293,9 +17293,9 @@
         "details": {
           "1": 510,
           "2": 1573,
-          "3": 16311,
-          "4": 55595,
-          "5": 79081
+          "3": 16314,
+          "4": 55600,
+          "5": 79089
         },
         "stars": "45",
         "min": 0
@@ -17344,7 +17344,7 @@
       "durations": [
         "133分钟"
       ],
-      "collect_count": 278325,
+      "collect_count": 278357,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Legends of the Fall",
@@ -17381,9 +17381,9 @@
         "details": {
           "1": 2245,
           "2": 6257,
-          "3": 74452,
-          "4": 258915,
-          "5": 215722
+          "3": 74462,
+          "4": 258951,
+          "5": 215763
         },
         "stars": "45",
         "min": 0
@@ -17432,7 +17432,7 @@
       "durations": [
         "118分钟"
       ],
-      "collect_count": 1051480,
+      "collect_count": 1051811,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "부산행",
@@ -17469,10 +17469,10 @@
         "average": 8.8,
         "details": {
           "1": 430,
-          "2": 1319,
-          "3": 15447,
-          "4": 61761,
-          "5": 80894
+          "2": 1320,
+          "3": 15450,
+          "4": 61768,
+          "5": 80906
         },
         "stars": "45",
         "min": 0
@@ -17521,7 +17521,7 @@
       "durations": [
         "88分钟"
       ],
-      "collect_count": 297846,
+      "collect_count": 297891,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "羅生門",
@@ -17558,9 +17558,9 @@
         "details": {
           "1": 456,
           "2": 1891,
-          "3": 26427,
-          "4": 88363,
-          "5": 99805
+          "3": 26429,
+          "4": 88370,
+          "5": 99814
         },
         "stars": "45",
         "min": 0
@@ -17609,7 +17609,7 @@
       "durations": [
         "98分钟"
       ],
-      "collect_count": 379369,
+      "collect_count": 379423,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "時をかける少女",
@@ -17646,9 +17646,9 @@
         "details": {
           "1": 44,
           "2": 62,
-          "3": 1139,
-          "4": 9076,
-          "5": 41474
+          "3": 1140,
+          "4": 9077,
+          "5": 41486
         },
         "stars": "50",
         "min": 0
@@ -17695,7 +17695,7 @@
       "durations": [
         "91分钟"
       ],
-      "collect_count": 75617,
+      "collect_count": 75653,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "人生フルーツ",
@@ -17732,9 +17732,9 @@
         "details": {
           "1": 164,
           "2": 583,
-          "3": 12606,
-          "4": 55990,
-          "5": 69542
+          "3": 12608,
+          "4": 55997,
+          "5": 69556
         },
         "stars": "45",
         "min": 0
@@ -17783,7 +17783,7 @@
       "durations": [
         "108分钟"
       ],
-      "collect_count": 305506,
+      "collect_count": 305556,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Waterloo Bridge",
@@ -17820,9 +17820,9 @@
         "details": {
           "1": 1154,
           "2": 4918,
-          "3": 59246,
-          "4": 188030,
-          "5": 160040
+          "3": 59252,
+          "4": 188052,
+          "5": 160077
         },
         "stars": "45",
         "min": 0
@@ -17871,7 +17871,7 @@
         "106 分钟(香港)",
         "98 分钟(中国大陆)"
       ],
-      "collect_count": 830341,
+      "collect_count": 830510,
       "mainland_pubdate": "2006-06-30",
       "has_video": true,
       "original_title": "疯狂的石头",
@@ -17909,9 +17909,9 @@
         "details": {
           "1": 67,
           "2": 453,
-          "3": 8130,
+          "3": 8131,
           "4": 31619,
-          "5": 31765
+          "5": 31766
         },
         "stars": "45",
         "min": 0
@@ -17961,7 +17961,7 @@
         "113分钟",
         "114分钟(中国大陆)"
       ],
-      "collect_count": 527912,
+      "collect_count": 528040,
       "mainland_pubdate": "2018-01-19",
       "has_video": true,
       "original_title": "Wonder",
@@ -17999,9 +17999,9 @@
         "details": {
           "1": 226,
           "2": 986,
-          "3": 21302,
-          "4": 74200,
-          "5": 86666
+          "3": 21304,
+          "4": 74209,
+          "5": 86681
         },
         "stars": "45",
         "min": 0
@@ -18051,7 +18051,7 @@
         "153分钟(特别版)",
         "156分钟(终极剪辑版)"
       ],
-      "collect_count": 362651,
+      "collect_count": 362710,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Terminator 2: Judgment Day",
@@ -18089,9 +18089,9 @@
         "details": {
           "1": 262,
           "2": 933,
-          "3": 14206,
-          "4": 64335,
-          "5": 76330
+          "3": 14207,
+          "4": 64350,
+          "5": 76350
         },
         "stars": "45",
         "min": 0
@@ -18139,7 +18139,7 @@
       "durations": [
         "134分钟"
       ],
-      "collect_count": 226924,
+      "collect_count": 226969,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "신세계",
@@ -18178,7 +18178,7 @@
           "2": 711,
           "3": 10717,
           "4": 43550,
-          "5": 37815
+          "5": 37816
         },
         "stars": "45",
         "min": 0
@@ -18227,7 +18227,7 @@
         "97分钟",
         "96分钟(中国大陆)"
       ],
-      "collect_count": 499650,
+      "collect_count": 499724,
       "mainland_pubdate": "2018-05-25",
       "has_video": true,
       "original_title": "Perfetti sconosciuti",
@@ -18267,7 +18267,7 @@
           "2": 692,
           "3": 11496,
           "4": 43291,
-          "5": 37079
+          "5": 37081
         },
         "stars": "45",
         "min": 0
@@ -18316,7 +18316,7 @@
       "durations": [
         "94分钟"
       ],
-      "collect_count": 492698,
+      "collect_count": 492763,
       "mainland_pubdate": "2018-06-25",
       "has_video": true,
       "original_title": "阿飛正傳",
@@ -18354,9 +18354,9 @@
         "details": {
           "1": 1031,
           "2": 3346,
-          "3": 33672,
-          "4": 101571,
-          "5": 111648
+          "3": 33674,
+          "4": 101580,
+          "5": 111653
         },
         "stars": "45",
         "min": 0
@@ -18404,7 +18404,7 @@
       "durations": [
         "94分钟"
       ],
-      "collect_count": 447693,
+      "collect_count": 447732,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Trainspotting",
@@ -18441,9 +18441,9 @@
         "details": {
           "1": 317,
           "2": 968,
-          "3": 14351,
-          "4": 60618,
-          "5": 73375
+          "3": 14352,
+          "4": 60626,
+          "5": 73386
         },
         "stars": "45",
         "min": 0
@@ -18493,7 +18493,7 @@
         "90分钟(美国)",
         "98分钟(阿根廷)"
       ],
-      "collect_count": 385149,
+      "collect_count": 385200,
       "mainland_pubdate": "2004-10-01",
       "has_video": true,
       "original_title": "可可西里",
@@ -18530,10 +18530,10 @@
         "average": 8.4,
         "details": {
           "1": 2174,
-          "2": 8769,
-          "3": 92479,
-          "4": 238106,
-          "5": 219642
+          "2": 8770,
+          "3": 92486,
+          "4": 238124,
+          "5": 219670
         },
         "stars": "45",
         "min": 0
@@ -18583,7 +18583,7 @@
         "118分钟(泰国)",
         "100分钟(中国大陆)"
       ],
-      "collect_count": 1224634,
+      "collect_count": 1224844,
       "mainland_pubdate": "2012-06-05",
       "has_video": true,
       "original_title": "สิ่งเล็กเล็กที่เรียกว่า...รัก",
@@ -18632,9 +18632,9 @@
         "details": {
           "1": 536,
           "2": 1593,
-          "3": 13315,
-          "4": 45384,
-          "5": 72879
+          "3": 13316,
+          "4": 45390,
+          "5": 72889
         },
         "stars": "45",
         "min": 0
@@ -18682,7 +18682,7 @@
       "durations": [
         "237分钟(导演剪辑版)"
       ],
-      "collect_count": 227890,
+      "collect_count": 227924,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "牯嶺街少年殺人事件",
@@ -18719,9 +18719,9 @@
         "details": {
           "1": 1597,
           "2": 4379,
-          "3": 41356,
-          "4": 134008,
-          "5": 128682
+          "3": 41358,
+          "4": 134018,
+          "5": 128694
         },
         "stars": "45",
         "min": 0
@@ -18770,7 +18770,7 @@
       "durations": [
         "147分钟"
       ],
-      "collect_count": 538669,
+      "collect_count": 538736,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Perfume: The Story of a Murderer",
@@ -18810,9 +18810,9 @@
         "details": {
           "1": 304,
           "2": 1925,
-          "3": 35329,
-          "4": 113957,
-          "5": 112177
+          "3": 35333,
+          "4": 113987,
+          "5": 112214
         },
         "stars": "45",
         "min": 0
@@ -18861,7 +18861,7 @@
       "durations": [
         "141 分钟"
       ],
-      "collect_count": 548369,
+      "collect_count": 548557,
       "mainland_pubdate": "2004-09-10",
       "has_video": true,
       "original_title": "Harry Potter and the Prisoner of Azkaban",
@@ -18900,8 +18900,8 @@
           "1": 1600,
           "2": 2920,
           "3": 14964,
-          "4": 42741,
-          "5": 82347
+          "4": 42744,
+          "5": 82357
         },
         "stars": "45",
         "min": 0
@@ -18950,7 +18950,7 @@
       "durations": [
         "149分钟"
       ],
-      "collect_count": 231906,
+      "collect_count": 231941,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "2001: A Space Odyssey",
@@ -18988,9 +18988,9 @@
         "details": {
           "1": 524,
           "2": 1541,
-          "3": 15518,
-          "4": 55108,
-          "5": 84685
+          "3": 15520,
+          "4": 55118,
+          "5": 84696
         },
         "stars": "45",
         "min": 0
@@ -19038,7 +19038,7 @@
       "durations": [
         "109分钟"
       ],
-      "collect_count": 265236,
+      "collect_count": 265288,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Before Midnight",
@@ -19075,9 +19075,9 @@
         "details": {
           "1": 202,
           "2": 967,
-          "3": 21176,
-          "4": 85775,
-          "5": 85178
+          "3": 21177,
+          "4": 85784,
+          "5": 85187
         },
         "stars": "45",
         "min": 0
@@ -19126,7 +19126,7 @@
       "durations": [
         "108分钟"
       ],
-      "collect_count": 375121,
+      "collect_count": 375182,
       "mainland_pubdate": "2004-11-14",
       "has_video": true,
       "original_title": "The Bourne Supremacy",
@@ -19166,8 +19166,8 @@
           "1": 285,
           "2": 1549,
           "3": 28835,
-          "4": 99039,
-          "5": 97431
+          "4": 99047,
+          "5": 97439
         },
         "stars": "45",
         "min": 0
@@ -19216,7 +19216,7 @@
       "durations": [
         "119分钟"
       ],
-      "collect_count": 424080,
+      "collect_count": 424141,
       "mainland_pubdate": "2002-11-21",
       "has_video": true,
       "original_title": "The Bourne Identity",
@@ -19254,9 +19254,9 @@
         "details": {
           "1": 222,
           "2": 1214,
-          "3": 21593,
-          "4": 84657,
-          "5": 84927
+          "3": 21596,
+          "4": 84666,
+          "5": 84942
         },
         "stars": "45",
         "min": 0
@@ -19304,7 +19304,7 @@
       "durations": [
         "122 分钟"
       ],
-      "collect_count": 355141,
+      "collect_count": 355189,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Lord of War",
@@ -19341,9 +19341,9 @@
         "details": {
           "1": 220,
           "2": 734,
-          "3": 9324,
-          "4": 39672,
-          "5": 60192
+          "3": 9325,
+          "4": 39680,
+          "5": 60203
         },
         "stars": "45",
         "min": 0
@@ -19392,7 +19392,7 @@
       "durations": [
         "165分钟"
       ],
-      "collect_count": 181299,
+      "collect_count": 181345,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Taare Zameen Par",
@@ -19429,9 +19429,9 @@
         "details": {
           "1": 393,
           "2": 2371,
-          "3": 36015,
-          "4": 115682,
-          "5": 110250
+          "3": 36022,
+          "4": 115691,
+          "5": 110261
         },
         "stars": "45",
         "min": 0
@@ -19480,7 +19480,7 @@
       "durations": [
         "99分钟"
       ],
-      "collect_count": 515945,
+      "collect_count": 516032,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "青蛇",
@@ -19517,9 +19517,9 @@
         "details": {
           "1": 908,
           "2": 2834,
-          "3": 30850,
-          "4": 114523,
-          "5": 110389
+          "3": 30851,
+          "4": 114530,
+          "5": 110399
         },
         "stars": "45",
         "min": 0
@@ -19567,7 +19567,7 @@
       "durations": [
         "153分钟"
       ],
-      "collect_count": 426927,
+      "collect_count": 426957,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Inglourious Basterds",
@@ -19605,9 +19605,9 @@
         "details": {
           "1": 316,
           "2": 1966,
-          "3": 37605,
-          "4": 125265,
-          "5": 113292
+          "3": 37613,
+          "4": 125290,
+          "5": 113325
         },
         "stars": "45",
         "min": 0
@@ -19656,7 +19656,7 @@
         "161分钟",
         "174分钟(加长版)"
       ],
-      "collect_count": 584775,
+      "collect_count": 584979,
       "mainland_pubdate": "2003-01-24",
       "has_video": true,
       "original_title": "Harry Potter and the Chamber of Secrets",
@@ -19696,8 +19696,8 @@
           "1": 276,
           "2": 1402,
           "3": 26949,
-          "4": 105608,
-          "5": 95844
+          "4": 105623,
+          "5": 95852
         },
         "stars": "45",
         "min": 0
@@ -19748,7 +19748,7 @@
         "99分钟",
         "103分钟(美国)"
       ],
-      "collect_count": 455971,
+      "collect_count": 456038,
       "mainland_pubdate": "2012-02-24",
       "has_video": true,
       "original_title": "新龍門客棧",
@@ -19785,10 +19785,10 @@
         "average": 8.7,
         "details": {
           "1": 268,
-          "2": 1038,
+          "2": 1039,
           "3": 14038,
-          "4": 63071,
-          "5": 72454
+          "4": 63075,
+          "5": 72467
         },
         "stars": "45",
         "min": 0
@@ -19836,7 +19836,7 @@
       "durations": [
         "107 分钟"
       ],
-      "collect_count": 237338,
+      "collect_count": 237372,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Die Welle",
@@ -19873,9 +19873,9 @@
         "details": {
           "1": 272,
           "2": 1727,
-          "3": 31987,
-          "4": 124240,
-          "5": 108725
+          "3": 31988,
+          "4": 124245,
+          "5": 108731
         },
         "stars": "45",
         "min": 0
@@ -19923,7 +19923,7 @@
       "durations": [
         "124 分钟"
       ],
-      "collect_count": 481926,
+      "collect_count": 481959,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "The Reader",
@@ -19962,9 +19962,9 @@
         "details": {
           "1": 578,
           "2": 3423,
-          "3": 61147,
-          "4": 219907,
-          "5": 163534
+          "3": 61151,
+          "4": 219920,
+          "5": 163551
         },
         "stars": "45",
         "min": 0
@@ -20013,7 +20013,7 @@
       "durations": [
         "93分钟"
       ],
-      "collect_count": 791578,
+      "collect_count": 791677,
       "mainland_pubdate": "2011-08-30",
       "has_video": true,
       "original_title": "Source Code",
@@ -20053,8 +20053,8 @@
           "1": 328,
           "2": 1178,
           "3": 13526,
-          "4": 49991,
-          "5": 68126
+          "4": 49994,
+          "5": 68135
         },
         "stars": "45",
         "min": 0
@@ -20103,7 +20103,7 @@
       "durations": [
         "189 分钟"
       ],
-      "collect_count": 224628,
+      "collect_count": 224654,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Green Mile",
@@ -20140,9 +20140,9 @@
         "details": {
           "1": 230,
           "2": 727,
-          "3": 10913,
-          "4": 54668,
-          "5": 66228
+          "3": 10915,
+          "4": 54676,
+          "5": 66238
         },
         "stars": "45",
         "min": 0
@@ -20190,7 +20190,7 @@
       "durations": [
         "115分钟"
       ],
-      "collect_count": 215411,
+      "collect_count": 215449,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "歩いても 歩いても",
@@ -20228,8 +20228,8 @@
           "1": 74,
           "2": 136,
           "3": 2533,
-          "4": 16134,
-          "5": 42072
+          "4": 16135,
+          "5": 42081
         },
         "stars": "50",
         "min": 0
@@ -20278,7 +20278,7 @@
       "durations": [
         "87 分钟"
       ],
-      "collect_count": 125235,
+      "collect_count": 125256,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "City Lights",
@@ -20315,10 +20315,10 @@
         "average": 8.5,
         "details": {
           "1": 1044,
-          "2": 3218,
-          "3": 33613,
-          "4": 117120,
-          "5": 109420
+          "2": 3219,
+          "3": 33620,
+          "4": 117133,
+          "5": 109445
         },
         "stars": "45",
         "min": 0
@@ -20367,7 +20367,7 @@
       "durations": [
         "89分钟"
       ],
-      "collect_count": 410588,
+      "collect_count": 410649,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Coherence",
@@ -20406,8 +20406,8 @@
           "1": 122,
           "2": 852,
           "3": 18400,
-          "4": 84698,
-          "5": 77714
+          "4": 84705,
+          "5": 77726
         },
         "stars": "45",
         "min": 0
@@ -20456,7 +20456,7 @@
       "durations": [
         "143 分钟"
       ],
-      "collect_count": 348079,
+      "collect_count": 348128,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Blood Diamond",
@@ -20545,7 +20545,7 @@
         "159分钟",
         "141分钟(中国大陆)"
       ],
-      "collect_count": 485537,
+      "collect_count": 485673,
       "mainland_pubdate": "2018-03-02",
       "has_video": true,
       "original_title": "Bajrangi Bhaijaan",
@@ -20583,9 +20583,9 @@
         "details": {
           "1": 385,
           "2": 2062,
-          "3": 29068,
-          "4": 97787,
-          "5": 95377
+          "3": 29069,
+          "4": 97796,
+          "5": 95383
         },
         "stars": "45",
         "min": 0
@@ -20634,7 +20634,7 @@
       "durations": [
         "104分钟"
       ],
-      "collect_count": 358645,
+      "collect_count": 358694,
       "mainland_pubdate": "2015-06-26",
       "has_video": true,
       "original_title": "Begin Again",
@@ -20671,11 +20671,11 @@
         "max": 10,
         "average": 8.6,
         "details": {
-          "1": 1661,
+          "1": 1662,
           "2": 4472,
-          "3": 34435,
-          "4": 103634,
-          "5": 130043
+          "3": 34438,
+          "4": 103644,
+          "5": 130057
         },
         "stars": "45",
         "min": 0
@@ -20724,7 +20724,7 @@
       "durations": [
         "120分钟"
       ],
-      "collect_count": 432246,
+      "collect_count": 432312,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Mad Max: Fury Road",
@@ -20763,8 +20763,8 @@
           "1": 159,
           "2": 448,
           "3": 6774,
-          "4": 35101,
-          "5": 53104
+          "4": 35102,
+          "5": 53108
         },
         "stars": "45",
         "min": 0
@@ -20813,7 +20813,7 @@
       "durations": [
         "69分钟"
       ],
-      "collect_count": 147088,
+      "collect_count": 147101,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Following",
@@ -20849,11 +20849,11 @@
         "max": 10,
         "average": 8.7,
         "details": {
-          "1": 321,
+          "1": 322,
           "2": 1071,
           "3": 13959,
-          "4": 59603,
-          "5": 69841
+          "4": 59606,
+          "5": 69850
         },
         "stars": "45",
         "min": 0
@@ -20901,7 +20901,7 @@
       "durations": [
         "123分钟"
       ],
-      "collect_count": 244814,
+      "collect_count": 244839,
       "mainland_pubdate": "2012-11-13",
       "has_video": true,
       "original_title": "جدایی نادر از سیمین",
@@ -20940,9 +20940,9 @@
         "details": {
           "1": 200,
           "2": 802,
-          "3": 10541,
-          "4": 48862,
-          "5": 48849
+          "3": 10542,
+          "4": 48863,
+          "5": 48850
         },
         "stars": "45",
         "min": 0
@@ -20992,7 +20992,7 @@
         "117分钟(中国大陆)",
         "121分钟"
       ],
-      "collect_count": 910412,
+      "collect_count": 910574,
       "mainland_pubdate": "2018-08-03",
       "has_video": true,
       "original_title": "万引き家族",
@@ -21031,9 +21031,9 @@
         "details": {
           "1": 174,
           "2": 260,
-          "3": 3364,
-          "4": 18203,
-          "5": 43480
+          "3": 3365,
+          "4": 18209,
+          "5": 43482
         },
         "stars": "45",
         "min": 0
@@ -21081,7 +21081,7 @@
       "durations": [
         "136 分钟"
       ],
-      "collect_count": 119588,
+      "collect_count": 119607,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "東京物語",
@@ -21117,10 +21117,10 @@
         "average": 8.6,
         "details": {
           "1": 191,
-          "2": 1215,
-          "3": 21279,
-          "4": 80621,
-          "5": 78802
+          "2": 1216,
+          "3": 21284,
+          "4": 80631,
+          "5": 78814
         },
         "stars": "45",
         "min": 0
@@ -21169,7 +21169,7 @@
       "durations": [
         "97 分钟"
       ],
-      "collect_count": 303639,
+      "collect_count": 303708,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Bucket List",
@@ -21207,9 +21207,9 @@
         "details": {
           "1": 1045,
           "2": 4011,
-          "3": 52975,
-          "4": 147174,
-          "5": 132317
+          "3": 52988,
+          "4": 147193,
+          "5": 132343
         },
         "stars": "45",
         "min": 0
@@ -21259,7 +21259,7 @@
         "158分钟",
         "145分钟(中国大陆)"
       ],
-      "collect_count": 635414,
+      "collect_count": 635540,
       "mainland_pubdate": "2007-11-01",
       "has_video": false,
       "original_title": "色，戒",
@@ -21300,9 +21300,9 @@
         "details": {
           "1": 218,
           "2": 805,
-          "3": 12848,
-          "4": 63501,
-          "5": 78303
+          "3": 12849,
+          "4": 63506,
+          "5": 78312
         },
         "stars": "45",
         "min": 0
@@ -21350,7 +21350,7 @@
       "durations": [
         "128分钟"
       ],
-      "collect_count": 248263,
+      "collect_count": 248289,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Spotlight",
@@ -21388,9 +21388,9 @@
         "details": {
           "1": 629,
           "2": 1655,
-          "3": 18006,
-          "4": 84833,
-          "5": 89993
+          "3": 18009,
+          "4": 84846,
+          "5": 90010
         },
         "stars": "45",
         "min": 0
@@ -21439,7 +21439,7 @@
       "durations": [
         "102分钟"
       ],
-      "collect_count": 271528,
+      "collect_count": 271595,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "大佛普拉斯",
@@ -21476,10 +21476,10 @@
         "average": 8.6,
         "details": {
           "1": 493,
-          "2": 1713,
-          "3": 22321,
-          "4": 78791,
-          "5": 79482
+          "2": 1714,
+          "3": 22322,
+          "4": 78805,
+          "5": 79490
         },
         "stars": "45",
         "min": 0
@@ -21528,7 +21528,7 @@
         "112分钟",
         "115分钟(导演剪辑版)"
       ],
-      "collect_count": 322873,
+      "collect_count": 322914,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Crash",
@@ -21567,8 +21567,8 @@
           "1": 1367,
           "2": 3274,
           "3": 26905,
-          "4": 82753,
-          "5": 92649
+          "4": 82756,
+          "5": 92658
         },
         "stars": "45",
         "min": 0
@@ -21617,7 +21617,7 @@
       "durations": [
         "136 分钟"
       ],
-      "collect_count": 361862,
+      "collect_count": 361894,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "A Clockwork Orange",
@@ -21655,9 +21655,9 @@
         "details": {
           "1": 554,
           "2": 1548,
-          "3": 12810,
-          "4": 44281,
-          "5": 63458
+          "3": 12812,
+          "4": 44285,
+          "5": 63463
         },
         "stars": "45",
         "min": 0
@@ -21704,7 +21704,7 @@
       "durations": [
         "102分钟"
       ],
-      "collect_count": 204966,
+      "collect_count": 204991,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Requiem for a Dream",
@@ -21742,9 +21742,9 @@
         "details": {
           "1": 320,
           "2": 1175,
-          "3": 16855,
-          "4": 65109,
-          "5": 69936
+          "3": 16856,
+          "4": 65117,
+          "5": 69946
         },
         "stars": "45",
         "min": 0
@@ -21795,7 +21795,7 @@
         "142分钟(德国)",
         "152分钟(加长版)"
       ],
-      "collect_count": 260400,
+      "collect_count": 260438,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Black Hawk Down",
@@ -21831,10 +21831,10 @@
         "average": 8.3,
         "details": {
           "1": 1032,
-          "2": 2902,
+          "2": 2903,
           "3": 17129,
-          "4": 50823,
-          "5": 45640
+          "4": 50824,
+          "5": 45643
         },
         "stars": "45",
         "min": 0
@@ -21882,7 +21882,7 @@
       "durations": [
         "111分钟"
       ],
-      "collect_count": 856485,
+      "collect_count": 856726,
       "mainland_pubdate": "2016-10-28",
       "has_video": true,
       "original_title": "驴得水",
@@ -21930,9 +21930,9 @@
         "details": {
           "1": 295,
           "2": 1257,
-          "3": 22563,
-          "4": 84145,
-          "5": 78081
+          "3": 22565,
+          "4": 84152,
+          "5": 78091
         },
         "stars": "45",
         "min": 0
@@ -21981,7 +21981,7 @@
         "115分钟",
         "120分钟(加长版)"
       ],
-      "collect_count": 395384,
+      "collect_count": 395448,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "E.T.: The Extra-Terrestrial",
@@ -22020,8 +22020,8 @@
           "1": 178,
           "2": 451,
           "3": 5632,
-          "4": 23723,
-          "5": 47417
+          "4": 23725,
+          "5": 47420
         },
         "stars": "45",
         "min": 0
@@ -22069,7 +22069,7 @@
       "durations": [
         "118分钟"
       ],
-      "collect_count": 121467,
+      "collect_count": 121483,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "그대를 사랑합니다",
@@ -22106,9 +22106,9 @@
         "details": {
           "1": 176,
           "2": 714,
-          "3": 11641,
-          "4": 49417,
-          "5": 59037
+          "3": 11643,
+          "4": 49421,
+          "5": 59048
         },
         "stars": "45",
         "min": 0
@@ -22157,7 +22157,7 @@
       "durations": [
         "106分钟"
       ],
-      "collect_count": 188631,
+      "collect_count": 188662,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Gattaca",
@@ -22195,8 +22195,8 @@
           "1": 231,
           "2": 809,
           "3": 11685,
-          "4": 48053,
-          "5": 58621
+          "4": 48056,
+          "5": 58627
         },
         "stars": "45",
         "min": 0
@@ -22245,7 +22245,7 @@
       "durations": [
         "130 分钟"
       ],
-      "collect_count": 205638,
+      "collect_count": 205660,
       "mainland_pubdate": "",
       "has_video": false,
       "original_title": "Thelma & Louise",
@@ -22283,9 +22283,9 @@
         "details": {
           "1": 288,
           "2": 1661,
-          "3": 30886,
-          "4": 109546,
-          "5": 88455
+          "3": 30887,
+          "4": 109550,
+          "5": 88468
         },
         "stars": "45",
         "min": 0
@@ -22334,7 +22334,7 @@
       "durations": [
         "138分钟"
       ],
-      "collect_count": 442386,
+      "collect_count": 442438,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "Face/Off",
@@ -22371,9 +22371,9 @@
         "details": {
           "1": 1840,
           "2": 4490,
-          "3": 29494,
-          "4": 79705,
-          "5": 98423
+          "3": 29495,
+          "4": 79714,
+          "5": 98435
         },
         "stars": "45",
         "min": 0
@@ -22421,7 +22421,7 @@
       "durations": [
         "87 分钟"
       ],
-      "collect_count": 343488,
+      "collect_count": 343527,
       "mainland_pubdate": "",
       "has_video": true,
       "original_title": "The Man from Earth",
