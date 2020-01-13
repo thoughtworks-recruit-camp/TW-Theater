@@ -1,6 +1,7 @@
 const http = require('http');
 const url = require('url');
-const DOUBAN_MOVIE = '/v2/movie';
+const API_ROOT = '/topMovies';
+const DB_ROOT = 'http://localhost:3000';
 
 const proxyServer = http.createServer((request, response) => {
   const parsedUrl = url.parse(request.url);
@@ -10,19 +11,16 @@ const proxyServer = http.createServer((request, response) => {
   response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   response.setHeader('Content-Type', 'text/plain;charset=utf-8');
 
-  if (parsedUrl.pathname.indexOf(DOUBAN_MOVIE) > -1) {
-    http.get(`http://api.douban.com${parsedUrl.pathname}?${parsedUrl.query}`, res => {
-      var body = '';
-
+  if (parsedUrl.pathname.startsWith(API_ROOT)) {
+    http.get(`${DB_ROOT}${parsedUrl.pathname}`, res => {
+      let body = '';
       res.on('data', data => {
         body += data;
       });
-
       res.on('end', () => {
         response.statusCode = res.statusCode;
         response.end(body);
       });
-
     }).on('error', error => {
       console.log('代理失败:' + error.message)
     });

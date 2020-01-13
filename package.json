@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start-db": "npx json-server --watch .\\server\\db.json",
+    "start-proxy": "node server"
   },
   "repository": {
     "type": "git",
