@@ -10,8 +10,8 @@ http.get(`${DB_ROOT}${API_ROOT}`, res => {
     body += data;
   });
   res.on('end', () => {
-   DATA = JSON.parse(body);
-   console.log(DATA.length)
+    DATA = JSON.parse(body);
+    console.log(DATA.length)
   });
 }).on('error', error => {
   console.log('代理失败:' + error.message)
@@ -19,38 +19,41 @@ http.get(`${DB_ROOT}${API_ROOT}`, res => {
 
 
 const proxyServer = http.createServer((request, response) => {
-  const parsedUrl = url.parse(request.url,true);
+  const parsedUrl = url.parse(request.url, true);
   response.setHeader('Access-Control-Allow-Origin', '*');
   response.setHeader('Access-Control-Allow-Methods', '*');
   response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   response.setHeader('Content-Type', 'text/plain;charset=utf-8');
   switch (parsedUrl.pathname) {
+    case "topMovies/all":
+      response.statusCode = 200;
+      response.end(JSON.stringify(DATA));
+      break;
     case "/topMovies/random":
       let count = Number(parsedUrl.query.count);
-      if (count>MAX_RANDOM_N){
+      if (count > MAX_RANDOM_N) {
         response.statusCode = 413;
         response.end("CODE: 413");
       }
-      let randomIndices =new Set();
+      let randomIndices = new Set();
       const MAX = DATA.length;
-      while (randomIndices.size<count){
-        randomIndices.add(Math.floor(Math.random()*MAX));
+      while (randomIndices.size < count) {
+        randomIndices.add(Math.floor(Math.random() * MAX));
       }
-      let randomSubjects = Array.from(randomIndices).map(index=>DATA[index]);
+      let randomSubjects = Array.from(randomIndices).map(index => DATA[index]);
       response.statusCode = 200;
-      response.end(JSON.stringify(randomSubjects.reduce((acc,cur)=>{
+      response.end(JSON.stringify(randomSubjects.reduce((acc, cur) => {
         acc.push([{
-          title:cur.title,
-          rating:cur.rating.average,
-          firstGenre:cur.genres[0],
+          title: cur.title,
+          rating: cur.rating.average,
+          firstGenre: cur.genres[0],
           year: cur.year,
           image: cur.images.large
         }]);
         return acc;
-      },[])));
+      }, [])));
       break;
   }
-
 
 
   // if (parsedUrl.pathname.startsWith(API_ROOT)) {
