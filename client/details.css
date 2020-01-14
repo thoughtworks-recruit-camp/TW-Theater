@@ -1,0 +1,69 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.details-subtitle {
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#navigation {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#web-name {
+  color: white;
+  padding: 5px 0px 5px 90px;
+}
+
+#search {
+  padding: 5px 90px 5px 0px;;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 90px
+}
+
+#movie-info {
+  display: flex;
+}
+
+#movie-info-img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+#movie-info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#movie-recommended {
+  display: flex;
+}
+
+.recommended {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.recommended img {
+  width: 150px;
+}
+
+.recommended-name {
+  margin: 0 auto;
+}
