@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-db": "npx json-server --watch .\\server\\db.json",
-    "start-proxy": "node server"
+    "server": "node server"
   },
   "repository": {
     "type": "git",
@@ -16,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/thoughtworks-recruit-camp/TW-Theater/issues"
   },
-  "homepage": "https://github.com/Non-computer-training/tw-movie-theater#readme",
-  "dependencies": {
-    "json-server": "^0.15.1"
-  }
+  "homepage": "https://github.com/Non-computer-training/tw-movie-theater#readme"
 }
