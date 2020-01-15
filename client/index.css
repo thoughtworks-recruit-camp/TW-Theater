@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 main {
   display: flex;
 }
@@ -29,7 +34,9 @@ main {
 .movie-tile {
   position: relative;
   margin: 20px;
-  height: 400px;
+  width: 200px;
+  height: 360px;
+  text-align: center;
 }
 
 [class$="tag"] {
@@ -37,20 +44,25 @@ main {
   position: absolute;
   margin: 4px;
   padding: 4px;
-  background: #88888888;
+  background: rgba(0,0,0,0.8);
   border-radius: 2px;
-  text-align: center;
   color: white;
+  font-size: 12px;
 }
 
 .rating-tag {
-  bottom: 100px;
+  bottom: 60px;
   right: 0;
-  width: 100px;
+  width: 80px;
 }
 
 .genre-tag {
   top: 0;
   left: 0;
-  width: 50px;
+  width: 40px;
 }
+ .movie-tile h3 {
+   font-family: serif;
+ }
+
+
