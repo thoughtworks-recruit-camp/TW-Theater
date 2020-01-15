@@ -3,8 +3,7 @@
 }
 
 main {
-  margin: 0 auto;
-  width: 1366px;
+  display: flex;
 }
 
 #top-bar {
@@ -14,15 +13,44 @@ main {
 }
 
 #side-bar {
-  float: left;
-  width: 15%;
+  flex: 0 0 120px;
   height: calc(100vh - 64px);
   background: #008800;
 }
 
 #contents {
-float: right;
-  width: 85%;
+  flex: 1 1 0;
   height: calc(100vh - 64px);
-  background: #000088;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie-tile {
+  position: relative;
+  margin: 20px;
+  height: 400px;
+}
+
+[class$="tag"] {
+  display: inline-block;
+  position: absolute;
+  margin: 4px;
+  padding: 4px;
+  background: #88888888;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+}
+
+.rating-tag {
+  bottom: 100px;
+  right: 0;
+  width: 100px;
+}
+
+.genre-tag {
+  top: 0;
+  left: 0;
+  width: 50px;
 }
