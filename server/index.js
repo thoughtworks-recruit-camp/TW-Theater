@@ -6,6 +6,7 @@ const METHOD = fetch;  // TODO fetch || load
 
 function toIndexData(dbData) {
   return {
+    id: dbData.id,
     title: dbData.title,
     rating: dbData.rating.average,
     firstGenre: dbData.genres[0],
@@ -32,6 +33,7 @@ METHOD.handler.on("finished", () => {
           response.end(JSON.stringify({CODE: 413}));
         }
         response.statusCode = 200;
+        response.setHeader('Content-Type', 'Application/JSON');
         response.end(JSON.stringify(Array.from(moviesDb.values()).slice(0, count).map(toIndexData)));
         break;
       }
@@ -48,6 +50,7 @@ METHOD.handler.on("finished", () => {
         }
         let randomSubjects = Array.from(randomIndices).map(index => Array.from(moviesDb.values())[index]);
         response.statusCode = 200;
+        response.setHeader('Content-Type', 'Application/JSON');
         response.end(JSON.stringify(randomSubjects.map(toIndexData)));
         break;
       case "/poster":

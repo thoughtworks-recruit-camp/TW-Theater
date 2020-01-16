@@ -7,6 +7,7 @@ const dataChunks = [];
 for (let index = 0; index < 250; index += 10) {
   http.get(`http://api.douban.com/v2/movie/top250?start=${index}&count=10&apikey=0df993c66c0c636e29ecbb5344252a4a`, (res1) => {
     let rawData = "";
+    res1.setEncoding("utf-8");
     res1.on("data", (chunk => {
       rawData += chunk;
     }));
