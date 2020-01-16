@@ -8,13 +8,13 @@
   const $moviePlot = document.getElementById("movie-plot");
 
   //render details.html
-  function renderDetails(index) {
-    $movieTitle.innerHTML = detailsData[index].title + detailsData[index].original_title;
-    $movieInfoImg.setAttribute("src", detailsData[index].images.small);
-    $infoContentGenres.innerHTML = "类型: " + detailsData[index].genres[0];
-    $infoContentPubdates.innerHTML = "上映日期: " + detailsData[index].pubdates;
-    $infoContentDurations.innerHTML = "片长: " + detailsData[index].durations;
-    $infoContentScores.innerHTML = "豆瓣评分: " + detailsData[index].rating;
-    $moviePlot.innerHTML = detailsData[index].summary;
+  function renderDetails(obj) {
+    $movieTitle.innerHTML = obj.title + obj.original_title;
+    $movieInfoImg.setAttribute("src", obj.images.small);
+    $infoContentGenres.innerHTML = "类型: " + obj.genres[0];
+    $infoContentPubdates.innerHTML = "上映日期: " + obj.pubdates;
+    $infoContentDurations.innerHTML = "片长: " + obj.durations;
+    $infoContentScores.innerHTML = "豆瓣评分: " + obj.score;
+    $moviePlot.innerHTML = obj.summary;
   }
 })();
