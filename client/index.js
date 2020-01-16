@@ -53,6 +53,21 @@ function renderGenres(dataList) {
   dataList.map(data => {
     genresList.innerHTML += `<li>${data}</li>`;
   });
+  genresList.addEventListener("click", handleGenreSwitch, false);
+}
+
+function handleGenreSwitch(event) {
+  let target = event.target;
+  if (target.tagName !== "LI") {
+    return;
+  }
+  let genreSelected = target.innerText;
+  ajax({
+    url: `${API_ROOT}/movies/genre?genre=${genreSelected}&sorting=top&count=25`,
+    method: "get",
+    onSuccess: renderGallery,
+    onFail: ajaxFailed
+  });
 }
 
 window.onload = () => {
