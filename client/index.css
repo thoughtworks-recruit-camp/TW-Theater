@@ -20,9 +20,25 @@ main {
 #side-bar {
   flex: 0 0 120px;
   height: calc(100vh - 64px);
-  background: #008800;
+  text-align: center;
 }
 
+#side-bar ul,
+#side-bar li{
+  list-style: none;
+  padding: 0;
+}
+#side-bar h2{
+  font-size: 16px;
+  margin: 20px;
+}
+#side-bar li{
+  font-size: 12px;
+  margin: 8px;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: aqua;
+}
 #contents {
   flex: 1 1 0;
   height: calc(100vh - 64px);
