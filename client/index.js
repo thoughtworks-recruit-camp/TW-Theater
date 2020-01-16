@@ -51,7 +51,7 @@ function renderGenres(dataList) {
     genresList.removeChild(genresList.lastChild);
   }
   dataList.map(data => {
-    genresList.innerHTML += `<li>${data}</li>`;
+    genresList.innerHTML += `<li class="unselected">${data}</li>`;
   });
   genresList.addEventListener("click", handleGenreSwitch, false);
 }
@@ -61,6 +61,10 @@ function handleGenreSwitch(event) {
   if (target.tagName !== "LI") {
     return;
   }
+  for (let child of target.parentElement.children) {
+    child.setAttribute("class", "unselected");
+  }
+  target.setAttribute("class", "selected");
   let genreSelected = target.innerText;
   ajax({
     url: `${API_ROOT}/movies/genre?genre=${genreSelected}&sorting=top&count=25`,
