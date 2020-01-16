@@ -114,7 +114,7 @@ METHOD.handler.on("finished", () => {
               "score": briefData.rating.average,
               "summary": detailData.summary,
               "recommended":
-                getRandomElements(briefData.genres.map(genre=>genreIdMap.get(genre)).flat(), 6).map(id=>moviesDb.get(id)).map(dbData=>toRecItems(dbData))
+                getRandomElements(briefData.genres.map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecItems(dbData))
 
             };
             response.statusCode = 200;
@@ -122,6 +122,15 @@ METHOD.handler.on("finished", () => {
             response.end(JSON.stringify(resData));
           });
         });
+        break;
+      }
+      case "/genres": {
+        let count = parsedUrl.query.top;
+        response.statusCode = 200;
+        response.setHeader('Content-Type', 'Application/JSON');
+        response.end(JSON.stringify(Array.from(genreIdMap.keys())
+          .sort(((a, b) => genreIdMap.get(b).length - genreIdMap.get(a).length))
+          .slice(0,count)));
         break;
       }
       case "/poster":
