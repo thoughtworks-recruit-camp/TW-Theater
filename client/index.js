@@ -15,6 +15,15 @@ function initGallery() {
   })
 }
 
+function initGenres() {
+  ajax({
+    url: `${API_ROOT}/genres?top=10`,
+    method: "get",
+    onSuccess: renderGenres,
+    onFail: ajaxFailed
+  })
+}
+
 function renderGallery(dataList) {
   let contents = document.querySelector("#contents");
   while (contents.hasChildNodes()) {
@@ -36,6 +45,17 @@ function renderGallery(dataList) {
   })
 }
 
+function renderGenres(dataList) {
+  let genresList = document.querySelector("#genres-list");
+  while (genresList.hasChildNodes()) {
+    genresList.removeChild(genresList.lastChild);
+  }
+  dataList.map(data => {
+    genresList.innerHTML += `<li>${data}</li>`;
+  });
+}
+
 window.onload = () => {
   initGallery();
+  initGenres();
 };
