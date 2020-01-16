@@ -67,7 +67,6 @@ METHOD.handler.on("finished", () => {
         response.end(JSON.stringify(randomSubjects.map(toIndexData)));
         break;
       case "/movies/genre": {
-
         let [genre, sorting, count]
           = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.count)];
         if (count > MAX_RANDOM_N) {
@@ -84,7 +83,6 @@ METHOD.handler.on("finished", () => {
         response.setHeader('Content-Type', 'Application/JSON');
         response.end(JSON.stringify(resData));
         break;
-
       }
       case "/poster":
         http.get(idPosterMap.get(parsedUrl.query.id), res => {
