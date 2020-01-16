@@ -1,5 +1,5 @@
 function isValidOptions(options) {  // GET only!!!
-  let hasValidUrl = (options) => !options.url.includes("?");
+  let hasValidUrl = (options) => true;
   let hasValidMethod = (options) => ["GET"].includes(options.method.toUpperCase());
   let hasValidCallbacks = (options) => typeof options.onSuccess === "function" && typeof options.onFail === "function";
   return hasValidUrl(options) && hasValidMethod(options) && hasValidCallbacks(options);
