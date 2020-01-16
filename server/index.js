@@ -84,6 +84,38 @@ METHOD.handler.on("finished", () => {
         response.end(JSON.stringify(resData));
         break;
       }
+      case "/details": {
+        let id = parsedUrl.query.id;
+        http.get(`http://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`, (res) => {
+          let rawData = "";
+          res.setEncoding("utf-8");
+          res.on("data", (chunk => {
+            rawData += chunk;
+          }));
+          res.on("end", () => {
+            let detailData = JSON.parse(rawData);
+            let briefData = moviesDb.get(id);
+            let resData = {
+              "title": briefData.title,
+              "original_title": briefData.original_title,
+              "year": briefData.year,
+              "images": briefData.images,
+              "genres": briefData.genres,
+              "pubdates": briefData.pubdates,
+              "durations": briefData.durations,
+              "score": briefData.rating.average,
+              "summary": detailData.summary,
+              "recommended": [
+                1, 2, 3, 4, 5
+              ]
+            };
+            response.statusCode = 200;
+            response.setHeader('Content-Type', 'Application/JSON');
+            response.end(JSON.stringify(resData));
+          });
+        });
+        break;
+      }
       case "/poster":
         http.get(idPosterMap.get(parsedUrl.query.id), res => {
           let body = Buffer.from([]);
