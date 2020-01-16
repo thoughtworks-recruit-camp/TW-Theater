@@ -2,7 +2,19 @@ const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
 const MAX_RANDOM_N = 36;
 const idPosterMap = new Map();
+const genreIdMap = new Map();
 const METHOD = fetch;  // TODO fetch || load
+
+function getRandomElements(array, count) {
+  let arr = array.concat();
+  let result = [];
+  for (let index = 0; index < count; index++) {
+    let randomIndex = Math.floor(Math.random() * (arr.length - index));
+    result.push(arr[randomIndex]);
+    arr[randomIndex] = arr[arr.length - index - 1];
+  }
+  return result
+}
 
 function toIndexData(dbData) {
   return {
@@ -18,7 +30,13 @@ function toIndexData(dbData) {
 METHOD.handler.on("finished", () => {
   const moviesDb = METHOD.data;
   Array.from(moviesDb.entries())
-    .forEach(([key, value]) => idPosterMap.set(key, value.images.large));
+    .forEach(([key, value]) => {
+      idPosterMap.set(key, value.images.large);
+      for (let genre of value.genres) {
+        let currentIds = genreIdMap.get(genre) || [];
+        genreIdMap.set(genre, currentIds.concat(key))
+      }
+    });
   const proxyServer = http.createServer((request, response) => {
     const parsedUrl = url.parse(request.url, true);
     response.setHeader('Access-Control-Allow-Origin', '*');
@@ -43,16 +61,31 @@ METHOD.handler.on("finished", () => {
           response.statusCode = 413;
           response.end("CODE: 413");
         }
-        let randomIndices = new Set();
-        const MAX = moviesDb.size;
-        while (randomIndices.size < count) {
-          randomIndices.add(Math.floor(Math.random() * MAX));
-        }
-        let randomSubjects = Array.from(randomIndices).map(index => Array.from(moviesDb.values())[index]);
+        let randomSubjects = getRandomElements(Array.from(moviesDb.values()), count);
         response.statusCode = 200;
         response.setHeader('Content-Type', 'Application/JSON');
         response.end(JSON.stringify(randomSubjects.map(toIndexData)));
         break;
+      case "/movies/genre": {
+
+        let [genre, sorting, count]
+          = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.count)];
+        if (count > MAX_RANDOM_N) {
+          response.statusCode = 413;
+          response.end(JSON.stringify({CODE: 413}));
+        }
+        let resData;
+        if (sorting === "top") {
+          resData = genreIdMap.get(genre).slice(0, count).map(id => moviesDb.get(id)).map(toIndexData);
+        } else if (sorting === "random") {
+          resData = getRandomElements(genreIdMap.get(genre), count).map(id => moviesDb.get(id)).map(toIndexData);
+        }
+        response.statusCode = 200;
+        response.setHeader('Content-Type', 'Application/JSON');
+        response.end(JSON.stringify(resData));
+        break;
+
+      }
       case "/poster":
         http.get(idPosterMap.get(parsedUrl.query.id), res => {
           let body = Buffer.from([]);
