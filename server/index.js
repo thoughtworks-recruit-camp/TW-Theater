@@ -27,6 +27,14 @@ function toIndexData(dbData) {
   }
 }
 
+function toRecItems(dbData) {
+  return {
+    id: dbData.id,
+    title: dbData.title,
+    image: `http://localhost:8888/poster?id=${dbData.id}`
+  }
+}
+
 METHOD.handler.on("finished", () => {
   const moviesDb = METHOD.data;
   Array.from(moviesDb.entries())
@@ -99,15 +107,15 @@ METHOD.handler.on("finished", () => {
               "title": briefData.title,
               "original_title": briefData.original_title,
               "year": briefData.year,
-              "images": briefData.images,
+              "images": idPosterMap.get(id),
               "genres": briefData.genres,
               "pubdates": briefData.pubdates,
               "durations": briefData.durations,
               "score": briefData.rating.average,
               "summary": detailData.summary,
-              "recommended": [
-                1, 2, 3, 4, 5
-              ]
+              "recommended":
+                getRandomElements(briefData.genres.map(genre=>genreIdMap.get(genre)).flat(), 6).map(id=>moviesDb.get(id)).map(dbData=>toRecItems(dbData))
+
             };
             response.statusCode = 200;
             response.setHeader('Content-Type', 'Application/JSON');
