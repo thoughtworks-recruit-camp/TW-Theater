@@ -90,11 +90,11 @@ function getDetailsDataFromId() {
 
 //render details.html
 function renderDetails(obj) {
-  $movieTitle.innerHTML = obj.title + " " + obj.original_title + " " + obj.year;
+  $movieTitle.innerHTML = isCommonName(obj.title, obj.original_title) + " " + obj.year;
   $movieInfoImg.setAttribute("src", obj.image);
-  $infoContentGenres.innerHTML = "类型: " + updateGenres(obj.genres);
-  $infoContentPubdates.innerHTML = "上映日期: " + obj.pubdates;
-  $infoContentDurations.innerHTML = "片长: " + obj.durations;
+  $infoContentGenres.innerHTML = "类型: " + updateArr(obj.genres);
+  $infoContentPubdates.innerHTML = "上映日期: " + updateArr(obj.pubdates);
+  $infoContentDurations.innerHTML = "片长: " + updateArr(obj.durations);
   $infoContentScores.innerHTML = "豆瓣评分: " + obj.score;
   $moviePlot.innerHTML = obj.summary;
   let recommendeds = obj.recommended;
@@ -107,8 +107,15 @@ function renderDetails(obj) {
   }
 }
 
-//update genres
-function updateGenres(arr) {
+//update
+function isCommonName(name1, name2) {
+  if(name1 === name2) {
+    return name1;
+  }
+  return name1 + " " + name2;
+}
+
+function updateArr(arr) {
   let res = "";
   for (let i = 0; i < arr.length - 1; i++) {
     res += arr[i] + " / ";

@@ -27,3 +27,28 @@ body {
 #search {
   padding: 5px 90px 5px 0px;;
 }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 90px
+}
+
+.search-div {
+  display: flex;
+}
+
+.search-div img {
+  margin-right: 20px;
+}
+
+.search-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
