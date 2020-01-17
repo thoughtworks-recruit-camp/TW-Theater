@@ -26,7 +26,7 @@ function getResultsDataFromKeyword() {
 //render results.html
 function renderResults(arr) {
   console.log(1)
-  $main.innerHTML = `搜索` + `${getLocationKeyword()}`;
+  $main.innerHTML = `<h1>搜索` + `${getLocationKeyword()}</h1>`;
   for (let i = 0; i < arr.length; i++) {
     $main.innerHTML += `<div class="search-div">`
     + `<a href="./details.html?id=${arr[i].id}">`

@@ -5,6 +5,12 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  cursor: none;
+  color: black;
+}
+
 .details-subtitle {
   color: white;
   background-color: gray;
