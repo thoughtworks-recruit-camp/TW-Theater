@@ -1,5 +1,7 @@
 let [http, EventEmitter] = [require("http"), require("events").EventEmitter];
-let handler = new EventEmitter();
+let finishHandler = new EventEmitter();
+let summaryHandler = new EventEmitter();
+let summaryCount = 0;
 
 const moviesDb = new Map();
 const dataChunks = [];
@@ -19,20 +21,30 @@ function mergeData(data) {
   dataChunks.push(data);
   if (dataChunks.length === 25) {
     dataChunks.sort((a, b) => a.start - b.start);
-    dataChunks.map(chunk => (chunk.subjects)).flat().forEach((element => moviesDb.set(element.id,element)));
-    handler.emit("finished")
+    dataChunks.map(chunk => (chunk.subjects)).flat().forEach((element => moviesDb.set(element.id, element)));
+    for (let id of moviesDb.keys()) {
+      http.get(`http://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`, (res => {
+        let rawData = "";
+        res.setEncoding("utf-8");
+        res.on("data", (chunk => {
+          rawData += chunk;
+        }));
+        res.on("end", () => {
+          let currentData = moviesDb.get(id);
+          currentData.summary = JSON.parse(rawData).summary;
+          moviesDb.set(id, currentData);
+          summaryHandler.emit("summary");
+        });
+      }))
+    }
   }
 }
 
-module.exports = {handler: handler, data: moviesDb};
+summaryHandler.on("summary", () => {
+  summaryCount++;
+  if (summaryCount === 250) {
+    finishHandler.emit("finished");
+  }
+});
 
-// function getGenres(moviesDb) {
-//   let genres = new Set();
-//   for (let subject of moviesDb.topMovies) {
-//     genres.add(...subject.genres);
-//   }
-//   for (let subject of moviesDb.inTheaters) {
-//     genres.add(...subject.genres);
-//   }
-//   fs.writeFileSync(".\\genres.json", JSON.stringify(Array.from(genres), null, 2));
-// }
+module.exports = {finishHandler: finishHandler, data: moviesDb};

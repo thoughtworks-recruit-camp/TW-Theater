@@ -52,7 +52,7 @@ function toSearchResult(dbData) {
   }
 }
 
-METHOD.handler.on("finished", () => {
+METHOD.finishHandler.on("finished", () => {
   const moviesDb = METHOD.data;
   Array.from(moviesDb.entries())
     .forEach(([key, value]) => {
@@ -100,20 +100,19 @@ METHOD.handler.on("finished", () => {
               rawData += chunk;
             }));
             res.on("end", () => {
-              let detailData = JSON.parse(rawData);
-              let briefData = moviesDb.get(id);
+              let movieData = moviesDb.get(id);
               let resData = {
-                "title": briefData.title,
-                "original_title": briefData.original_title,
-                "year": briefData.year,
-                "images": `http://localhost:8888/poster?id=${briefData.id}`,
-                "genres": briefData.genres,
-                "pubdates": briefData.pubdates,
-                "durations": briefData.durations,
-                "score": briefData.rating.average,
-                "summary": detailData.summary,
+                "title": movieData.title,
+                "original_title": movieData.original_title,
+                "year": movieData.year,
+                "images": `http://localhost:8888/poster?id=${movieData.id}`,
+                "genres": movieData.genres,
+                "pubdates": movieData.pubdates,
+                "durations": movieData.durations,
+                "score": movieData.rating.average,
+                "summary": movieData.summary,
                 "recommended":
-                  getRandomElements(briefData.genres.map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecItems(dbData))
+                  getRandomElements(movieData.genres.map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecItems(dbData))
               };
               response.statusCode = 200;
               response.setHeader('Content-Type', 'Application/JSON');
