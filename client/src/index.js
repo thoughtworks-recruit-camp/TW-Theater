@@ -1,4 +1,4 @@
-import {ajax} from "../src/ajax.js";
+import {ajax} from "./ajax.js";
 
 const API_ROOT = "http://cloud.truman.pro:8888";
 const sortingValuesMap = new Map([
