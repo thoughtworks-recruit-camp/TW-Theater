@@ -26,7 +26,7 @@ function toIndexData(dbData) {
     id: dbData.id,
     title: dbData.title,
     rating: dbData.rating.average,
-    firstGenre: dbData.genres[0],
+    genres: dbData.genres,
     year: dbData.year,
     image: `http://localhost:8888/poster?id=${dbData.id}`,
     summary: dbData.summary

@@ -39,14 +39,16 @@ function renderGallery(dataList) {
     let movieTile = document.createElement("article");
     movieTile.setAttribute("class", "movie-tile");
     movieTile.innerHTML
-      = `<a href="#">`
-      + `<img src="http://localhost:8888/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
-      + `</a>`
+      = `<img src="http://localhost:8888/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
       + `<span class="rating-tag">豆瓣评分: ${data.rating}</span>`
-      + `<span class="genre-tag">${data.firstGenre}</span>`
+      + `<div class="brief-box">`
+      + `<ul><li>类型: ${data.genres.join(" ")}</li>`
+      + `<li>年代: ${data.year}</li>`
+      + `<li><p>${data.summary.replace("\n","")}</p></li></ul>`
+      + `<a class="details-button" href="#">查看详情</a></div>`
       + `<a href="#">`
       + `<h3>${data.title}</h3>`
-      + ` </a>`;
+      + `</a>`;
     contents.appendChild(movieTile);
   })
 }
@@ -56,9 +58,9 @@ function renderGenres(dataList) {
   while (genresList.hasChildNodes()) {
     genresList.removeChild(genresList.lastChild);
   }
-  genresList.innerHTML += `<li class="selected">全部</li>`;
+  genresList.innerHTML += `<li class="selected"><span class="iconfont icon-tags">全部</span></li>`;
   dataList.map(data => {
-    genresList.innerHTML += `<li class="unselected">${data}</li>`;
+    genresList.innerHTML += `<li class="unselected"><span class="iconfont icon-tag">${data}</span></li>`;
   });
   genresList.addEventListener("click", handleGenreSwitch, false);
 }
@@ -71,9 +73,9 @@ function handleSortingSwitch(event) {
   let selectedSorting = sortingValuesMap.get(target.innerText);
   if (selectedSorting !== currentSorting) {
     for (let child of target.parentElement.children) {
-      child.setAttribute("class", "unselected");
+      child.classList.replace("selected","unselected");
     }
-    target.setAttribute("class", "selected");
+    target.classList.replace("unselected","selected");
     currentSorting = selectedSorting;
     getGalleryData();
   }
@@ -88,9 +90,9 @@ function handleGenreSwitch(event) {
   let selectedGenre = target.innerText;
   if (selectedGenre !== currentGenre) {
     for (let child of target.parentElement.children) {
-      child.setAttribute("class", "unselected");
+      child.classList.replace("selected","unselected");
     }
-    target.setAttribute("class", "selected");
+    target.classList.replace("unselected","selected");
     currentGenre = selectedGenre;
     getGalleryData();
   }
