@@ -39,14 +39,16 @@ function renderGallery(dataList) {
     let movieTile = document.createElement("article");
     movieTile.setAttribute("class", "movie-tile");
     movieTile.innerHTML
-      = `<a href="#">`
-      + `<img src="http://localhost:8888/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
-      + `</a>`
+      = `<img src="http://localhost:8888/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
       + `<span class="rating-tag">豆瓣评分: ${data.rating}</span>`
-      + `<span class="genre-tag">${data.firstGenre}</span>`
+      + `<div class="brief-box">`
+      + `<ul><li>类型: ${data.genres.join(" ")}</li>`
+      + `<li>年代: ${data.year}</li>`
+      + `<li><p>${data.summary}</p></li></ul>`
+      + `<a class="details-button" href="#">查看详情</a></div>`
       + `<a href="#">`
       + `<h3>${data.title}</h3>`
-      + ` </a>`;
+      + `</a>`;
     contents.appendChild(movieTile);
   })
 }
