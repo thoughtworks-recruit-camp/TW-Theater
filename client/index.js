@@ -68,7 +68,15 @@ function handleSortingSwitch(event) {
   if (target.tagName !== "LI") {
     return;
   }
-  currentSorting = sortingValuesMap.get(target.innerText);
+  let selectedSorting = sortingValuesMap.get(target.innerText);
+  if (selectedSorting !== currentSorting) {
+    for (let child of target.parentElement.children) {
+      child.setAttribute("class", "unselected");
+    }
+    target.setAttribute("class", "selected");
+    currentSorting = selectedSorting;
+    getGalleryData();
+  }
   getGalleryData();
 }
 
@@ -77,12 +85,15 @@ function handleGenreSwitch(event) {
   if (target.tagName !== "LI") {
     return;
   }
-  for (let child of target.parentElement.children) {
-    child.setAttribute("class", "unselected");
+  let selectedGenre = target.innerText;
+  if (selectedGenre !== currentGenre) {
+    for (let child of target.parentElement.children) {
+      child.setAttribute("class", "unselected");
+    }
+    target.setAttribute("class", "selected");
+    currentGenre = selectedGenre;
+    getGalleryData();
   }
-  target.setAttribute("class", "selected");
-  currentGenre = target.innerText;
-  getGalleryData();
 }
 
 window.onload = () => {
