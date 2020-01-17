@@ -7,3 +7,4 @@
 ### 启动方法
 1. `npm run server`
 2. 使用`liveserver`或`anywhere`等载入`index.html`
+* [API说明](https://github.com/thoughtworks-recruit-camp/TW-Theater/blob/master/server/API_README.md)
