@@ -33,7 +33,7 @@ function toIndexData(dbData) {
   return {
     id: dbData.id,
     title: dbData.title,
-    rating: dbData.rating.average,
+    rating: dbData.rating.average.toFixed(1),
     genres: dbData.genres,
     year: dbData.year,
     image: `${API_ROOT}/poster?id=${dbData.id}`,
@@ -50,7 +50,7 @@ function toDetailsData(dbData) {
     "genres": dbData.genres,
     "pubdates": dbData.pubdates,
     "durations": dbData.durations,
-    "score": dbData.rating.average,
+    "score": dbData.rating.average.toFixed(1),
     "photos": dbData.photos,
     "album": `https://movie.douban.com/subject/${dbData.id}/all_photos`,
     "summary": dbData.summary,
@@ -76,7 +76,7 @@ function toSearchData(dbData) {
     genres: dbData.genres,
     year: dbData.year,
     summary: dbData.summary,
-    rating: dbData.rating.average,
+    rating: dbData.rating.average.toFixed(1),
     duration: dbData.duration,
     casts: dbData.casts.map(cast => cast.name)
   }
