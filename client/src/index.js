@@ -31,9 +31,9 @@ function initGenres() {
 }
 
 function renderGallery(dataList) {
-  let contents = document.querySelector("#contents");
-  while (contents.hasChildNodes()) {
-    contents.removeChild(contents.lastChild);
+  let gallery = document.querySelector("#gallery");
+  while (gallery.hasChildNodes()) {
+    gallery.removeChild(gallery.lastChild);
   }
   dataList.map(data => {
     let movieTile = document.createElement("article");
@@ -49,7 +49,7 @@ function renderGallery(dataList) {
       + `<a href="./details.html?id=${data.id}">`
       + `<h3>${data.title}</h3>`
       + `</a>`;
-    contents.appendChild(movieTile);
+    gallery.appendChild(movieTile);
   })
 }
 
@@ -79,9 +79,8 @@ function handleSortingSwitch(event) {
     target.classList.replace("unselected","selected");
     target.firstElementChild.classList.add("selected-icon");
     currentSorting = selectedSorting;
-    getGalleryData();
+    refreshData();
   }
-  getGalleryData();
 }
 
 function handleGenreSwitch(event) {
@@ -98,7 +97,7 @@ function handleGenreSwitch(event) {
     target.classList.replace("unselected","selected");
     target.firstElementChild.classList.add("selected-icon");
     currentGenre = selectedGenre;
-    getGalleryData();
+    refreshData();
   }
 }
 
