@@ -147,17 +147,17 @@ main {
 .brief-box li {
   list-style: none;
   padding: 0;
-  margin: 4px;
+  margin: 8px;
 }
 .brief-box ul{
   margin: auto;
-  padding: 20px;
+  padding: 12px;
 }
 .brief-box p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 10;
+  -webkit-line-clamp: 12;
   word-break: break-all;
 }
 .details-button{

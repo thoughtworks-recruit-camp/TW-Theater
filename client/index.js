@@ -44,7 +44,7 @@ function renderGallery(dataList) {
       + `<div class="brief-box">`
       + `<ul><li>类型: ${data.genres.join(" ")}</li>`
       + `<li>年代: ${data.year}</li>`
-      + `<li><p>${data.summary}</p></li></ul>`
+      + `<li><p>${data.summary.replace("\n","")}</p></li></ul>`
       + `<a class="details-button" href="#">查看详情</a></div>`
       + `<a href="#">`
       + `<h3>${data.title}</h3>`
