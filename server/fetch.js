@@ -2,6 +2,7 @@ let [http, EventEmitter] = [require("http"), require("events").EventEmitter];
 let finishHandler = new EventEmitter();
 let summaryHandler = new EventEmitter();
 let summaryCount = 0;
+let briefCount = 0;
 
 const moviesDb = new Map();
 const dataChunks = [];
@@ -19,7 +20,9 @@ for (let index = 0; index < 250; index += 10) {
 
 function mergeData(data) {
   dataChunks.push(data);
+  process.stdout.write(`\rTop 250 loading progress: ${++briefCount * 10}/250`);
   if (dataChunks.length === 25) {
+    process.stdout.write(" ...completed!\n");
     dataChunks.sort((a, b) => a.start - b.start);
     dataChunks.map(chunk => (chunk.subjects)).flat().forEach((element => moviesDb.set(element.id, element)));
     for (let id of moviesDb.keys()) {
@@ -33,16 +36,17 @@ function mergeData(data) {
           let currentData = moviesDb.get(id);
           currentData.summary = JSON.parse(rawData).summary;
           moviesDb.set(id, currentData);
-          summaryHandler.emit("summary");
+          summaryHandler.emit("set");
         });
       }))
     }
   }
 }
 
-summaryHandler.on("summary", () => {
-  summaryCount++;
+summaryHandler.on("set", () => {
+  process.stdout.write(`\rTop 250 summaries loading progress: ${++summaryCount}/250`);
   if (summaryCount === 250) {
+    process.stdout.write(" ...completed!\n");
     finishHandler.emit("finished");
   }
 });
