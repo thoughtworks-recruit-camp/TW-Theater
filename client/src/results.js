@@ -43,7 +43,7 @@ function renderResults(arr) {
     }
   }else{
     $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`
-    + `<div id="search-fail"><img src="./fail.svg" alt="logo" />`
+    + `<div id="search-fail"><img src="../static/fail.svg" alt="logo" />`
     + `<p>未找到相关电影!</p>`
     + `</div>`;
   }
