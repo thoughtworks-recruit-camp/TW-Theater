@@ -126,9 +126,9 @@ a {
 }
 
 .photo-header {
-  width: 120px;
-  margin: 20px;
+  width: 160px;
   text-align: center;
+  margin: 8px;
 }
 
 .photo-header a {

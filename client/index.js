@@ -6,7 +6,7 @@ const sortingValuesMap = new Map([
   ["随机", "random"]]);
 let currentSorting = "top";
 let currentGenre = "全部";
-let currentLimit = 10;
+let currentLimit = 16;
 
 function ajaxFailed(err) {
   console.log(err);
