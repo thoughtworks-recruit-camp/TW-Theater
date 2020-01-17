@@ -12,7 +12,7 @@ function ajaxFailed(err) {
   console.log(err);
 }
 
-function getGalleryData() {
+function refreshData() {
   ajax({
     url: `${API_ROOT}/movies?genre=${currentGenre}&sorting=${currentSorting}&limit=${currentLimit}`,
     method: "get",
@@ -44,7 +44,7 @@ function renderGallery(dataList) {
       + `<div class="brief-box">`
       + `<ul><li>类型: ${data.genres.join(" ")}</li>`
       + `<li>年代: ${data.year}</li>`
-      + `<li><p>${data.summary.replace("\n","")}</p></li></ul>`
+      + `<li><p>${data.summary.replace("\n", "")}</p></li></ul>`
       + `<a class="details-button" href="./details.html?id=${data.id}">查看详情</a></div>`
       + `<a href="./details.html?id=${data.id}">`
       + `<h3>${data.title}</h3>`
@@ -103,14 +103,14 @@ function handleGenreSwitch(event) {
 }
 
 window.onload = () => {
-  currentLimit=document.querySelector("#limit-select").value;  // refresh steady
+  currentLimit = document.querySelector("#limit-select").value;  // refresh steady
   initGenres();
-  getGalleryData();
+  refreshData();
   let sortingOptions = document.querySelector("#sorting-options");
   sortingOptions.addEventListener("click", handleSortingSwitch, false);
   let limitSelect = document.querySelector("#limit-select");
   limitSelect.onchange = () => {
     currentLimit = limitSelect.value;
-    getGalleryData();
+    refreshData();
   }
 };
