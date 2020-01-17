@@ -45,8 +45,8 @@ function renderGallery(dataList) {
       + `<ul><li>类型: ${data.genres.join(" ")}</li>`
       + `<li>年代: ${data.year}</li>`
       + `<li><p>${data.summary.replace("\n","")}</p></li></ul>`
-      + `<a class="details-button" href="#">查看详情</a></div>`
-      + `<a href="#">`
+      + `<a class="details-button" href="./details.html?id=${data.id}">查看详情</a></div>`
+      + `<a href="./details.html?id=${data.id}">`
       + `<h3>${data.title}</h3>`
       + `</a>`;
     contents.appendChild(movieTile);
@@ -74,8 +74,10 @@ function handleSortingSwitch(event) {
   if (selectedSorting !== currentSorting) {
     for (let child of target.parentElement.children) {
       child.classList.replace("selected","unselected");
+      child.firstElementChild.classList.remove("selected-icon");
     }
     target.classList.replace("unselected","selected");
+    target.firstElementChild.classList.add("selected-icon");
     currentSorting = selectedSorting;
     getGalleryData();
   }
@@ -91,8 +93,10 @@ function handleGenreSwitch(event) {
   if (selectedGenre !== currentGenre) {
     for (let child of target.parentElement.children) {
       child.classList.replace("selected","unselected");
+      child.firstElementChild.classList.remove("selected-icon");
     }
     target.classList.replace("unselected","selected");
+    target.firstElementChild.classList.add("selected-icon");
     currentGenre = selectedGenre;
     getGalleryData();
   }

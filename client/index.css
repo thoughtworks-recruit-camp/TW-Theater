@@ -1,14 +1,11 @@
 * {
   margin: 0;
+  font-family: sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-main {
-  display: flex;
 }
 
 #top-bar {
@@ -25,6 +22,8 @@ main {
   width: 180px;
   height: calc(100vh - 64px);
   text-align: center;
+  background: #eee;
+  color: #666;
 }
 
 #side-bar ul,
@@ -35,33 +34,47 @@ main {
 
 #side-bar h2 {
   font-size: 16px;
-  margin: 20px;
+  margin-top: 30px;
+  color: #222;
+  font-weight: bold;
+}
+
+#side-bar hr {
+  width: 80%;
+  border: none;
+  border-top: 1px #ccc dashed;
+  margin: 12px auto;
 }
 
 #side-bar li {
   width: 80px;
-  font-size: 12px;
-  margin: 8px auto;
+  font-size: 16px;
+  margin: 12px auto;
   padding: 4px;
   border-radius: 2px;
-  color: white;
-  transition: 250ms;
+  transition: 200ms;
 }
 
 .unselected {
-  background-color: #888888;
+  background-color: #ddd;
 }
 
 .selected {
-  background-color: #444444;
+  background-color: #bbb;
+  color: #222;
+  font-weight: bold;
+}
+
+.selected-icon {
+  color: red;
 }
 
 #side-bar li:hover {
-  background-color: #aaaaaa;
+  background-color: #ccc;
 }
 
 #side-bar li:active {
-  background-color: #cccccc;
+  background-color: #aaa;
 }
 
 #side-bar p {
@@ -71,7 +84,6 @@ main {
 }
 
 #side-bar select {
-  /*width: 60px;*/
   font-size: 12px;
 }
 
@@ -83,11 +95,11 @@ main {
   position: absolute;
   left: 180px;
   top: 64px;
-  /*flex: 1 1 0;*/
   height: calc(100vh - 64px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  color: #444;
 }
 
 .movie-tile {
@@ -138,18 +150,22 @@ main {
   padding: 0;
   margin: 8px;
 }
-.brief-box ul{
+
+.brief-box ul {
   margin: auto;
-  padding: 12px;
+  padding: 8px;
 }
+
 .brief-box p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 12;
   word-break: break-all;
+  line-height: 14px;
 }
-.details-button{
+
+.details-button {
   display: block;
   margin: 0 auto;
   padding: 2px;
@@ -169,8 +185,10 @@ main {
 .details-button:active {
   background-color: #888888;
 }
+
 .movie-tile h3 {
-  font-family: serif;
+  margin: 8px;
+  font-weight: bold;
 }
 
 
