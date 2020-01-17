@@ -45,12 +45,31 @@ a {
 
 #movie-info-img {
   margin-right: 20px;
+  height: auto;
 }
 
 #movie-info-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+#movie-info-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  height: 340px;
+}
+.photo-header {
+  width: 120px;
+  text-align: center;
+}
+.photo-container{
+  display: flex;
+  align-items: center;
+}
+#movie-info-photos img{
+  margin: 8px;
 }
 
 #movie-recommended {
