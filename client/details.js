@@ -42,7 +42,7 @@ function renderDetails(obj) {
   $movieRecommended.innerHTML = "";
   for (let i = 0; i < recommendeds.length; i++) {
     $movieRecommended.innerHTML += `<div class="recommended">`
-      + `<img src="${recommendeds[i].image}" alt="sorry" />`
+      + `<img src="${recommendeds[i].image}" alt="poster" width="160px" height="240px"/>`
       + `<span class="recommended-name">${recommendeds[i].title}</span>`
       + `</div>`
   }
