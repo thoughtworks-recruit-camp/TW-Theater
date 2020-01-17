@@ -25,7 +25,8 @@ function getResultsDataFromKeyword() {
 //render results.html
 function renderResults(arr) {
   if (arr.length > 0) {
-    $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`;
+    $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`
+      + `<p>找到${arr.length}个相关结果</p>`;
     for (let i = 0; i < arr.length; i++) {
       $main.innerHTML += `<div class="search-div">`
       + `<a href="./details.html?id=${arr[i].id}">`
