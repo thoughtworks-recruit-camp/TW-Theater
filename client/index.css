@@ -47,9 +47,11 @@ main {
   color: white;
   transition: 250ms;
 }
-.unselected{
+
+.unselected {
   background-color: #888888;
 }
+
 .selected {
   background-color: #444444;
 }
@@ -61,18 +63,22 @@ main {
 #side-bar li:active {
   background-color: #cccccc;
 }
-#side-bar p{
+
+#side-bar p {
   font-size: 12px;
   margin-top: 20px;
   position: relative;
 }
-#side-bar select{
+
+#side-bar select {
   /*width: 60px;*/
   font-size: 12px;
 }
-#side-bar option{
+
+#side-bar option {
   font-size: 12px;
 }
+
 #contents {
   position: absolute;
   left: 180px;
@@ -93,6 +99,7 @@ main {
 }
 
 [class$="tag"] {
+  z-index: 2;
   display: inline-block;
   position: absolute;
   margin: 4px;
@@ -104,6 +111,7 @@ main {
 }
 
 .rating-tag {
+
   bottom: 60px;
   right: 0;
   width: 80px;
@@ -113,8 +121,65 @@ main {
   top: 0;
   left: 0;
   width: 40px;
+
 }
 
+.brief-box {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-color: #222222aa;
+  opacity: 0;
+  transition: opacity ease 250ms;
+  text-align: left;
+  font-size: 12px;
+  color: white;
+}
+
+.brief-box:hover {
+  opacity: 1;
+}
+
+.brief-box ul,
+.brief-box li {
+  list-style: none;
+  padding: 0;
+  margin: 4px;
+}
+.brief-box ul{
+  margin: auto;
+  padding: 20px;
+}
+.brief-box p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  word-break: break-all;
+}
+.details-button{
+  display: block;
+  margin: 0 auto;
+  padding: 2px;
+  width: 80px;
+  border-radius: 2px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #222222;
+  cursor: pointer;
+}
+
+
+.details-button:hover {
+  background-color: #444444;
+}
+
+.details-button:active {
+  background-color: #888888;
+}
 .movie-tile h3 {
   font-family: serif;
 }
