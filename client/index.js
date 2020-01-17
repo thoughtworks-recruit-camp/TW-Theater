@@ -1,16 +1,31 @@
 import {ajax} from "../src/ajax.js";
 
-const API_ROOT = "http://localhost:8888";
+const API_ROOT = "http://cloud.truman.pro:8888";
+const sortingValuesMap = new Map([
+  ["综合", "top"],
+  ["随机", "random"]]);
+let currentSorting = "top";
+let currentGenre = "全部";
+let currentLimit = 10;
 
 function ajaxFailed(err) {
   console.log(err);
 }
 
-function initGallery() {
+function getGalleryData() {
   ajax({
-    url: `${API_ROOT}/movies/random?count=16`,
+    url: `${API_ROOT}/movies?genre=${currentGenre}&sorting=${currentSorting}&limit=${currentLimit}`,
     method: "get",
     onSuccess: renderGallery,
+    onFail: ajaxFailed
+  })
+}
+
+function initGenres() {
+  ajax({
+    url: `${API_ROOT}/genres?top=10`,
+    method: "get",
+    onSuccess: renderGenres,
     onFail: ajaxFailed
   })
 }
@@ -24,18 +39,78 @@ function renderGallery(dataList) {
     let movieTile = document.createElement("article");
     movieTile.setAttribute("class", "movie-tile");
     movieTile.innerHTML
-      = `<a href="#">`
-      + `<img src="http://localhost:8888/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
-      + `</a>`
+      = `<img src="${API_ROOT}/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
       + `<span class="rating-tag">豆瓣评分: ${data.rating}</span>`
-      + `<span class="genre-tag">${data.firstGenre}</span>`
-      + `<a href="#">`
+      + `<div class="brief-box">`
+      + `<ul><li>类型: ${data.genres.join(" ")}</li>`
+      + `<li>年代: ${data.year}</li>`
+      + `<li><p>${data.summary.replace("\n","")}</p></li></ul>`
+      + `<a class="details-button" href="./details.html?id=${data.id}">查看详情</a></div>`
+      + `<a href="./details.html?id=${data.id}">`
       + `<h3>${data.title}</h3>`
-      + ` </a>`;
+      + `</a>`;
     contents.appendChild(movieTile);
   })
 }
 
+function renderGenres(dataList) {
+  let genresList = document.querySelector("#genres-list");
+  while (genresList.hasChildNodes()) {
+    genresList.removeChild(genresList.lastChild);
+  }
+  genresList.innerHTML += `<li class="selected"><span class="iconfont icon-tags selected-icon"></span>全部</li>`;
+  dataList.map(data => {
+    genresList.innerHTML += `<li class="unselected"><span class="iconfont icon-tag"></span>${data}</li>`;
+  });
+  genresList.addEventListener("click", handleGenreSwitch, false);
+}
+
+function handleSortingSwitch(event) {
+  let target = event.target;
+  if (target.tagName !== "LI") {
+    return;
+  }
+  let selectedSorting = sortingValuesMap.get(target.innerText);
+  if (selectedSorting !== currentSorting) {
+    for (let child of target.parentElement.children) {
+      child.classList.replace("selected","unselected");
+      child.firstElementChild.classList.remove("selected-icon");
+    }
+    target.classList.replace("unselected","selected");
+    target.firstElementChild.classList.add("selected-icon");
+    currentSorting = selectedSorting;
+    getGalleryData();
+  }
+  getGalleryData();
+}
+
+function handleGenreSwitch(event) {
+  let target = event.target;
+  if (target.tagName !== "LI") {
+    return;
+  }
+  let selectedGenre = target.innerText;
+  if (selectedGenre !== currentGenre) {
+    for (let child of target.parentElement.children) {
+      child.classList.replace("selected","unselected");
+      child.firstElementChild.classList.remove("selected-icon");
+    }
+    target.classList.replace("unselected","selected");
+    target.firstElementChild.classList.add("selected-icon");
+    currentGenre = selectedGenre;
+    getGalleryData();
+  }
+}
+
 window.onload = () => {
-  initGallery();
+  currentLimit=document.querySelector("#limit-select").value;  // refresh steady
+  initGenres();
+  getGalleryData();
+  let sortingOptions = document.querySelector("#sorting-options");
+  sortingOptions.addEventListener("click", handleSortingSwitch, false);
+  let limitSelect = document.querySelector("#limit-select");
+  limitSelect.onchange = () => {
+    currentLimit = limitSelect.value;
+    getGalleryData();
+  }
 };

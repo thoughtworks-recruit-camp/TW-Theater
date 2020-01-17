@@ -1,0 +1,51 @@
+{
+    "id": "1291841",
+    "title": "教父",
+    "original_title": "The Godfather",
+    "image": "http://localhost:8888/poster?id=1291841",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "year": "1972",
+    "summary": "40年代的美国，“教父”维托·柯里昂（马龙·白兰度 饰）是黑手党柯里昂家族的首领，带领家族从事非法的勾当，但同时他也是许多弱小平民的保护神，深得人们爱戴。\n因为拒绝了毒枭索洛索的毒品交易要求，柯里昂家族和纽约其他几个黑手党家族的矛盾激化。圣诞前夕，索洛索劫持了“教父”的参谋汤姆，并派人暗杀“教父”；因为内奸的出卖，“教父”的大儿子逊尼被仇家杀害；小儿子麦克（阿尔·帕西诺 饰）也被卷了进来，失去爱妻。黑手党家族之间的矛盾越来越白热化。\n年老的“教父”面对丧子之痛怎样统领全局？黑手党之间的仇杀如何落幕？谁是家族的内奸？谁又能够成为新一代的“教父”？\n血雨腥风和温情脉脉，在这部里程碑式的黑帮史诗巨片里真实上演。©豆瓣",
+    "score": 9.3,
+    "durations": [
+        "171 分钟"
+    ],
+    "casts": [
+        {
+          "avatars": {
+            "small": "http://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p17525.jpg",
+            "large": "http://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p17525.jpg",
+            "medium": "http://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p17525.jpg"
+          },
+          "name_en": "Tim Robbins",
+          "name": "蒂姆·罗宾斯",
+          "alt": "https://movie.douban.com/celebrity/1054521/",
+          "id": "1054521"
+        },
+        {
+          "avatars": {
+            "small": "http://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p34642.jpg",
+            "large": "http://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p34642.jpg",
+            "medium": "http://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p34642.jpg"
+          },
+          "name_en": "Morgan Freeman",
+          "name": "摩根·弗里曼",
+          "alt": "https://movie.douban.com/celebrity/1054534/",
+          "id": "1054534"
+        },
+        {
+          "avatars": {
+            "small": "http://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5837.jpg",
+            "large": "http://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5837.jpg",
+            "medium": "http://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5837.jpg"
+          },
+          "name_en": "Bob Gunton",
+          "name": "鲍勃·冈顿",
+          "alt": "https://movie.douban.com/celebrity/1041179/",
+          "id": "1041179"
+        }
+      ]
+}

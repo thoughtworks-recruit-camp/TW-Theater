@@ -1,104 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <link href="./index.css" rel="stylesheet"/>
+  <link href="./iconfont/iconfont.css" rel="stylesheet"/>
 </head>
 <body>
 
 <nav id="top-bar">
-  Top bar
-  <!--  卡1内容-->
+  <img src="./tw-logo.svg" alt="logo" class="logo"/>
+  <p id="page-title">思沃影院 TW Theater</p>
+  <div id="search-bar">
+    <input type="search" name="search" id="search-box" placeholder="搜索电影名"/>
+    <a href="#">
+      <input type="submit" name="search" id="search-button"/>
+    </a>
+  </div>
 </nav>
-<main>
-  <nav id="side-bar">
-    <ul id="genres-list">
-      <li>犯罪</li>
-      <li>剧情</li>
-      <li>科幻</li>
-      <li>喜剧</li>
-      <li>动画</li>
-      <li>奇幻</li>
-      <li>传记</li>
-      <li>动作</li>
-      <li>纪录片</li>
-      <li>爱情</li>
-      <li>儿童</li>
-      <li>悬疑</li>
-      <li>冒险</li>
-    </ul>
-  </nav>
-  <section id="contents">
-    <article class="movie-tile">
-      <a href="#">
-        <img src="http://localhost:8888/poster?id=1292052" alt="肖申克的救赎" width="200px" height="300px">
-      </a>
-      <span class="rating-tag">豆瓣评分: 9.7</span>
-      <span class="genre-tag">犯罪</span>
-      <a href="#">
-        <h3>肖申克的救赎</h3>
-      </a>
 
-    </article>
-    <article class="movie-tile">
-      <a href="#">
-        <img src="http://localhost:8888/poster?id=1292052" alt="肖申克的救赎" width="200px" height="300px">
-      </a>
-      <span class="rating-tag">豆瓣评分: 9.7</span>
-      <span class="genre-tag">犯罪</span>
-      <a href="#">
-        <h3>肖申克的救赎</h3>
-      </a>
+<nav id="side-bar">
+  <h2>排序方式</h2>
+  <hr/>
+  <ul id="sorting-options">
+    <li class="selected "><span class="iconfont icon-sort selected-icon"></span>综合</li>
+    <li class="unselected "><span class="iconfont icon-shuffle"></span>随机</li>
+  </ul>
+  <h2>分类</h2>
+  <hr/>
+  <ul id="genres-list">
+  </ul>
+  <hr/>
+  <p>
+    <label for="limit-select">显示数量</label>
+    <select name="show-limit" id="limit-select">
+      <option value="10" selected>10部</option>
+      <option value="20">20部</option>
+      <option value="0">无限制</option>
+    </select>
+  </p>
+</nav>
+<section id="contents">
 
-    </article>
-    <article class="movie-tile">
-      <a href="#">
-        <img src="http://localhost:8888/poster?id=26628357" alt="一个叫欧维的男人决定去死" width="200px" height="300px">
-      </a>
-      <span class="rating-tag">豆瓣评分: 8.8</span>
-      <span class="genre-tag">剧情</span>
-      <a href="#">
-        <h3>一个叫欧维的男人决定去死</h3>
-      </a>
-
-    </article>
-    <article class="movie-tile">
-      <a href="#">
-        <img src="http://localhost:8888/poster?id=26628357" alt="一个叫欧维的男人决定去死" width="200px" height="300px">
-      </a>
-      <span class="rating-tag">豆瓣评分: 8.8</span>
-      <span class="genre-tag">剧情</span>
-      <a href="#">
-        <h3>一个叫欧维的男人决定去死</h3>
-      </a>
-
-    </article>
-    <article class="movie-tile">
-      <a href="#">
-        <img src="http://localhost:8888/poster?id=26628357" alt="一个叫欧维的男人决定去死" width="200px" height="300px">
-      </a>
-      <span class="rating-tag">豆瓣评分: 8.8</span>
-      <span class="genre-tag">剧情</span>
-      <a href="#">
-        <h3>一个叫欧维的男人决定去死</h3>
-      </a>
-
-    </article>
-    <article class="movie-tile">
-      <a href="#">
-        <img src="http://localhost:8888/poster?id=26628357" alt="一个叫欧维的男人决定去死" width="200px" height="300px">
-      </a>
-      <span class="rating-tag">豆瓣评分: 8.8</span>
-      <span class="genre-tag">剧情</span>
-      <a href="#">
-        <h3>一个叫欧维的男人决定去死</h3>
-      </a>
-
-    </article>
-  </section>
-</main>
-<script type="module" src="../src/ajax.js"></script>
+</section>
 <script type="module" src="./index.js"></script>
 </body>
 </html>
