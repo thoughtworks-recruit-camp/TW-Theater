@@ -7,7 +7,6 @@ const $main = document.getElementById("main");
 function getLocationKeyword() {
   return window.location.search.split("=")[1];
 }
-console.log(getLocationKeyword())
 
 //get API by keyword
 function ajaxFailed(err) {
@@ -25,8 +24,7 @@ function getResultsDataFromKeyword() {
   
 //render results.html
 function renderResults(arr) {
-  console.log(1)
-  $main.innerHTML = `<h1>搜索: ` + `${getLocationKeyword()}</h1>`;
+  $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`;
   for (let i = 0; i < arr.length; i++) {
     $main.innerHTML += `<div class="search-div">`
     + `<a href="./details.html?id=${arr[i].id}">`
