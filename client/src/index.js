@@ -1,6 +1,6 @@
 import {ajax} from "./ajax.js";
 
-const API_ROOT = "http://cloud.truman.pro:8888";
+const API_ROOT = "http://localhost:8888";
 const sortingValuesMap = new Map([
   ["综合", "top"],
   ["随机", "random"]]);
@@ -12,7 +12,7 @@ function ajaxFailed(err) {
   console.log(err);
 }
 
-function getGalleryData() {
+function refreshData() {
   ajax({
     url: `${API_ROOT}/movies?genre=${currentGenre}&sorting=${currentSorting}&limit=${currentLimit}`,
     method: "get",
@@ -31,9 +31,9 @@ function initGenres() {
 }
 
 function renderGallery(dataList) {
-  let contents = document.querySelector("#contents");
-  while (contents.hasChildNodes()) {
-    contents.removeChild(contents.lastChild);
+  let gallery = document.querySelector("#gallery");
+  while (gallery.hasChildNodes()) {
+    gallery.removeChild(gallery.lastChild);
   }
   dataList.map(data => {
     let movieTile = document.createElement("article");
@@ -44,12 +44,12 @@ function renderGallery(dataList) {
       + `<div class="brief-box">`
       + `<ul><li>类型: ${data.genres.join(" ")}</li>`
       + `<li>年代: ${data.year}</li>`
-      + `<li><p>${data.summary.replace("\n","")}</p></li></ul>`
+      + `<li><p>${data.summary.replace("\n", "")}</p></li></ul>`
       + `<a class="details-button" href="./details.html?id=${data.id}">查看详情</a></div>`
       + `<a href="./details.html?id=${data.id}">`
       + `<h3>${data.title}</h3>`
       + `</a>`;
-    contents.appendChild(movieTile);
+    gallery.appendChild(movieTile);
   })
 }
 
@@ -73,15 +73,14 @@ function handleSortingSwitch(event) {
   let selectedSorting = sortingValuesMap.get(target.innerText);
   if (selectedSorting !== currentSorting) {
     for (let child of target.parentElement.children) {
-      child.classList.replace("selected","unselected");
+      child.classList.remove("selected");
       child.firstElementChild.classList.remove("selected-icon");
     }
-    target.classList.replace("unselected","selected");
+    target.classList.add("selected");
     target.firstElementChild.classList.add("selected-icon");
     currentSorting = selectedSorting;
-    getGalleryData();
+    refreshData();
   }
-  getGalleryData();
 }
 
 function handleGenreSwitch(event) {
@@ -92,25 +91,25 @@ function handleGenreSwitch(event) {
   let selectedGenre = target.innerText;
   if (selectedGenre !== currentGenre) {
     for (let child of target.parentElement.children) {
-      child.classList.replace("selected","unselected");
+      child.classList.remove("selected");
       child.firstElementChild.classList.remove("selected-icon");
     }
-    target.classList.replace("unselected","selected");
+    target.classList.add("selected");
     target.firstElementChild.classList.add("selected-icon");
     currentGenre = selectedGenre;
-    getGalleryData();
+    refreshData();
   }
 }
 
 window.onload = () => {
-  currentLimit=document.querySelector("#limit-select").value;  // refresh steady
+  currentLimit = document.querySelector("#limit-select").value;  // refresh steady
   initGenres();
-  getGalleryData();
+  refreshData();
   let sortingOptions = document.querySelector("#sorting-options");
   sortingOptions.addEventListener("click", handleSortingSwitch, false);
   let limitSelect = document.querySelector("#limit-select");
   limitSelect.onchange = () => {
     currentLimit = limitSelect.value;
-    getGalleryData();
+    refreshData();
   }
 };

@@ -101,7 +101,9 @@ DATA_SOURCE.finishHandler.on("finished", () => {
       response.setHeader('Access-Control-Allow-Methods', '*');
       response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
       switch (parsedUrl.pathname) {
-        case "/movies" : {
+        case
+        "/movies"
+        : {
           let [genre, sorting, limit]
             = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.limit)];
           let resData =
@@ -124,7 +126,9 @@ DATA_SOURCE.finishHandler.on("finished", () => {
           response.end(JSON.stringify(resData.map(toIndexData)));
           break;
         }
-        case "/details"   : {
+        case
+        "/details"
+        : {
           let id = parsedUrl.query.id;
           http.get(`${REMOTE_ROOT}/subject/${id}?apikey=${KEY}`, (res) => {
             let rawData = "";
@@ -141,21 +145,10 @@ DATA_SOURCE.finishHandler.on("finished", () => {
           break;
         }
         case
-        "/genres"
-        : {
-          let count = parsedUrl.query.top;
-          response.statusCode = 200;
-          response.setHeader('Content-Type', 'Application/JSON');
-          response.end(JSON.stringify(Array.from(genreIdMap.keys())
-            .sort(((a, b) => genreIdMap.get(b).length - genreIdMap.get(a).length))
-            .slice(0, count)));
-          break;
-        }
-        case
         "/poster"
         : {
           response.statusCode = 200;
-          response.setHeader("Cache-Control", "max-age=60");
+          response.setHeader("Cache-Control", "max-age=3600");
           response.end(imagesDb.get(parsedUrl.query.id));
           break;
         }
@@ -166,6 +159,18 @@ DATA_SOURCE.finishHandler.on("finished", () => {
           response.statusCode = 200;
           response.setHeader('Content-Type', 'Application/JSON');
           response.end(JSON.stringify(resData.map(toSearchData)));
+          break;
+        }
+        case
+        "/genres"
+        : {
+          let count = parsedUrl.query.top;
+          response.statusCode = 200;
+          response.setHeader('Content-Type', 'Application/JSON');
+          response.end(JSON.stringify(Array.from(genreIdMap.keys())
+            .sort(((a, b) => genreIdMap.get(b).length - genreIdMap.get(a).length))
+            .slice(0, count)));
+          break;
         }
       }
     }
@@ -173,7 +178,7 @@ DATA_SOURCE.finishHandler.on("finished", () => {
   proxyServer.listen(PORT, () => {
     console.log(`The DB Server is running at ${API_ROOT}`);
   });
-})
-;
+});
+
 
 
