@@ -15,6 +15,7 @@ a {
   background-color: gray;
   padding: 5px;
   border-radius: 3px;
+  width: fit-content;
 }
 
 #navigation {

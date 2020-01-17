@@ -40,6 +40,8 @@ body {
 
 .search-div img {
   margin-right: 20px;
+  width: 135px;
+  height: 200px;
 }
 
 .search-info {

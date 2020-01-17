@@ -33,7 +33,7 @@ function getDetailsDataFromId() {
 //render details.html
 function renderDetails(obj) {
   $movieTitle.innerHTML = isCommonName(obj.title, obj.original_title) + " " + obj.year;
-  $movieInfoImg.setAttribute("src", obj.image);
+  $movieInfoImg.setAttribute("src", obj.images);
   $infoContentGenres.innerHTML = "类型: " + updateArr(obj.genres);
   $infoContentPubdates.innerHTML = "上映日期: " + updateArr(obj.pubdates);
   $infoContentDurations.innerHTML = "片长: " + updateArr(obj.durations);
