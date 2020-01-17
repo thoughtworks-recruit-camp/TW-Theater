@@ -22,7 +22,7 @@ main {
 #side-bar {
   position: fixed;
   top: 64px;
-  flex: 0 0 120px;
+  width: 180px;
   height: calc(100vh - 64px);
   text-align: center;
 }
@@ -39,8 +39,9 @@ main {
 }
 
 #side-bar li {
+  width: 100px;
   font-size: 12px;
-  margin: 8px;
+  margin: 8px auto;
   padding: 4px;
   border-radius: 2px;
   color: white;
@@ -60,10 +61,21 @@ main {
 #side-bar li:active {
   background-color: #cccccc;
 }
-
+#side-bar p{
+  font-size: 12px;
+  margin-top: 20px;
+  position: relative;
+}
+#side-bar select{
+  /*width: 60px;*/
+  font-size: 12px;
+}
+#side-bar option{
+  font-size: 12px;
+}
 #contents {
   position: absolute;
-  left: 120px;
+  left: 180px;
   top: 64px;
   /*flex: 1 1 0;*/
   height: calc(100vh - 64px);

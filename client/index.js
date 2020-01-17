@@ -1,14 +1,17 @@
 import {ajax} from "../src/ajax.js";
 
 const API_ROOT = "http://localhost:8888";
+let currentSorting = "top";
+let currentGenre = "全部";
+let currentLimit = 10;
 
 function ajaxFailed(err) {
   console.log(err);
 }
 
-function initGallery() {
+function getGalleryData() {
   ajax({
-    url: `${API_ROOT}/movies/random?count=16`,
+    url: `${API_ROOT}/movies?genre=${currentGenre}&sorting=${currentSorting}&limit=${currentLimit}`,
     method: "get",
     onSuccess: renderGallery,
     onFail: ajaxFailed
@@ -50,6 +53,7 @@ function renderGenres(dataList) {
   while (genresList.hasChildNodes()) {
     genresList.removeChild(genresList.lastChild);
   }
+  genresList.innerHTML += `<li class="selected">全部</li>`;
   dataList.map(data => {
     genresList.innerHTML += `<li class="unselected">${data}</li>`;
   });
@@ -65,16 +69,16 @@ function handleGenreSwitch(event) {
     child.setAttribute("class", "unselected");
   }
   target.setAttribute("class", "selected");
-  let genreSelected = target.innerText;
-  ajax({
-    url: `${API_ROOT}/movies/genre?genre=${genreSelected}&sorting=top&count=25`,
-    method: "get",
-    onSuccess: renderGallery,
-    onFail: ajaxFailed
-  });
+  currentGenre = target.innerText;
+  getGalleryData();
 }
 
 window.onload = () => {
-  initGallery();
+  getGalleryData();
   initGenres();
+  let limitSelect = document.querySelector("#limit-select");
+  limitSelect.onchange = () => {
+    currentLimit = limitSelect.value;
+    getGalleryData();
+  }
 };

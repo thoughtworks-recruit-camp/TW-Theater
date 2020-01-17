@@ -15,13 +15,20 @@
   <nav id="side-bar">
     <h2>排序方式</h2>
     <ul id="sorting-options">
-      <li>随机</li>
-      <li>综合</li>
+      <li class="unselected">随机</li>
+      <li class="unselected">综合</li>
     </ul>
     <h2>分类</h2>
     <ul id="genres-list">
-
     </ul>
+    <p>
+      <label for="limit-select">显示数量</label>
+      <select name="show-limit" id="limit-select">
+        <option value="10" selected>10部</option>
+        <option value="20">20部</option>
+        <option value="0">无限制</option>
+      </select>
+    </p>
   </nav>
   <section id="contents">
     <article class="movie-tile">
