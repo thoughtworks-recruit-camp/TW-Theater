@@ -18,11 +18,11 @@ li {
   position: fixed;
   width: 100%;
   height: 64px;
-  background: #eeeeee66;
+  background: #eee6;
   z-index: 3;
   display: flex;
   justify-content: space-between;
-  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 6px 3px #0004;
 }
 
 #top-bar:before {
@@ -32,7 +32,7 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fffb;
   z-index: -1;
   filter: blur(20px);
 }
@@ -168,7 +168,7 @@ li {
 }
 
 .movie-tile img {
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 1px #0004;
 }
 
 .rating-tag {
@@ -177,7 +177,7 @@ li {
   position: absolute;
   margin: 4px;
   padding: 4px;
-  background: rgba(0, 0, 0, 0.8);
+  background: #000b;
   border-radius: 2px;
   color: white;
   font-size: 12px;
@@ -193,7 +193,7 @@ li {
   left: 0;
   width: 200px;
   height: 300px;
-  background-color: #222222aa;
+  background-color: #222a;
   opacity: 0;
   transition: opacity ease 250ms;
   text-align: left;
@@ -234,23 +234,24 @@ li {
   border-radius: 2px;
   font-size: 16px;
   text-align: center;
-  background-color: #222222;
+  background-color: #222;
   cursor: pointer;
 }
 
 
 .details-button:hover {
-  background-color: #444444;
+  background-color: #444;
 }
 
 .details-button:active {
-  background-color: #888888;
+  background-color: #888;
 }
 
 .movie-tile h3 {
   margin: 8px;
   font-weight: bold;
-  text-shadow: 1px 1px #66666666;
+  color: #333;
+  text-shadow: 1px 1px #6666;
 }
 
 
