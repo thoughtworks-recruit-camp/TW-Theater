@@ -28,7 +28,8 @@ function toIndexData(dbData) {
     rating: dbData.rating.average,
     firstGenre: dbData.genres[0],
     year: dbData.year,
-    image: dbData.images.large
+    image: `http://localhost:8888/poster?id=${dbData.id}`,
+    summary: dbData.summary
   }
 }
 
@@ -40,7 +41,7 @@ function toRecItems(dbData) {
   }
 }
 
-function toSearchResult(dbData){
+function toSearchResult(dbData) {
   return {
     id: dbData.id,
     title: dbData.title,
@@ -50,6 +51,7 @@ function toSearchResult(dbData){
     year: dbData.year,
   }
 }
+
 METHOD.handler.on("finished", () => {
   const moviesDb = METHOD.data;
   Array.from(moviesDb.entries())
@@ -65,7 +67,6 @@ METHOD.handler.on("finished", () => {
       response.setHeader('Access-Control-Allow-Origin', '*');
       response.setHeader('Access-Control-Allow-Methods', '*');
       response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-      // response.setHeader('Content-Type', 'Application/JSON');
       switch (parsedUrl.pathname) {
         case "/movies" : {
           let [genre, sorting, limit]
@@ -90,50 +91,6 @@ METHOD.handler.on("finished", () => {
           response.end(JSON.stringify(resData.map(toIndexData)));
           break;
         }
-        // case
-        // "/movies/top"
-        // : {
-        //   let count = Number(parsedUrl.query.count);
-        //   if (count > MAX_RANDOM_N) {
-        //     response.statusCode = 413;
-        //     response.end(JSON.stringify({CODE: 413}));
-        //   }
-        //   response.statusCode = 200;
-        //   response.setHeader('Content-Type', 'Application/JSON');
-        //   response.end(JSON.stringify(Array.from(moviesDb.values()).slice(0, count).map(toIndexData)));
-        //   break;
-        // }
-        // case
-        // "/movies/random"
-        // :
-        //   let count = Number(parsedUrl.query.count);
-        //   if (count > MAX_RANDOM_N) {
-        //     response.statusCode = 413;
-        //     response.end("CODE: 413");
-        //   }
-        //   let randomSubjects = getRandomElements(Array.from(moviesDb.values()), count);
-        //   response.statusCode = 200;
-        //   response.setHeader('Content-Type', 'Application/JSON');
-        //   response.end(JSON.stringify(randomSubjects.map(toIndexData)));
-        //   break;
-        // case        "/movies/genre"      : {
-        //   let [genre, sorting, count]
-        //     = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.count)];
-        //   if (count > MAX_RANDOM_N) {
-        //     response.statusCode = 413;
-        //     response.end(JSON.stringify({CODE: 413}));
-        //   }
-        //   let resData;
-        //   if (sorting === "top") {
-        //     resData = genreIdMap.get(genre).slice(0, count).map(id => moviesDb.get(id)).map(toIndexData);
-        //   } else if (sorting === "random") {
-        //     resData = getRandomElements(genreIdMap.get(genre), count).map(id => moviesDb.get(id)).map(toIndexData);
-        //   }
-        //   response.statusCode = 200;
-        //   response.setHeader('Content-Type', 'Application/JSON');
-        //   response.end(JSON.stringify(resData));
-        //   break;
-        // }
         case "/details"   : {
           let id = parsedUrl.query.id;
           http.get(`http://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`, (res) => {
