@@ -45,8 +45,8 @@ function renderGallery(dataList) {
       + `<ul><li>类型: ${data.genres.join(" ")}</li>`
       + `<li>年代: ${data.year}</li>`
       + `<li><p>${data.summary.replace("\n", "")}</p></li></ul>`
-      + `<a class="details-button" href="./details.html?id=${data.id}">查看详情</a></div>`
-      + `<a href="./details.html?id=${data.id}">`
+      + `<a class="details-button" href="./details.html?id=${data.id}" target="_blank">查看详情</a></div>`
+      + `<a href="./details.html?id=${data.id}" target="_blank">`
       + `<h3>${data.title}</h3>`
       + `</a>`;
     gallery.appendChild(movieTile);
