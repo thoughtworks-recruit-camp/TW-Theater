@@ -52,22 +52,22 @@ METHOD.handler.on("finished", () => {
     // response.setHeader('Content-Type', 'Application/JSON');
     switch (parsedUrl.pathname) {
       case "/movies" : {
-        let [genre, sorting, count]
-          = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.count)];
+        let [genre, sorting, limit]
+          = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.limit)];
         let resData =
           genre === "all" ?
             Array.from(moviesDb.values())
             : genreIdMap.get(genre).map(id => moviesDb.get(id));
         if (sorting === "top") {
           resData =
-            count === 0 ?
+            limit === 0 ?
               resData
-              : resData.slice(0, count);
+              : resData.slice(0, limit);
         } else if (sorting === "random") {
           resData =
-            count === 0 ?
+            limit === 0 ?
               getRandomElements(resData, resData.length)
-              : getRandomElements(resData, count);
+              : getRandomElements(resData, limit);
         }
         response.statusCode = 200;
         response.setHeader('Content-Type', 'Application/JSON');

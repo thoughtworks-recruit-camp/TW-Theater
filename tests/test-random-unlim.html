@@ -10,7 +10,7 @@
   import {ajax} from "../src/ajax.js";
 
   ajax({
-    url: "http://localhost:8888/topMovies/random?count=10",
+    url: "http://localhost:8888/movies?genre=all&sorting=random&limit=10",
     method: "get",
     onSuccess: show,
     onFail: show

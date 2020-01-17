@@ -2,22 +2,21 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>Test-All</title>
+  <title>Test-Random-Unlimited</title>
 </head>
 <body>
-<!--<script type="module" src="../src/ajax.js"-->
 <script type="module">
   import {ajax} from "../src/ajax.js";
 
   ajax({
-    url: "http://localhost:8888/topMovies/all",
+    url: "http://localhost:8888/movies?genre=all&sorting=random&limit=0",
     method: "get",
     onSuccess: show,
     onFail: show
   });
 
   function show(responseText) {
-    document.body.innerHTML=(`<pre>${JSON.stringify(responseText, null, 2)}</pre>`);
+    document.body.innerHTML = (`<pre>${JSON.stringify(responseText, null, 2)}</pre>`);
   }
 </script>
 </body>
