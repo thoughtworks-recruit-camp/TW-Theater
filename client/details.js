@@ -1,4 +1,4 @@
-// import {ajax} from "../src/ajax.js";
+import {ajax} from "../src/ajax.js";
 
 const API_ROOT = "http://localhost:8888";
 const $movieTitle = document.getElementById("movie-title");
@@ -15,17 +15,17 @@ let obj = {
   "title": "肖申克的救赎",
   "original_title": "The Shawshank Redemption",
   "year": "1994",
-  "image":  "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg",
+  "image": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg",
   "genres": [
-      "犯罪",
-      "剧情"
+    "犯罪",
+    "剧情"
   ],
   "pubdates": [
-      "1994-09-10(多伦多电影节)",
-      "1994-10-14(美国)"
+    "1994-09-10(多伦多电影节)",
+    "1994-10-14(美国)"
   ],
   "durations": [
-      "142分钟"
+    "142分钟"
   ],
   "score": 9.7,
   "summary": `20世纪40年代末，小有成就的青年银行家安迪（蒂姆·罗宾斯 Tim Robbins 饰）因涉嫌杀害妻子及她的情人而锒铛入狱。
@@ -71,28 +71,26 @@ let obj = {
 
 //get id from location, return id
 function getLocationId() {
-  let href = window.location.href;
-  let index = href.indexOf("id=");
-  return href.slice(index + 3);
+  return window.location.search.split("=")[1];
 }
 
 //get API by id
-// function ajaxFailed(err) {
-//   console.log(err);
-// }
+function ajaxFailed(err) {
+  console.log(err);
+}
 
-// function getDetailsDataFromId() {
-//   ajax({
-//     url: `${API_ROOT}/details?id=${getLocationId}`,
-//     method: "get",
-//     onSuccess: renderDetails,
-//     onFail: ajaxFailed
-//   })
-// }
+function getDetailsDataFromId() {
+  ajax({
+    url: `${API_ROOT}/details?id=${getLocationId()}`,
+    method: "get",
+    onSuccess: renderDetails,
+    onFail: ajaxFailed
+  })
+}
 
 //render details.html
 function renderDetails(obj) {
-  $movieTitle.innerHTML = obj.title + " " +obj.original_title + " " + obj.year;
+  $movieTitle.innerHTML = obj.title + " " + obj.original_title + " " + obj.year;
   $movieInfoImg.setAttribute("src", obj.image);
   $infoContentGenres.innerHTML = "类型: " + updateGenres(obj.genres);
   $infoContentPubdates.innerHTML = "上映日期: " + obj.pubdates;
@@ -103,9 +101,9 @@ function renderDetails(obj) {
   $movieRecommended.innerHTML = "";
   for (let i = 0; i < recommendeds.length; i++) {
     $movieRecommended.innerHTML += `<div class="recommended">`
-    + `<img src="${recommendeds[i].images}" alt="sorry" />`
-    + `<span class="recommended-name">${recommendeds[i].title}</span>`
-    + `</div>`
+      + `<img src="${recommendeds[i].image}" alt="sorry" />`
+      + `<span class="recommended-name">${recommendeds[i].title}</span>`
+      + `</div>`
   }
 }
 
@@ -115,10 +113,10 @@ function updateGenres(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     res += arr[i] + " / ";
   }
-  return res + arr[arr.length-1];
+  return res + arr[arr.length - 1];
 }
 
 window.onload = () => {
-  renderDetails(obj);
+  getDetailsDataFromId();
   console.log(1)
 };
