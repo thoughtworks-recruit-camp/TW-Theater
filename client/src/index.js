@@ -73,10 +73,10 @@ function handleSortingSwitch(event) {
   let selectedSorting = sortingValuesMap.get(target.innerText);
   if (selectedSorting !== currentSorting) {
     for (let child of target.parentElement.children) {
-      child.classList.replace("selected","unselected");
+      child.classList.remove("selected");
       child.firstElementChild.classList.remove("selected-icon");
     }
-    target.classList.replace("unselected","selected");
+    target.classList.add("selected");
     target.firstElementChild.classList.add("selected-icon");
     currentSorting = selectedSorting;
     refreshData();
@@ -91,10 +91,10 @@ function handleGenreSwitch(event) {
   let selectedGenre = target.innerText;
   if (selectedGenre !== currentGenre) {
     for (let child of target.parentElement.children) {
-      child.classList.replace("selected","unselected");
+      child.classList.remove("selected");
       child.firstElementChild.classList.remove("selected-icon");
     }
-    target.classList.replace("unselected","selected");
+    target.classList.add("selected");
     target.firstElementChild.classList.add("selected-icon");
     currentGenre = selectedGenre;
     refreshData();

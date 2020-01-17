@@ -140,17 +140,7 @@ DATA_SOURCE.finishHandler.on("finished", () => {
           });
           break;
         }
-        case
-        "/genres"
-        : {
-          let count = parsedUrl.query.top;
-          response.statusCode = 200;
-          response.setHeader('Content-Type', 'Application/JSON');
-          response.end(JSON.stringify(Array.from(genreIdMap.keys())
-            .sort(((a, b) => genreIdMap.get(b).length - genreIdMap.get(a).length))
-            .slice(0, count)));
-          break;
-        }
+
         case
         "/poster"
         : {
@@ -166,6 +156,18 @@ DATA_SOURCE.finishHandler.on("finished", () => {
           response.statusCode = 200;
           response.setHeader('Content-Type', 'Application/JSON');
           response.end(JSON.stringify(resData.map(toSearchData)));
+          break;
+        }
+        case
+        "/genres"
+        : {
+          let count = parsedUrl.query.top;
+          response.statusCode = 200;
+          response.setHeader('Content-Type', 'Application/JSON');
+          response.end(JSON.stringify(Array.from(genreIdMap.keys())
+            .sort(((a, b) => genreIdMap.get(b).length - genreIdMap.get(a).length))
+            .slice(0, count)));
+          break;
         }
       }
     }

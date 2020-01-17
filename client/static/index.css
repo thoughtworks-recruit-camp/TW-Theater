@@ -113,9 +113,6 @@ a {
   padding: 4px;
   border-radius: 2px;
   transition: 200ms;
-}
-
-.unselected {
   background-color: #ddd;
 }
 
