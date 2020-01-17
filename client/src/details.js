@@ -1,4 +1,4 @@
-import {ajax} from "../src/ajax.js";
+import {ajax} from "./ajax.js";
 
 const API_ROOT = "http://localhost:8888";
 const $movieTitle = document.getElementById("movie-title");
