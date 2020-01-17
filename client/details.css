@@ -39,7 +39,6 @@ body {
 }
 
 #movie-info-img {
-  width: 150px;
   margin-right: 20px;
 }
 
@@ -62,6 +61,7 @@ body {
 
 .recommended img {
   width: 150px;
+  margin: 0 auto;
 }
 
 .recommended-name {

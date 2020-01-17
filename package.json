@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thoughtworks-recruit-camp/TW-Theater/issues"
   },
-  "homepage": "https://github.com/Non-computer-training/tw-movie-theater#readme"
+  "homepage": "https://github.com/Non-computer-training/tw-movie-theater#readme",
+  "devDependencies": {
+    "json-server": "^0.15.1"
+  }
 }
