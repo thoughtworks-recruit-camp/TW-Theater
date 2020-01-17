@@ -1,6 +1,6 @@
 import {ajax} from "./ajax.js";
 
-const API_ROOT = "http://cloud.truman.pro:8888";
+const API_ROOT = "http://localhost:8888";
 const sortingValuesMap = new Map([
   ["综合", "top"],
   ["随机", "random"]]);
