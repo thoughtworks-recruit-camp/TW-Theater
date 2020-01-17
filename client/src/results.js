@@ -3,16 +3,14 @@ import {ajax} from "./ajax.js";
 const API_ROOT = "http://localhost:8888";
 const $main = document.getElementById("main");
 
-//get keyword from location
 function getLocationKeyword() {
   return window.location.search.split("=")[1];
 }
 
-//get API by keyword
 function ajaxFailed(err) {
     console.log(err);
 }
-  
+
 function getResultsDataFromKeyword() {
   ajax({
     url: `${API_ROOT}/search?keyword=${getLocationKeyword()}`,
@@ -22,7 +20,6 @@ function getResultsDataFromKeyword() {
   })
 }
   
-//render results.html
 function renderResults(arr) {
   if (arr.length > 0) {
     $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`;

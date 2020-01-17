@@ -3,20 +3,15 @@ import {ajax} from "./ajax.js";
 const API_ROOT = "http://localhost:8888";
 const $movieTitle = document.getElementById("movie-title");
 const $movieInfoImg = document.getElementById("movie-info-img");
-const $infoContentGenres = document.getElementById("info-content-genres");
-const $infoContentPubdates = document.getElementById("info-content-pubdates");
-const $infoContentDurations = document.getElementById("info-content-durations");
-const $infoContentScores = document.getElementById("info-content-scores");
+const $movieInfoContent = document.getElementById("movie-info-content");
 const $moviePlot = document.getElementById("movie-plot");
 const $movieRecommended = document.getElementById("movie-recommended");
 const $movieInfoPhotos = document.getElementById("movie-info-photos");
 
-//get id from location, return id
 function getLocationId() {
   return window.location.search.split("=")[1];
 }
 
-//get API by id
 function ajaxFailed(err) {
   console.log(err);
 }
@@ -30,14 +25,17 @@ function getDetailsDataFromId() {
   })
 }
 
-//render details.html
 function renderDetails(obj) {
   $movieTitle.innerHTML = isCommonName(obj.title, obj.original_title) + " " + obj.year;
   $movieInfoImg.setAttribute("src", obj.image);
-  $infoContentGenres.innerHTML = "类型: " + updateArr(obj.genres);
-  $infoContentPubdates.innerHTML = "上映日期: <br/>" + updateArr(obj.pubdates);
-  $infoContentDurations.innerHTML = "片长: " + updateArr(obj.durations);
-  $infoContentScores.innerHTML = "豆瓣评分: " + obj.score;
+  $movieInfoContent.innerHTML += `<span id="info-content-genres">`
+  + `类型: ` + `${updateArr(obj.genres)}</span>`
+  + `<span id="info-content-pubdates">`
+  + `上映日期: <br/>` + `${updateArr(obj.pubdates)}</span>`
+  + `<span id="info-content-durations">`
+  + `片长: ` + `${updateArr(obj.durations)}</span>`
+  + `<span id="info-content-scores">`
+  + `豆瓣评分: ` + `${obj.score}</span>`;
   $movieInfoPhotos.innerHTML +=
     `<div class="photo-header">`
     + `<h2>剧照</h2>`
@@ -61,7 +59,6 @@ function renderDetails(obj) {
   }
 }
 
-//update
 function isCommonName(name1, name2) {
   if (name1 === name2) {
     return name1;
