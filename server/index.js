@@ -55,7 +55,7 @@ METHOD.handler.on("finished", () => {
         let [genre, sorting, limit]
           = [parsedUrl.query.genre, parsedUrl.query.sorting, Number(parsedUrl.query.limit)];
         let resData =
-          genre === "all" ?
+          genre === "全部" ?
             Array.from(moviesDb.values())
             : genreIdMap.get(genre).map(id => moviesDb.get(id));
         if (sorting === "top") {
