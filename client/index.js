@@ -1,6 +1,9 @@
 import {ajax} from "../src/ajax.js";
 
 const API_ROOT = "http://localhost:8888";
+const sortingValuesMap = new Map([
+  ["综合", "top"],
+  ["随机", "random"]]);
 let currentSorting = "top";
 let currentGenre = "全部";
 let currentLimit = 10;
@@ -60,6 +63,15 @@ function renderGenres(dataList) {
   genresList.addEventListener("click", handleGenreSwitch, false);
 }
 
+function handleSortingSwitch(event) {
+  let target = event.target;
+  if (target.tagName !== "LI") {
+    return;
+  }
+  currentSorting = sortingValuesMap.get(target.innerText);
+  getGalleryData();
+}
+
 function handleGenreSwitch(event) {
   let target = event.target;
   if (target.tagName !== "LI") {
@@ -74,8 +86,10 @@ function handleGenreSwitch(event) {
 }
 
 window.onload = () => {
-  getGalleryData();
   initGenres();
+  getGalleryData();
+  let sortingOptions = document.querySelector("#sorting-options");
+  sortingOptions.addEventListener("click", handleSortingSwitch, false);
   let limitSelect = document.querySelector("#limit-select");
   limitSelect.onchange = () => {
     currentLimit = limitSelect.value;
