@@ -133,7 +133,7 @@ METHOD.handler.on("finished", () => {
               "title": briefData.title,
               "original_title": briefData.original_title,
               "year": briefData.year,
-              "images": idPosterMap.get(id),
+              "images": `http://localhost:8888/poster?id=${briefData.id}`,
               "genres": briefData.genres,
               "pubdates": briefData.pubdates,
               "durations": briefData.durations,
