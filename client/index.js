@@ -1,6 +1,6 @@
 import {ajax} from "../src/ajax.js";
 
-const API_ROOT = "http://localhost:8888";
+const API_ROOT = "http://cloud.truman.pro:8888";
 const sortingValuesMap = new Map([
   ["综合", "top"],
   ["随机", "random"]]);
@@ -39,7 +39,7 @@ function renderGallery(dataList) {
     let movieTile = document.createElement("article");
     movieTile.setAttribute("class", "movie-tile");
     movieTile.innerHTML
-      = `<img src="http://localhost:8888/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
+      = `<img src="${API_ROOT}/poster?id=${data.id}" alt="${data.title}" width="200px" height="300px">`
       + `<span class="rating-tag">豆瓣评分: ${data.rating}</span>`
       + `<div class="brief-box">`
       + `<ul><li>类型: ${data.genres.join(" ")}</li>`
@@ -103,6 +103,7 @@ function handleGenreSwitch(event) {
 }
 
 window.onload = () => {
+  currentLimit=document.querySelector("#limit-select").value;  // refresh steady
   initGenres();
   getGalleryData();
   let sortingOptions = document.querySelector("#sorting-options");
