@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   font-family: sans-serif;
@@ -13,7 +14,7 @@ a {
   width: 100%;
   height: 64px;
   background: #eeeeee66;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.3);
@@ -110,17 +111,17 @@ a {
 }
 
 .selected {
-  background-color: #bbb;
+  background-color: #ccc;
   color: #222;
   font-weight: bold;
 }
 
 .selected-icon {
-  color: red;
+  color: #c00;
 }
 
 #side-bar li:hover {
-  background-color: #ccc;
+  background-color: #bbb;
 }
 
 #side-bar li:active {
