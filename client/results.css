@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.details-subtitle {
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#navigation {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#web-name {
+  color: white;
+  padding: 5px 0px 5px 90px;
+}
+
+#search {
+  padding: 5px 90px 5px 0px;;
+}
