@@ -73,7 +73,10 @@ function toSearchData(dbData) {
     image: `${API_ROOT}/poster?id=${dbData.id}`,
     genres: dbData.genres,
     year: dbData.year,
-    summary: dbData.summary
+    summary: dbData.summary,
+    rating: dbData.rating.average,
+    duration: dbData.duration,
+    casts: dbData.casts.map(cast => cast.name)
   }
 }
 
