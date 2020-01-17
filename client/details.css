@@ -3,6 +3,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  color: #444;
 }
 
 a {
@@ -11,11 +13,12 @@ a {
 }
 
 .details-subtitle {
-  color: white;
-  background-color: gray;
-  padding: 5px;
+  align-self: flex-start;
+  background-color: #bbb;
+  color: #222;
+  padding: 6px 12px;
   border-radius: 3px;
-  width: fit-content;
+  width: auto;
 }
 
 #navigation {
@@ -40,36 +43,51 @@ a {
   padding: 20px 90px
 }
 
+#movie-title {
+  color: #222;
+}
+
 #movie-info {
   display: flex;
 }
 
 #movie-info-img {
+  flex: 0 0 300px;
   margin-right: 20px;
-  height: auto;
 }
 
 #movie-info-content {
+  flex: 0 0 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 #movie-info-photos {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   overflow: hidden;
   height: 340px;
 }
+
 .photo-header {
   width: 120px;
+  margin: 20px;
   text-align: center;
 }
-.photo-container{
+
+.photo-header a {
+  color: #888;
+}
+
+.photo-container {
   display: flex;
   align-items: center;
 }
-#movie-info-photos img{
+
+#movie-info-photos img {
   margin: 8px;
 }
 
@@ -82,6 +100,7 @@ a {
   flex-direction: column;
   margin: 10px;
   flex-grow: 1;
+  text-align: center;
 }
 
 .recommended-name {

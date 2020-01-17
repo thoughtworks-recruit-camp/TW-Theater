@@ -35,13 +35,13 @@ function renderDetails(obj) {
   $movieTitle.innerHTML = isCommonName(obj.title, obj.original_title) + " " + obj.year;
   $movieInfoImg.setAttribute("src", obj.image);
   $infoContentGenres.innerHTML = "类型: " + updateArr(obj.genres);
-  $infoContentPubdates.innerHTML = "上映日期: " + updateArr(obj.pubdates);
+  $infoContentPubdates.innerHTML = "上映日期: <br/>" + updateArr(obj.pubdates);
   $infoContentDurations.innerHTML = "片长: " + updateArr(obj.durations);
   $infoContentScores.innerHTML = "豆瓣评分: " + obj.score;
   $movieInfoPhotos.innerHTML +=
     `<div class="photo-header">`
     + `<h2>剧照</h2>`
-    + ` <p><a href="${obj.album}"> 查看更多</a></p>`
+    + ` <p><a href="${obj.album}">>查看更多<</a></p>`
     + ` </div>`;
   for (let photo of obj.photos) {
     $movieInfoPhotos.innerHTML +=
@@ -79,4 +79,5 @@ function updateArr(arr) {
 
 window.onload = () => {
   getDetailsDataFromId();
+  document.referrer="";
 };
