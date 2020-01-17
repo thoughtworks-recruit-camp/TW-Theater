@@ -83,11 +83,8 @@ a {
   flex-grow: 1;
 }
 
-.recommended img {
-  width: 150px;
-  margin: 0 auto;
-}
-
 .recommended-name {
   margin: 0 auto;
+  height: auto;
+  font-size: 14px;
 }

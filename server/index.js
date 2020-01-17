@@ -51,6 +51,7 @@ function toDetailsData(dbData) {
     "pubdates": dbData.pubdates,
     "durations": dbData.durations,
     "score": dbData.rating.average,
+    "photos": dbData.photos,
     "summary": dbData.summary,
     "recommended":
       getRandomElements(dbData.genres.slice(0, 3).map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecommendData(dbData))

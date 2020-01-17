@@ -5,7 +5,7 @@ const KEY = "0df993c66c0c636e29ecbb5344252a4a";
 
 const [moviesDb, imagesDb] = [new Map(), new Map()];
 const dataChunks = [];
-let summaryCount = 0;
+let detailsCount = 0;
 let imageCount = 0;
 let finishHandler = new EventEmitter();
 let jobHandler = new EventEmitter();
@@ -39,7 +39,8 @@ function mergeData(data) {
         }));
         res.on("end", () => {
           moviesDb.get(id).summary = JSON.parse(rawData).summary;
-          jobHandler.emit("summary");
+          moviesDb.get(id).photos = JSON.parse(rawData).photos.map(data => data.cover);
+          jobHandler.emit("details");
         });
       }));
 
@@ -57,20 +58,20 @@ function mergeData(data) {
   }
 }
 
-const detailsMessage = (summaryCount, imageCount) => {
-  return `\rTop 250 details loading progress: summaries ${summaryCount}/250 | images ${imageCount}/250`;
+const detailsMessage = (detailsCount, imageCount) => {
+  return `\rTop 250 data loading progress: details ${detailsCount}/250 | images ${imageCount}/250`;
 };
 
-jobHandler.on("summary", () => {
-  process.stdout.write(detailsMessage(++summaryCount, imageCount));
-  if (summaryCount === 250 && imageCount === 250) {
+jobHandler.on("details", () => {
+  process.stdout.write(detailsMessage(++detailsCount, imageCount));
+  if (detailsCount === 250 && imageCount === 250) {
     process.stdout.write(" ...completed!\n");
     finishHandler.emit("finished");
   }
 });
 jobHandler.on("image", () => {
-  process.stdout.write(detailsMessage(summaryCount, ++imageCount));
-  if (summaryCount === 250 && imageCount === 250) {
+  process.stdout.write(detailsMessage(detailsCount, ++imageCount));
+  if (detailsCount === 250 && imageCount === 250) {
     process.stdout.write(" ...completed!\n");
     finishHandler.emit("finished");
   }

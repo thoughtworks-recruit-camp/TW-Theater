@@ -9,6 +9,7 @@ const $infoContentDurations = document.getElementById("info-content-durations");
 const $infoContentScores = document.getElementById("info-content-scores");
 const $moviePlot = document.getElementById("movie-plot");
 const $movieRecommended = document.getElementById("movie-recommended");
+const $movieInfoPhotos = document.getElementById("movie-info-photos");
 
 //get id from location, return id
 function getLocationId() {
@@ -37,6 +38,11 @@ function renderDetails(obj) {
   $infoContentPubdates.innerHTML = "上映日期: " + updateArr(obj.pubdates);
   $infoContentDurations.innerHTML = "片长: " + updateArr(obj.durations);
   $infoContentScores.innerHTML = "豆瓣评分: " + obj.score;
+  for (let photo of obj.photos) {
+    $movieInfoPhotos.innerHTML +=
+      `<div class="photo-container">`
+      + `<img src="${photo}" width="160px"/></div>`
+  }
   $moviePlot.innerHTML = obj.summary;
   let recommendeds = obj.recommended;
   $movieRecommended.innerHTML = "";
@@ -44,8 +50,8 @@ function renderDetails(obj) {
     $movieRecommended.innerHTML += `<div class="recommended">`
       + `<a href="./details.html?id=${recommendeds[i].id}">`
       + `<img src="${recommendeds[i].image}" alt="poster" width="160px" height="240px"/></a>`
-      + `<span class="recommended-name"><a href="./details.html?id=${recommendeds[i].id}">`
-      + `${recommendeds[i].title}</a></span>`
+      + `<p class="recommended-name"><a href="./details.html?id=${recommendeds[i].id}">`
+      + `${recommendeds[i].title}</a></p>`
       + `</div>`
   }
 }
