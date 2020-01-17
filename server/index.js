@@ -1,6 +1,5 @@
 const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
-const MAX_RANDOM_N = 36;
 const idPosterMap = new Map();
 const genreIdMap = new Map();
 const METHOD = fetch;  // TODO fetch || load
