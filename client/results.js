@@ -1,15 +1,18 @@
 import {ajax} from "../src/ajax.js";
 
+const API_ROOT = "http://localhost:8888";
 const $main = document.getElementById("main");
 
+//get keyword from location
 function getLocationKeyword() {
   return window.location.search.split("=")[1];
 }
+console.log(getLocationKeyword())
 
 //get API by keyword
 function ajaxFailed(err) {
     console.log(err);
-  }
+}
   
 function getResultsDataFromKeyword() {
   ajax({
@@ -22,20 +25,20 @@ function getResultsDataFromKeyword() {
   
 //render results.html
 function renderResults(arr) {
-  $main.innerHTML = `搜索 ${getLocationKeyword()}`;
+  console.log(1)
+  $main.innerHTML = `搜索` + `${getLocationKeyword()}`;
   for (let i = 0; i < arr.length; i++) {
     $main.innerHTML += `<div class="search-div">`
     + `<a href="./details.html?id=${arr[i].id}">`
-    + `<img src=${arr[i].images} alt="poster" /></a>`
+    + `<img src=${arr[i].image} alt="poster" /></a>`
     + `<p class="search-info">`
     + `<span class="info-title"><a href="./details.html?id=${arr[i].id}">`
     + `${arr[i].title} (${arr[i].year})</a></span>`
-    + `<span>评分: ${arr[i].score}</span>`
+    + `<span>评分: ${arr[i].rating}</span>`
     + `<span>${updateArr(arr[i].genres)} / `
-    + `${isCommonName(arr[i].title, arr[i].original_title)} /`
-    + `${arr[i].durations[0]}</span>`
-    + `<span>全宰洪 / 车秀妍 / 李天熙</span>`
-    + `${arr[i].summary}`
+    + `${isCommonName(arr[i].title, arr[i].original_title)}</span>`
+    + `<span>${updateArr(arr[i].casts)}</span>`
+    + `<span class="search-summary">${arr[i].summary}</span>`
     + `</p>`
     + `</div>`
   }

@@ -54,3 +54,11 @@ body {
   font-size: 24px;
   font-weight: 600;
 }
+
+.search-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
