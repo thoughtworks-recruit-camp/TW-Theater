@@ -25,11 +25,15 @@ function renderResults(arr) {
   $main.innerHTML = `搜索 ${getLocationKeyword()}`;
   for (let i = 0; i < arr.length; i++) {
     $main.innerHTML += `<div class="search-div">`
-    + `<img src=${arr[i].images} alt="poster" />`
+    + `<a href="./details.html?id=${arr[i].id}">`
+    + `<img src=${arr[i].images} alt="poster" /></a>`
     + `<p class="search-info">`
-    + `<span class="info-title">${arr[i].title} (${arr[i].year})</span>`
+    + `<span class="info-title"><a href="./details.html?id=${arr[i].id}">`
+    + `${arr[i].title} (${arr[i].year})</a></span>`
     + `<span>评分: ${arr[i].score}</span>`
-    + `<span>${updateArr(arr[i].genres)} / ${isCommonName(arr[i].title, arr[i].original_title)} / ${arr[i].durations[0]}</span>`
+    + `<span>${updateArr(arr[i].genres)} / `
+    + `${isCommonName(arr[i].title, arr[i].original_title)} /`
+    + `${arr[i].durations[0]}</span>`
     + `<span>全宰洪 / 车秀妍 / 李天熙</span>`
     + `${arr[i].summary}`
     + `</p>`
