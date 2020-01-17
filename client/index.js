@@ -73,9 +73,9 @@ function handleSortingSwitch(event) {
   let selectedSorting = sortingValuesMap.get(target.innerText);
   if (selectedSorting !== currentSorting) {
     for (let child of target.parentElement.children) {
-      child.setAttribute("class", "unselected");
+      child.classList.replace("selected","unselected");
     }
-    target.setAttribute("class", "selected");
+    target.classList.replace("unselected","selected");
     currentSorting = selectedSorting;
     getGalleryData();
   }
@@ -90,9 +90,9 @@ function handleGenreSwitch(event) {
   let selectedGenre = target.innerText;
   if (selectedGenre !== currentGenre) {
     for (let child of target.parentElement.children) {
-      child.setAttribute("class", "unselected");
+      child.classList.replace("selected","unselected");
     }
-    target.setAttribute("class", "selected");
+    target.classList.replace("unselected","selected");
     currentGenre = selectedGenre;
     getGalleryData();
   }
