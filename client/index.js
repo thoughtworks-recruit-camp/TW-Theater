@@ -58,9 +58,9 @@ function renderGenres(dataList) {
   while (genresList.hasChildNodes()) {
     genresList.removeChild(genresList.lastChild);
   }
-  genresList.innerHTML += `<li class="selected"><span class="iconfont icon-tags">全部</span></li>`;
+  genresList.innerHTML += `<li class="selected"><span class="iconfont icon-tags selected-icon"></span>全部</li>`;
   dataList.map(data => {
-    genresList.innerHTML += `<li class="unselected"><span class="iconfont icon-tag">${data}</span></li>`;
+    genresList.innerHTML += `<li class="unselected"><span class="iconfont icon-tag"></span>${data}</li>`;
   });
   genresList.addEventListener("click", handleGenreSwitch, false);
 }
