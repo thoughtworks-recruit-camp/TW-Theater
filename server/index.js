@@ -1,8 +1,12 @@
 const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
-const idPosterMap = new Map();
-const genreIdMap = new Map();
+const [genreIdMap, idPosterMap] = [new Map(), new Map()];
 const METHOD = fetch;  // TODO fetch || load
+const HOST = "localhost";
+const PORT = 8888;
+const API_ROOT = `http://${HOST}:${PORT}`;
+const REMOTE_ROOT = "http://api.douban.com/v2/movie";
+const KEY = "0df993c66c0c636e29ecbb5344252a4a";
 
 function getRandomElements(array, count) {
   let arr = array.concat();
@@ -28,7 +32,7 @@ function toIndexData(dbData) {
     rating: dbData.rating.average,
     genres: dbData.genres,
     year: dbData.year,
-    image: `http://localhost:8888/poster?id=${dbData.id}`,
+    image: `${API_ROOT}/poster?id=${dbData.id}`,
     summary: dbData.summary
   }
 }
@@ -37,7 +41,7 @@ function toRecItems(dbData) {
   return {
     id: dbData.id,
     title: dbData.title,
-    image: `http://localhost:8888/poster?id=${dbData.id}`
+    image: `${API_ROOT}/poster?id=${dbData.id}`
   }
 }
 
@@ -46,7 +50,7 @@ function toSearchResult(dbData) {
     id: dbData.id,
     title: dbData.title,
     original_title: dbData.original_title,
-    image: `http://localhost:8888/poster?id=${dbData.id}`,
+    image: `${API_ROOT}/poster?id=${dbData.id}`,
     genres: dbData.genres,
     year: dbData.year,
     summary: dbData.summary
@@ -94,7 +98,7 @@ METHOD.finishHandler.on("finished", () => {
         }
         case "/details"   : {
           let id = parsedUrl.query.id;
-          http.get(`http://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`, (res) => {
+          http.get(`${REMOTE_ROOT}/subject/${id}?apikey=${KEY}`, (res) => {
             let rawData = "";
             res.setEncoding("utf-8");
             res.on("data", (chunk => {
@@ -106,7 +110,7 @@ METHOD.finishHandler.on("finished", () => {
                 "title": movieData.title,
                 "original_title": movieData.original_title,
                 "year": movieData.year,
-                "image": `http://localhost:8888/poster?id=${movieData.id}`,
+                "image": `${API_ROOT}/poster?id=${movieData.id}`,
                 "genres": movieData.genres,
                 "pubdates": movieData.pubdates,
                 "durations": movieData.durations,
@@ -162,8 +166,8 @@ METHOD.finishHandler.on("finished", () => {
       }
     }
   );
-  proxyServer.listen(8888, () => {
-    console.log('The proxyServer is running at http://localhost:8888');
+  proxyServer.listen(PORT, HOST, () => {
+    console.log(`The proxyServer is running at ${API_ROOT}`);
   });
 })
 ;
