@@ -1,12 +1,15 @@
 const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
-const genreIdMap = new Map();
-const DATA_SOURCE = fetch;  // TODO fetch || load
+
+const REMOTE_ROOT = "http://api.douban.com/v2/movie";
+const KEY = "0df993c66c0c636e29ecbb5344252a4a";
+
 const HOST = "localhost";
 const PORT = 8888;
 const API_ROOT = `http://${HOST}:${PORT}`;
-const REMOTE_ROOT = "http://api.douban.com/v2/movie";
-const KEY = "0df993c66c0c636e29ecbb5344252a4a";
+
+const DATA_SOURCE = fetch;  // TODO fetch || load
+const genreIdMap = new Map();
 let moviesDb, imagesDb;
 
 function getRandomElements(array, count) {
@@ -38,6 +41,22 @@ function toIndexData(dbData) {
   }
 }
 
+function toDetailsData(dbData) {
+  return {
+    "title": dbData.title,
+    "original_title": dbData.original_title,
+    "year": dbData.year,
+    "image": `${API_ROOT}/poster?id=${dbData.id}`,
+    "genres": dbData.genres,
+    "pubdates": dbData.pubdates,
+    "durations": dbData.durations,
+    "score": dbData.rating.average,
+    "summary": dbData.summary,
+    "recommended":
+      getRandomElements(dbData.genres.slice(0, 3).map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecommendData(dbData))
+  };
+}
+
 function toRecommendData(dbData) {
   return {
     id: dbData.id,
@@ -58,31 +77,17 @@ function toSearchData(dbData) {
   }
 }
 
-function toDetailsData(dbData) {
-  return {
-    "title": dbData.title,
-    "original_title": dbData.original_title,
-    "year": dbData.year,
-    "image": `${API_ROOT}/poster?id=${dbData.id}`,
-    "genres": dbData.genres,
-    "pubdates": dbData.pubdates,
-    "durations": dbData.durations,
-    "score": dbData.rating.average,
-    "summary": dbData.summary,
-    "recommended":
-      getRandomElements(dbData.genres.slice(0, 3).map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecommendData(dbData))
-  };
-}
 
 DATA_SOURCE.finishHandler.on("finished", () => {
   moviesDb = DATA_SOURCE.moviesDb;
   imagesDb = DATA_SOURCE.imagesDb;
   Array.from(moviesDb.entries())
     .forEach(([key, value]) => {
-      // idPosterMap.set(key, value.images.large);
       for (let genre of value.genres) {
-        let currentIds = genreIdMap.get(genre) || [];
-        genreIdMap.set(genre, currentIds.concat(key))
+        if (!genreIdMap.has(genre)) {
+          genreIdMap.set(genre, [])
+        }
+        genreIdMap.get(genre).push(key);
       }
     });
   const proxyServer = http.createServer((request, response) => {
