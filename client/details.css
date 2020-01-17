@@ -14,8 +14,8 @@ a {
 
 .details-subtitle {
   align-self: flex-start;
-  background-color: #bbb;
-  color: #222;
+  background: #eee;
+  color: #444;
   padding: 6px 12px;
   border-radius: 3px;
   width: auto;

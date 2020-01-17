@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   font-family: sans-serif;
@@ -13,11 +14,12 @@ a {
   width: 100%;
   height: 64px;
   background: #eeeeee66;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
-  box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3);
 }
+
 #top-bar:before {
   content: '';
   position: absolute;
@@ -25,18 +27,23 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: -1;
   filter: blur(20px);
 }
-.logo{
+
+.logo {
+  display: inline-block;
   width: 140px;
-  padding: 20px;
+  margin-left: 16px;
+  align-self: center;
 }
-#page-title{
+
+#page-title {
   align-self: center;
   font-size: 24px;
 }
+
 #search-bar {
   align-self: center;
   margin: 24px;
@@ -56,7 +63,9 @@ a {
   color: #eee;
   border: 0;
   background-color: transparent;
+  outline: none;
 }
+
 #search-button {
   height: 32px;
   width: 32px;
@@ -66,6 +75,7 @@ a {
   background-image: url(./search.svg);
   cursor: pointer;
 }
+
 #side-bar {
   position: fixed;
   top: 64px;
@@ -110,17 +120,17 @@ a {
 }
 
 .selected {
-  background-color: #bbb;
+  background-color: #ccc;
   color: #222;
   font-weight: bold;
 }
 
 .selected-icon {
-  color: red;
+  color: #c00;
 }
 
 #side-bar li:hover {
-  background-color: #ccc;
+  background-color: #bbb;
 }
 
 #side-bar li:active {
@@ -146,7 +156,7 @@ a {
   left: 180px;
   top: 0;
   padding-top: 80px;
-  height:auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -160,6 +170,9 @@ a {
   width: 200px;
   height: 360px;
   text-align: center;
+}
+.movie-tile img{
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .rating-tag {
@@ -241,6 +254,7 @@ a {
 .movie-tile h3 {
   margin: 8px;
   font-weight: bold;
+  text-shadow: 1px 1px #66666666;
 }
 
 
