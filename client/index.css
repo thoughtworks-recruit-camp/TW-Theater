@@ -39,7 +39,7 @@ main {
 }
 
 #side-bar li {
-  width: 100px;
+  width: 80px;
   font-size: 12px;
   margin: 8px auto;
   padding: 4px;
@@ -98,7 +98,7 @@ main {
   text-align: center;
 }
 
-[class$="tag"] {
+.rating-tag {
   z-index: 2;
   display: inline-block;
   position: absolute;
@@ -108,20 +108,9 @@ main {
   border-radius: 2px;
   color: white;
   font-size: 12px;
-}
-
-.rating-tag {
-
   bottom: 60px;
   right: 0;
   width: 80px;
-}
-
-.genre-tag {
-  top: 0;
-  left: 0;
-  width: 40px;
-
 }
 
 .brief-box {
