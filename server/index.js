@@ -2,7 +2,7 @@ const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
 const genreIdMap = new Map();
 const DATA_SOURCE = fetch;  // TODO fetch || load
-const HOST = "192.168.0.11";
+const HOST = "localhost";
 const PORT = 8888;
 const API_ROOT = `http://${HOST}:${PORT}`;
 const REMOTE_ROOT = "http://api.douban.com/v2/movie";
@@ -160,7 +160,7 @@ DATA_SOURCE.finishHandler.on("finished", () => {
       }
     }
   );
-  proxyServer.listen(PORT, HOST, () => {
+  proxyServer.listen(PORT, () => {
     console.log(`The DB Server is running at ${API_ROOT}`);
   });
 })
