@@ -24,21 +24,28 @@ function getResultsDataFromKeyword() {
   
 //render results.html
 function renderResults(arr) {
-  $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`;
-  for (let i = 0; i < arr.length; i++) {
-    $main.innerHTML += `<div class="search-div">`
-    + `<a href="./details.html?id=${arr[i].id}">`
-    + `<img src=${arr[i].image} alt="poster" /></a>`
-    + `<p class="search-info">`
-    + `<span class="info-title"><a href="./details.html?id=${arr[i].id}">`
-    + `${arr[i].title} (${arr[i].year})</a></span>`
-    + `<span>评分: ${arr[i].rating}</span>`
-    + `<span>${updateArr(arr[i].genres)} / `
-    + `${isCommonName(arr[i].title, arr[i].original_title)}</span>`
-    + `<span>${updateArr(arr[i].casts)}</span>`
-    + `<span class="search-summary">${arr[i].summary}</span>`
-    + `</p>`
-    + `</div>`
+  if (arr.length > 0) {
+    $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`;
+    for (let i = 0; i < arr.length; i++) {
+      $main.innerHTML += `<div class="search-div">`
+      + `<a href="./details.html?id=${arr[i].id}">`
+      + `<img src=${arr[i].image} alt="poster" /></a>`
+      + `<p class="search-info">`
+      + `<span class="info-title"><a href="./details.html?id=${arr[i].id}">`
+      + `${arr[i].title} (${arr[i].year})</a></span>`
+      + `<span>评分: ${arr[i].rating}</span>`
+      + `<span>${updateArr(arr[i].genres)} / `
+      + `${isCommonName(arr[i].title, arr[i].original_title)}</span>`
+      + `<span>${updateArr(arr[i].casts)}</span>`
+      + `<span class="search-summary">${arr[i].summary}</span>`
+      + `</p>`
+      + `</div>`
+    }
+  }else{
+    $main.innerHTML = `<h1>搜索: ` + `${decodeURI(getLocationKeyword())}</h1>`
+    + `<div id="search-fail"><img src="./fail.svg" alt="logo" />`
+    + `<p>未找到相关电影!</p>`
+    + `</div>`;
   }
 }
 
