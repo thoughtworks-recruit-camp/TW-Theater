@@ -1,8 +1,16 @@
 const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
-const idPosterMap = new Map();
+
+const REMOTE_ROOT = "http://api.douban.com/v2/movie";
+const KEY = "0df993c66c0c636e29ecbb5344252a4a";
+
+const HOST = "localhost";
+const PORT = 8888;
+const API_ROOT = `http://${HOST}:${PORT}`;
+
+const DATA_SOURCE = fetch;  // TODO fetch || load
 const genreIdMap = new Map();
-const METHOD = fetch;  // TODO fetch || load
+let moviesDb, imagesDb;
 
 function getRandomElements(array, count) {
   let arr = array.concat();
@@ -28,39 +36,61 @@ function toIndexData(dbData) {
     rating: dbData.rating.average,
     genres: dbData.genres,
     year: dbData.year,
-    image: `http://localhost:8888/poster?id=${dbData.id}`,
+    image: `${API_ROOT}/poster?id=${dbData.id}`,
     summary: dbData.summary
   }
 }
 
-function toRecItems(dbData) {
+function toDetailsData(dbData) {
+  return {
+    "title": dbData.title,
+    "original_title": dbData.original_title,
+    "year": dbData.year,
+    "image": `${API_ROOT}/poster?id=${dbData.id}`,
+    "genres": dbData.genres,
+    "pubdates": dbData.pubdates,
+    "durations": dbData.durations,
+    "score": dbData.rating.average,
+    "summary": dbData.summary,
+    "recommended":
+      getRandomElements(dbData.genres.slice(0, 3).map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecommendData(dbData))
+  };
+}
+
+function toRecommendData(dbData) {
   return {
     id: dbData.id,
     title: dbData.title,
-    image: `http://localhost:8888/poster?id=${dbData.id}`
+    image: `${API_ROOT}/poster?id=${dbData.id}`
   }
 }
 
-function toSearchResult(dbData) {
+function toSearchData(dbData) {
   return {
     id: dbData.id,
     title: dbData.title,
     original_title: dbData.original_title,
-    image: `http://localhost:8888/poster?id=${dbData.id}`,
+    image: `${API_ROOT}/poster?id=${dbData.id}`,
     genres: dbData.genres,
     year: dbData.year,
-    summary: dbData.summary
+    summary: dbData.summary,
+    rating: dbData.rating.average,
+    duration: dbData.duration,
+    casts: dbData.casts.map(cast => cast.name)
   }
 }
 
-METHOD.finishHandler.on("finished", () => {
-  const moviesDb = METHOD.data;
+
+DATA_SOURCE.finishHandler.on("finished", () => {
+  moviesDb = DATA_SOURCE.moviesDb;
+  imagesDb = DATA_SOURCE.imagesDb;
   Array.from(moviesDb.entries())
     .forEach(([key, value]) => {
-      idPosterMap.set(key, value.images.large);
       for (let genre of value.genres) {
-        let currentIds = genreIdMap.get(genre) || [];
-        genreIdMap.set(genre, currentIds.concat(key))
+        if (!genreIdMap.has(genre)) {
+          genreIdMap.set(genre, [])
+        }
+        genreIdMap.get(genre).push(key);
       }
     });
   const proxyServer = http.createServer((request, response) => {
@@ -94,30 +124,16 @@ METHOD.finishHandler.on("finished", () => {
         }
         case "/details"   : {
           let id = parsedUrl.query.id;
-          http.get(`http://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`, (res) => {
+          http.get(`${REMOTE_ROOT}/subject/${id}?apikey=${KEY}`, (res) => {
             let rawData = "";
             res.setEncoding("utf-8");
             res.on("data", (chunk => {
               rawData += chunk;
             }));
             res.on("end", () => {
-              let movieData = moviesDb.get(id);
-              let resData = {
-                "title": movieData.title,
-                "original_title": movieData.original_title,
-                "year": movieData.year,
-                "image": `http://localhost:8888/poster?id=${movieData.id}`,
-                "genres": movieData.genres,
-                "pubdates": movieData.pubdates,
-                "durations": movieData.durations,
-                "score": movieData.rating.average,
-                "summary": movieData.summary,
-                "recommended":
-                  getRandomElements(movieData.genres.map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecItems(dbData))
-              };
               response.statusCode = 200;
               response.setHeader('Content-Type', 'Application/JSON');
-              response.end(JSON.stringify(resData));
+              response.end(JSON.stringify(toDetailsData(moviesDb.get(id))));
             });
           });
           break;
@@ -136,20 +152,10 @@ METHOD.finishHandler.on("finished", () => {
         case
         "/poster"
         : {
-          http.get(idPosterMap.get(parsedUrl.query.id), res => {
-            let body = Buffer.from([]);
-            res.on("data", data => {
-              body = Buffer.concat([body, data]);
-            });
-            res.on("end", () => {
-              response.statusCode = 200;
-              response.setHeader("Cache-Control", "max-age=60");
-              response.end(body);
-            });
-
-          });
+          response.statusCode = 200;
+          response.setHeader("Cache-Control", "max-age=60");
+          response.end(imagesDb.get(parsedUrl.query.id));
           break;
-
         }
         case
         "/search"
@@ -157,13 +163,13 @@ METHOD.finishHandler.on("finished", () => {
           let resData = Array.from(moviesDb.values()).filter(subject => isInTitle(parsedUrl.query.keyword, subject));
           response.statusCode = 200;
           response.setHeader('Content-Type', 'Application/JSON');
-          response.end(JSON.stringify(resData.map(toSearchResult)));
+          response.end(JSON.stringify(resData.map(toSearchData)));
         }
       }
     }
   );
-  proxyServer.listen(8888, () => {
-    console.log('The proxyServer is running at http://localhost:8888');
+  proxyServer.listen(PORT, () => {
+    console.log(`The DB Server is running at ${API_ROOT}`);
   });
 })
 ;
