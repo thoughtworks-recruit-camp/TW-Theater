@@ -5,6 +5,11 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .details-subtitle {
   color: white;
   background-color: gray;

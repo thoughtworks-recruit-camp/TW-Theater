@@ -42,15 +42,17 @@ function renderDetails(obj) {
   $movieRecommended.innerHTML = "";
   for (let i = 0; i < recommendeds.length; i++) {
     $movieRecommended.innerHTML += `<div class="recommended">`
-      + `<img src="${recommendeds[i].image}" alt="poster" width="160px" height="240px"/>`
-      + `<span class="recommended-name">${recommendeds[i].title}</span>`
+      + `<a href="./details.html?id=${recommendeds[i].id}">`
+      + `<img src="${recommendeds[i].image}" alt="poster" width="160px" height="240px"/></a>`
+      + `<span class="recommended-name"><a href="./details.html?id=${recommendeds[i].id}">`
+      + `${recommendeds[i].title}</a></span>`
       + `</div>`
   }
 }
 
 //update
 function isCommonName(name1, name2) {
-  if(name1 === name2) {
+  if (name1 === name2) {
     return name1;
   }
   return name1 + " " + name2;
