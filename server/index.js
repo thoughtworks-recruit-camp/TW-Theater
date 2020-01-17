@@ -106,7 +106,7 @@ METHOD.finishHandler.on("finished", () => {
                 "title": movieData.title,
                 "original_title": movieData.original_title,
                 "year": movieData.year,
-                "images": `http://localhost:8888/poster?id=${movieData.id}`,
+                "image": `http://localhost:8888/poster?id=${movieData.id}`,
                 "genres": movieData.genres,
                 "pubdates": movieData.pubdates,
                 "durations": movieData.durations,
