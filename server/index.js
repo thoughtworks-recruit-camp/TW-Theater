@@ -49,6 +49,7 @@ function toSearchResult(dbData) {
     image: `http://localhost:8888/poster?id=${dbData.id}`,
     genres: dbData.genres,
     year: dbData.year,
+    summary: dbData.summary
   }
 }
 
@@ -156,7 +157,7 @@ METHOD.finishHandler.on("finished", () => {
           let resData = Array.from(moviesDb.values()).filter(subject => isInTitle(parsedUrl.query.keyword, subject));
           response.statusCode = 200;
           response.setHeader('Content-Type', 'Application/JSON');
-          response.end(JSON.stringify(resData));
+          response.end(JSON.stringify(resData.map(toSearchResult)));
         }
       }
     }

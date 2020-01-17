@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Test-Details</title>
+</head>
+<body>
+</body>
+<script type="module">
+  import {ajax} from "../src/ajax.js";
+
+  ajax({
+    url: "http://localhost:8888/search?keyword=教父",
+    method: "get",
+    onSuccess: show,
+    onFail: show
+  });
+
+  function show(responseText) {
+    document.body.innerHTML=(`<pre>${JSON.stringify(responseText, null, 2)}</pre>`);
+  }
+</script>
+</html>
