@@ -26,6 +26,7 @@ function getDetailsDataFromId() {
 }
 
 function renderDetails(obj) {
+  document.title=`影片详情 - ${obj.title}`;
   $movieTitle.innerHTML = isCommonName(obj.title, obj.original_title) + " " + obj.year;
   $movieInfoImg.setAttribute("src", obj.image);
   $movieInfoContent.innerHTML += `<span id="info-content-genres">`
