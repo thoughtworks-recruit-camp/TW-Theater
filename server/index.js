@@ -1,13 +1,13 @@
 const [http, url] = [require("http"), require('url')];
 const fetch = require("./fetch");
-const [genreIdMap, idPosterMap] = [new Map(), new Map()];
-const METHOD = fetch;  // TODO fetch || load
+const genreIdMap = new Map();
+const DATA_SOURCE = fetch;  // TODO fetch || load
 const HOST = "192.168.0.11";
 const PORT = 8888;
 const API_ROOT = `http://${HOST}:${PORT}`;
 const REMOTE_ROOT = "http://api.douban.com/v2/movie";
 const KEY = "0df993c66c0c636e29ecbb5344252a4a";
-let moviesDb;
+let moviesDb, imagesDb;
 
 function getRandomElements(array, count) {
   let arr = array.concat();
@@ -74,11 +74,12 @@ function toDetailsData(dbData) {
   };
 }
 
-METHOD.finishHandler.on("finished", () => {
-  moviesDb = METHOD.data;
+DATA_SOURCE.finishHandler.on("finished", () => {
+  moviesDb = DATA_SOURCE.moviesDb;
+  imagesDb = DATA_SOURCE.imagesDb;
   Array.from(moviesDb.entries())
     .forEach(([key, value]) => {
-      idPosterMap.set(key, value.images.large);
+      // idPosterMap.set(key, value.images.large);
       for (let genre of value.genres) {
         let currentIds = genreIdMap.get(genre) || [];
         genreIdMap.set(genre, currentIds.concat(key))
@@ -143,20 +144,10 @@ METHOD.finishHandler.on("finished", () => {
         case
         "/poster"
         : {
-          http.get(idPosterMap.get(parsedUrl.query.id), res => {
-            let body = Buffer.from([]);
-            res.on("data", data => {
-              body = Buffer.concat([body, data]);
-            });
-            res.on("end", () => {
-              response.statusCode = 200;
-              response.setHeader("Cache-Control", "max-age=60");
-              response.end(body);
-            });
-
-          });
+          response.statusCode = 200;
+          response.setHeader("Cache-Control", "max-age=60");
+          response.end(imagesDb.get(parsedUrl.query.id));
           break;
-
         }
         case
         "/search"
@@ -170,7 +161,7 @@ METHOD.finishHandler.on("finished", () => {
     }
   );
   proxyServer.listen(PORT, HOST, () => {
-    console.log(`The proxyServer is running at ${API_ROOT}`);
+    console.log(`The DB Server is running at ${API_ROOT}`);
   });
 })
 ;

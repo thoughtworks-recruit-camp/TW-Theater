@@ -1,10 +1,12 @@
 let [http, EventEmitter] = [require("http"), require("events").EventEmitter];
 let finishHandler = new EventEmitter();
-let summaryHandler = new EventEmitter();
+let jobHandler = new EventEmitter();
+let chunkCount = 0;
 let summaryCount = 0;
-let briefCount = 0;
+let imageCount = 0;
 
-const moviesDb = new Map();
+
+const [moviesDb, imagesDb] = [new Map(), new Map()];
 const dataChunks = [];
 
 for (let index = 0; index < 250; index += 10) {
@@ -20,7 +22,7 @@ for (let index = 0; index < 250; index += 10) {
 
 function mergeData(data) {
   dataChunks.push(data);
-  process.stdout.write(`\rTop 250 loading progress: ${++briefCount * 10}/250`);
+  process.stdout.write(`\rTop 250 basics loading progress: ${++chunkCount * 10}/250`);
   if (dataChunks.length === 25) {
     process.stdout.write(" ...completed!\n");
     dataChunks.sort((a, b) => a.start - b.start);
@@ -36,19 +38,37 @@ function mergeData(data) {
           let currentData = moviesDb.get(id);
           currentData.summary = JSON.parse(rawData).summary;
           moviesDb.set(id, currentData);
-          summaryHandler.emit("set");
+          jobHandler.emit("summary");
         });
-      }))
+      }));
+      http.get(moviesDb.get(id).images.large, res => {
+        let data = Buffer.from([]);
+        res.on("data", chunk => {
+          data = Buffer.concat([data, chunk]);
+        });
+        res.on("end", () => {
+          imagesDb.set(id, data);
+          jobHandler.emit("image")
+        });
+      });
+
     }
   }
 }
 
-summaryHandler.on("set", () => {
-  process.stdout.write(`\rTop 250 summaries loading progress: ${++summaryCount}/250`);
-  if (summaryCount === 250) {
+jobHandler.on("summary", () => {
+  process.stdout.write(`\rTop 250 details loading progress: summaries ${++summaryCount}/250 | images ${imageCount}/250`);
+  if (summaryCount === 250 && imageCount === 250) {
+    process.stdout.write(" ...completed!\n");
+    finishHandler.emit("finished");
+  }
+});
+jobHandler.on("image", () => {
+  process.stdout.write(`\rTop 250 details loading progress: summaries ${summaryCount}/250 | images ${++imageCount}/250`);
+  if (summaryCount === 250 && imageCount === 250) {
     process.stdout.write(" ...completed!\n");
     finishHandler.emit("finished");
   }
 });
 
-module.exports = {finishHandler: finishHandler, data: moviesDb};
+module.exports = {finishHandler, moviesDb, imagesDb};
