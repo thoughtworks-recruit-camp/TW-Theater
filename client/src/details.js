@@ -26,17 +26,19 @@ function getDetailsDataFromId() {
 }
 
 function renderDetails(obj) {
-  document.title=`影片详情 - ${obj.title}`;
+  document.title = `影片详情 - ${obj.title}`;
   $movieTitle.innerHTML = isCommonName(obj.title, obj.original_title) + " " + obj.year;
   $movieInfoImg.setAttribute("src", obj.image);
   $movieInfoContent.innerHTML += `<span id="info-content-genres">`
-  + `类型: ` + `${updateArr(obj.genres)}</span>`
-  + `<span id="info-content-pubdates">`
-  + `上映日期: <br/>` + `${updateArr(obj.pubdates)}</span>`
-  + `<span id="info-content-durations">`
-  + `片长: ` + `${updateArr(obj.durations)}</span>`
-  + `<span id="info-content-scores">`
-  + `豆瓣评分: ` + `${obj.score}</span>`;
+    + `类型: ` + `${updateArr(obj.genres)}</span>`
+    + `<span id="info-content-casts">`
+    + `主演: ` + `${updateArr(obj.casts)}</span>`
+    + `<span id="info-content-pubdates">`
+    + `上映日期: <br/>` + `${updateArr(obj.pubdates)}</span>`
+    + `<span id="info-content-durations">`
+    + `片长: ` + `${updateArr(obj.durations)}</span>`
+    + `<span id="info-content-scores">`
+    + `豆瓣评分: ` + `${obj.score}</span>`;
   $movieInfoPhotos.innerHTML +=
     `<div class="photo-header">`
     + `<h2>剧照</h2>`
@@ -77,5 +79,5 @@ function updateArr(arr) {
 
 window.onload = () => {
   getDetailsDataFromId();
-  document.referrer="";
+  document.referrer = "";
 };
