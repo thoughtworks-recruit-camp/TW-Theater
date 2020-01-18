@@ -43,18 +43,19 @@ function toIndexData(dbData) {
 
 function toDetailsData(dbData) {
   return {
-    "title": dbData.title,
-    "original_title": dbData.original_title,
-    "year": dbData.year,
-    "image": `${API_ROOT}/poster?id=${dbData.id}`,
-    "genres": dbData.genres,
-    "pubdates": dbData.pubdates,
-    "durations": dbData.durations,
-    "score": dbData.rating.average.toFixed(1),
-    "photos": dbData.photos,
-    "album": `https://movie.douban.com/subject/${dbData.id}/all_photos`,
-    "summary": dbData.summary,
-    "recommended":
+    title: dbData.title,
+    original_title: dbData.original_title,
+    year: dbData.year,
+    image: `${API_ROOT}/poster?id=${dbData.id}`,
+    genres: dbData.genres,
+    pubdates: dbData.pubdates,
+    durations: dbData.durations,
+    score: dbData.rating.average.toFixed(1),
+    photos: dbData.photos,
+    album: `https://movie.douban.com/subject/${dbData.id}/all_photos`,
+    summary: dbData.summary,
+    casts: dbData.casts.map(cast => cast.name).slice(0, 5),
+    recommended:
       getRandomElements(dbData.genres.slice(0, 3).map(genre => genreIdMap.get(genre)).flat(), 6).map(id => moviesDb.get(id)).map(dbData => toRecommendData(dbData))
   };
 }
@@ -78,7 +79,7 @@ function toSearchData(dbData) {
     summary: dbData.summary,
     rating: dbData.rating.average.toFixed(1),
     duration: dbData.duration,
-    casts: dbData.casts.map(cast => cast.name)
+    casts: dbData.casts.map(cast => cast.name).slice(0, 5)
   }
 }
 
