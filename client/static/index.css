@@ -155,7 +155,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: #ddd;
+  background: linear-gradient(90deg,#eee, #aaa);
   color: #444;
 }
 
